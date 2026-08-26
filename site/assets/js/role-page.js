@@ -1,0 +1,13 @@
+import {findOrgPosition} from './data/org-roles.js';
+import {buildJobDescription} from './data/job-descriptions.js';
+function esc(v){return String(v??'').replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c]))}
+function assignment(role){try{return localStorage.getItem('ak9i-org-'+role.key)||role.initial}catch{return role.initial}}
+function list(items){return `<ul>${(items||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`}
+const key=new URLSearchParams(location.search).get('role');
+const role=findOrgPosition(key);
+const root=document.getElementById('roleRoot');
+if(!role){document.title='Role not found — AK9I';root.innerHTML=`<main class="role-page"><a class="back" href="../#s4">← Return to organization chart</a><section class="role-hero"><p class="eyebrow">AK9I Job Description</p><h1>Role not found</h1><p>The requested role is not present in the current AK9I operating model.</p></section></main>`;}else{
+ const jd=buildJobDescription(role);const parent=role.parentTitle?`<span>${esc(role.parentTitle)}</span>`:'<span>Executive / Independent Function</span>';
+ document.title=`${role.title} — AK9I Job Description`;
+ root.innerHTML=`<main class="role-page"><header class="role-topbar"><div class="brand"><strong>AK9I</strong><i></i><span>Train. Certify. Deploy. Protect.<br>A Brawner Group Company</span></div><a class="back" href="../#s4">← Return to organization chart</a></header><section class="role-hero" style="--role-color:${esc(role.color||'#0B2239')}"><p class="eyebrow">AK9I Job Description · Current Functional Alignment</p><h1>${esc(role.title)}</h1><div class="role-meta"><div><label>Current assignee</label><strong>${esc(assignment(role))}</strong></div><div><label>Reports / aligns to</label>${parent}</div></div><p class="purpose">${esc(jd.purpose)}</p></section><section class="role-grid"><article><h2>Accountabilities</h2>${list(jd.accountabilities)}</article><article><h2>Authority</h2><p>${esc(jd.authority)}</p></article><article><h2>Handoffs</h2><p>${esc(jd.handoffs)}</p></article><article><h2>Performance Measures</h2>${list(jd.kpis)}</article><article class="alignment"><h2>Job-Title Alignment</h2><p>${esc(jd.sourceAlignment)}</p></article><article class="standard"><h2>Operating Standard</h2><p>This role is accountable for the work assigned to the position, for maintaining required records and handoffs, and for escalating conditions that exceed delegated authority. Final HR-approved job descriptions, compensation classifications, and regulatory requirements control where they differ from this operating-model page.</p></article></section></main>`;
+}

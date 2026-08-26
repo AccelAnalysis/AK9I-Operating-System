@@ -1,0 +1,10 @@
+/* Org chart v2: integrated subordinate assignments + job-description links */
+.org-top-card.regulatory::before{content:"";position:absolute;right:100%;top:52%;width:60px;height:2px;background:rgba(11,34,57,.48);z-index:1}
+.org-role-link{color:inherit;text-decoration:none;cursor:pointer;display:inline-block}
+.org-role-link:hover{text-decoration:underline;text-decoration-color:var(--gold);text-decoration-thickness:2px;text-underline-offset:4px}
+.org-role-head h3 .org-role-link{color:#fff}.org-top-card.ceo .org-role-link{color:#fff}.org-top-card.regulatory .org-role-link{color:var(--graphite)}
+.person-select{display:inline-block;position:relative;max-width:100%}.person-select.compact{display:block;margin-top:4px}
+.person-menu{top:calc(100% + 8px)!important;left:50%!important;transform:translateX(-50%)!important}.org-top-card .person-menu{top:calc(100% + 8px)!important}
+.org-function{height:523px}.org-role-head{min-height:103px;padding:12px 8px 8px}.org-role-head h3{font-size:16px;min-height:35px;margin-bottom:7px}
+.org-responsibilities{padding:0 9px 8px}.org-responsibilities .org-subrole{position:relative;min-height:76px;padding:9px 3px 8px;border-bottom:1px solid rgba(11,34,57,.10);text-align:center;overflow:visible}.org-responsibilities .org-subrole:last-child{border-bottom:0}
+.org-subrole-title{font-size:11.5px;line-height:1.15;font-weight:700;color:var(--graphite);min-height:28px;display:flex;align-items:center;justify-content:center}.org-subrole .person-picker{font-size:10.5px;line-height:1.15;color:var(--steel);font-weight:800;max-width:100%;white-space:normal}.org-subrole .person-menu{width:225px;max-height:285px;z-index:160}.org-subrole .person-option{font-size:12px;padding:8px 9px}.org-function:nth-child(n+7) .org-subrole .person-menu{left:auto!important;right:0!important;transform:none!important}.org-function:nth-child(-n+2) .org-subrole .person-menu{left:0!important;transform:none!important}
