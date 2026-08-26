@@ -10,6 +10,8 @@ Once GitHub Pages has deployed `main`, the presentation is available at:
 
 The included Pages workflow uses GitHub Actions and attempts to enable Pages automatically on first deployment.
 
+> Deployment status: GitHub Pages workflow installed on `main`.
+
 ## Modular structure
 
 ```text
