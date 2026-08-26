@@ -1,0 +1,5 @@
+:root{
+ --navy:#0B2239;--gold:#F3B61F;--steel:#2D6280;--slate:#425466;--field:#F7F8FA;--graphite:#101820;--white:#fff;
+ --green:#3A7754;--teal:#168A93;--purple:#6958A6;--orange:#C87513;--sky:#3478A0;
+ --stage-w:1920px;--stage-h:1080px;--shadow:0 18px 50px rgba(11,34,57,.14);--soft:0 8px 24px rgba(11,34,57,.10)
+}
