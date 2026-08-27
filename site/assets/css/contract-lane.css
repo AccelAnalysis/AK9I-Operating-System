@@ -1,0 +1,21 @@
+/* Contract / Field Operations customer lane */
+.contract-lane{margin-top:34px}
+.contract-lane-stages{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;position:relative}
+.contract-lane-stages::before{content:"";position:absolute;left:4%;right:4%;top:52px;height:2px;background:rgba(11,34,57,.17);z-index:0}
+.contract-stage{appearance:none;border:0;background:transparent;text-align:left;min-height:382px;padding:0 13px 18px;position:relative;border-top:8px solid var(--lane-color);border-bottom:1px solid rgba(11,34,57,.18);z-index:1;color:var(--graphite)}
+.contract-stage:hover,.contract-stage:focus-visible{background:linear-gradient(180deg,color-mix(in srgb,var(--lane-color) 8%,transparent),transparent 70%);border-bottom-color:var(--gold);outline:none}
+.contract-stage:not(:last-child)::after{content:"→";position:absolute;right:-15px;top:39px;color:rgba(11,34,57,.35);font-size:22px;font-weight:900}
+.contract-stage-number{width:50px;height:50px;margin:14px 0 21px;border:3px solid var(--lane-color);border-radius:50%;display:grid;place-items:center;background:var(--field);font-family:"Roboto Condensed";font-size:23px;color:var(--navy);position:relative;z-index:2}
+.contract-stage h3{font-family:"Roboto Condensed";font-size:25px;line-height:1.05;color:var(--navy);margin:0 0 13px}
+.contract-stage p{font-size:14px;line-height:1.42;color:var(--slate);margin:0}
+.contract-owner{position:absolute;left:13px;right:13px;bottom:18px;padding-top:12px;border-top:2px solid color-mix(in srgb,var(--lane-color) 58%,transparent);display:grid;gap:4px}
+.contract-owner span{font-size:9.5px;text-transform:uppercase;letter-spacing:.12em;font-weight:900;color:var(--slate)}
+.contract-owner strong{font-size:13px;line-height:1.25;color:var(--navy)}
+.contract-enablement{margin-top:31px;display:grid;grid-template-columns:190px repeat(4,1fr);gap:22px;align-items:start;padding-top:20px;border-top:2px solid rgba(11,34,57,.16)}
+.contract-enablement-title{font-family:"Roboto Condensed";font-size:21px;line-height:1.08;color:var(--navy)}
+.contract-enable-item{display:grid;gap:5px;padding-left:13px;border-left:4px solid var(--gold)}
+.contract-enable-item strong{font-size:14px;color:var(--navy)}
+.contract-enable-item span{font-size:11.5px;line-height:1.35;color:var(--slate)}
+.contract-lane-note{margin-top:25px;display:flex;align-items:center;justify-content:space-between;color:var(--slate);font-size:12px}
+.contract-lane-note button{border:0;background:transparent;color:var(--steel);font-weight:900;border-bottom:2px solid var(--gold);padding:3px 0}
+.contract-lane-note span{max-width:920px;text-align:right}

@@ -1,0 +1,53 @@
+/* Explicit personnel authority for the AK9I functional org chart */
+.authority-chart.org-canvas{margin-top:14px!important;height:752px!important;padding:0 8px!important}
+.authority-chart .org-top{height:150px!important;grid-template-columns:1fr 1.12fr 1fr!important;gap:62px!important;padding:0 238px!important;align-items:start!important}
+.authority-chart .org-top::after{top:104px!important;height:55px!important;background:rgba(11,34,57,.52)!important}
+.authority-chart .org-top-card{min-height:98px!important;padding:11px 14px 10px!important}
+.authority-chart .org-top-card.regulatory,.authority-chart .org-top-card.coo{margin-top:16px!important}
+.authority-chart .org-top-card.regulatory::before{display:none!important}
+.authority-chart .org-top-card.regulatory::after{content:"";position:absolute;left:100%;top:50%;width:62px;border-top:2px solid rgba(11,34,57,.48);z-index:1}
+.authority-chart .org-top-card.coo::before{content:"";position:absolute;right:100%;top:50%;width:62px;border-top:2px solid rgba(11,34,57,.48);z-index:1}
+.authority-chart .org-top-card.coo{border-color:rgba(184,135,19,.68)!important;background:#fffaf0!important}
+.authority-chart .org-top-card.coo .person-picker{color:var(--navy)!important}
+.authority-chart .scope-status{color:#8c6510!important;font-weight:900!important;letter-spacing:.05em!important;text-transform:uppercase!important}
+.authority-chart .org-transition-links{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;overflow:visible}
+.authority-chart .coo-admin-link{fill:none;stroke:#8c6510;stroke-width:1.8;stroke-dasharray:7 7;opacity:.72}
+
+.authority-chart .org-functions{grid-template-columns:repeat(8,minmax(0,1fr))!important;gap:9px!important;padding-top:18px!important;position:relative!important;z-index:2}
+.authority-chart .org-functions::before{left:3.8%!important;right:3.8%!important;background:rgba(11,34,57,.5)!important}
+.authority-chart .org-function{height:520px!important;border-radius:10px!important;overflow:visible!important;min-width:0!important}
+.authority-chart .org-function::before{top:-18px!important;height:18px!important;background:rgba(11,34,57,.5)!important}
+.authority-chart .org-function.contracted-function::before{background:none!important;border-left:2px dashed rgba(11,34,57,.48)!important;width:0!important}
+.authority-chart .org-role-head{min-height:108px!important;padding:10px 6px 8px!important;border-radius:9px 9px 0 0!important}
+.authority-chart .org-role-head h3{font-size:14px!important;line-height:1.03!important;min-height:31px!important;margin:0 0 6px!important}
+.authority-chart .org-role-head .person-picker{font-size:11.2px!important;line-height:1.16!important}
+.authority-chart .org-role-status{margin:6px auto 0;max-width:95%;font-size:8.4px;line-height:1.18;font-weight:800;color:rgba(255,255,255,.84);letter-spacing:.025em}
+.authority-chart .contracted-function .org-role-head{background:repeating-linear-gradient(135deg,var(--role-color),var(--role-color) 16px,#ad6510 16px,#ad6510 32px)!important}
+.authority-chart .interim-function .org-role-head{box-shadow:inset 0 -4px 0 rgba(255,255,255,.28)}
+.authority-chart .static-person{cursor:default!important;text-decoration:none!important;display:inline-block;color:inherit}
+.authority-chart .org-function-body{position:relative;height:calc(100% - 108px);padding:8px 6px 7px;overflow:visible}
+.authority-chart .org-seat-note{margin:44px 8px 0;padding-top:15px;border-top:2px solid rgba(243,182,31,.75);font-size:10.3px;line-height:1.34;text-align:center;color:var(--slate);font-weight:700}
+.authority-chart .org-function-note{position:absolute;left:10px;right:10px;bottom:10px;margin:0;padding-top:8px;border-top:1px solid rgba(11,34,57,.12);font-size:8.8px;line-height:1.24;text-align:center;color:var(--slate);font-weight:700}
+
+.authority-chart .authority-tree,.authority-chart .authority-children{list-style:none;margin:0;padding:0}
+.authority-chart .authority-tree{padding:3px 1px 42px}
+.authority-chart .authority-children{margin:5px 0 0 10px;padding-left:8px}
+.authority-chart .authority-node{position:relative;margin:0 0 7px;padding-left:13px;overflow:visible}
+.authority-chart .authority-node::before{content:"";position:absolute;left:3px;top:-5px;bottom:-8px;border-left:1.6px solid rgba(11,34,57,.42)}
+.authority-chart .authority-node::after{content:"";position:absolute;left:3px;top:19px;width:10px;border-top:1.6px solid rgba(11,34,57,.42)}
+.authority-chart .authority-node:last-child::before{bottom:calc(100% - 20px)}
+.authority-chart .authority-node-row{position:relative;min-height:42px;padding:6px 5px 5px;border-radius:6px;background:rgba(255,255,255,.96);border:1px solid rgba(11,34,57,.10);box-shadow:0 4px 10px rgba(11,34,57,.035);text-align:left;overflow:visible}
+.authority-chart .authority-node.has-children>.authority-node-row{border-left:3px solid var(--role-color)}
+.authority-chart .authority-node.team-node>.authority-node-row{background:linear-gradient(90deg,rgba(45,98,128,.055),rgba(255,255,255,.97))}
+.authority-chart .authority-node-title{font-size:10.1px;line-height:1.13;font-weight:800;color:var(--graphite);text-align:left}
+.authority-chart .authority-node-title .org-role-link{display:block}
+.authority-chart .authority-node-row .person-select{display:block;margin-top:3px;text-align:left}
+.authority-chart .authority-node-row .person-picker{font-size:9.2px!important;line-height:1.14!important;color:var(--steel)!important;font-weight:900!important;text-align:left!important;white-space:normal!important;max-width:100%!important}
+.authority-chart .authority-node-status{margin-top:3px;font-size:7.9px;line-height:1.18;color:#8c6510;font-weight:800}
+.authority-chart .authority-coordination{margin:5px 0 0;padding:4px 0 0 8px;border-top:1px dashed rgba(184,135,19,.68);border-left:2px dotted rgba(184,135,19,.68);font-size:7.6px;line-height:1.2;color:#765913;font-weight:800}
+.authority-chart .authority-node .person-menu{top:calc(100% + 6px)!important;width:220px!important;max-height:285px!important;z-index:220!important}
+.authority-chart .authority-node .person-option{font-size:11.5px!important;padding:7px 8px!important}
+.authority-chart .org-function:nth-child(n+7) .authority-node .person-menu{left:auto!important;right:0!important;transform:none!important}
+.authority-chart .org-function:nth-child(-n+2) .authority-node .person-menu{left:0!important;transform:none!important}
+
+@media(max-width:1100px){.authority-chart .authority-node-title{font-size:9.7px}.authority-chart .authority-node-row .person-picker{font-size:8.8px!important}}

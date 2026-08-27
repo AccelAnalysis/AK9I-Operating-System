@@ -2,6 +2,7 @@ import {MAIN_SLIDES} from './data/main-slides.js';
 import {DETAILS,addDetail} from './data/details.js';
 import {findOrgPosition} from './data/org-roles.js';
 import {getOrgAssignment,saveOrgAssignment} from './data/org-storage.js';
+import {applyPipelineDetailOverrides} from './data/pipeline-detail-overrides.js';
 import {registerManagementDetails} from './details/management.js';
 import {registerBrandDetails} from './details/brand.js';
 import {registerPipelineDetails} from './details/pipeline.js';
@@ -15,6 +16,7 @@ import {renderDetails,renderSources} from './renderers.js';
 registerManagementDetails(addDetail);
 registerBrandDetails(addDetail);
 registerPipelineDetails(addDetail);
+applyPipelineDetailOverrides(DETAILS);
 
 const mainOrder=MAIN_SLIDES.map(s=>s.id);
 const slideTitles=Object.fromEntries(MAIN_SLIDES.map(s=>[s.id,s.title]));
