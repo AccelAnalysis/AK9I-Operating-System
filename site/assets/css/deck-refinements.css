@@ -1,0 +1,14 @@
+/* Deck refinements layered after the core presentation styles. */
+.uniform-layout{grid-template-columns:1.3fr .7fr!important;gap:54px!important;margin-top:42px!important;align-items:center!important}
+.uniform-people.four{height:500px!important;display:grid!important;grid-template-columns:repeat(4,1fr)!important;gap:22px!important;align-items:center!important;justify-items:center!important;border-bottom:2px solid rgba(11,34,57,.18)!important;padding:12px 22px 34px!important}
+.uniform-people.four .uniform-person{position:relative!important;width:150px!important;height:300px!important}
+.uniform-people.four .uniform-person .head{top:12px!important;width:68px!important;height:68px!important;background:#DAB598!important}
+.uniform-people.four .uniform-person .torso{top:90px!important;left:10px!important;width:130px!important;height:158px!important;border-radius:26px 26px 16px 16px!important}
+.uniform-people.four .uniform-person .shirt-mark{top:116px!important;font-size:22px!important}
+.uniform-people.four .uniform-person .pants{display:none!important}
+.uniform-people.four .uniform-person .role-label{bottom:-4px!important;width:165px!important;font-size:13px!important;line-height:1.2!important}
+.uniform-people.four .uniform-person.field .torso{background:var(--navy)!important}
+.uniform-people.four .uniform-person.event .torso{background:var(--steel)!important}
+.uniform-people.four .uniform-person.office .torso{background:var(--slate)!important}
+.uniform-people.four .uniform-person.kennel .torso{background:#3A7754!important}
+.uniform-actions{gap:13px!important}

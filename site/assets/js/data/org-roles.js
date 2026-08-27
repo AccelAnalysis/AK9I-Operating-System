@@ -63,7 +63,7 @@ export const ORG_ROLES=[
 ];
 
 export const ORG_RESOLUTIONS=[
- {key:'cooResolution',title:'COO / Enterprise Integration — Scope Under Resolution',initial:'Nigel Rhodes',kind:'resolution',roleStatus:'under-review'}
+ {key:'cooResolution',title:'COO / Enterprise Integration',initial:'Nigel Rhodes',kind:'resolution',roleStatus:'under-review'}
 ];
 
 export function getAllOrgPositions(){
