@@ -1,5 +1,7 @@
 import {MAIN_SLIDES} from './data/main-slides.js';
 import {DETAILS,addDetail} from './data/details.js';
+import {findOrgPosition} from './data/org-roles.js';
+import {getOrgAssignment,saveOrgAssignment} from './data/org-storage.js';
 import {registerManagementDetails} from './details/management.js';
 import {registerBrandDetails} from './details/brand.js';
 import {registerPipelineDetails} from './details/pipeline.js';
@@ -38,11 +40,24 @@ function nextMain(){const i=mainIndex();showSlide(mainOrder[Math.min(i+1,mainOrd
 function prevMain(){const i=mainIndex();showSlide(mainOrder[Math.max(i-1,0)])}
 function updateCounter(){const el=document.getElementById('control-counter'),s=document.getElementById(currentId);el.textContent=s?.dataset.main==='true'?`${Number(s.dataset.mainNum)} / ${mainOrder.length}`:currentId==='sources'?'Sources':'Detail'}
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._timer);t._timer=setTimeout(()=>t.classList.remove('show'),1800)}
-function setAssignment(key,name){try{localStorage.setItem('ak9i-org-'+key,name)}catch{}document.querySelectorAll(`[data-person-picker="${key}"]`).forEach(b=>b.textContent=name);closeMenus();toast(`${name} assigned.`)}
+function displayValue(role,value){if(!role?.multiple)return String(value||'Vacant / TBD');if(!value?.length)return 'Vacant / TBD';if(value.length<=2)return value.join(' • ');return `${value.slice(0,2).join(' • ')} +${value.length-2}`}
+function refreshAssignment(key){const role=findOrgPosition(key);if(!role)return;const value=getOrgAssignment(role),full=role.multiple?(value.join(', ')||'Vacant / TBD'):String(value||'Vacant / TBD');document.querySelectorAll(`[data-person-picker="${key}"]`).forEach(b=>{b.textContent=displayValue(role,value);b.title=full});document.querySelectorAll(`[data-menu-for="${key}"] [data-multi-person]`).forEach(b=>{const selected=Array.isArray(value)&&value.includes(b.dataset.multiPerson);b.classList.toggle('selected',selected);const check=b.querySelector('.check');if(check)check.textContent=selected?'✓':''})}
+function setAssignment(key,name){const role=findOrgPosition(key);if(!role)return;saveOrgAssignment(role,name);refreshAssignment(key);closeMenus();toast(`${name} assigned.`)}
+function toggleGroupPerson(key,name){const role=findOrgPosition(key);if(!role?.multiple)return;const current=[...getOrgAssignment(role)],i=current.indexOf(name);if(i>=0)current.splice(i,1);else current.push(name);saveOrgAssignment(role,current);refreshAssignment(key)}
+function clearGroup(key){const role=findOrgPosition(key);if(!role?.multiple)return;saveOrgAssignment(role,[]);refreshAssignment(key);toast('Team assignment cleared.')}
+function addGroupCustom(key){const role=findOrgPosition(key);if(!role?.multiple)return;const name=prompt('Enter the name to add to this team:');if(!name?.trim())return;const current=[...getOrgAssignment(role)];if(!current.includes(name.trim()))current.push(name.trim());saveOrgAssignment(role,current);refreshAssignment(key);toast(`${name.trim()} added.`)}
 
 document.addEventListener('click',e=>{
   const picker=e.target.closest('[data-person-picker]');
   if(picker){e.stopPropagation();const key=picker.dataset.personPicker,menu=picker.parentElement.querySelector(`[data-menu-for="${key}"]`),was=menu.classList.contains('open');closeMenus();if(!was){menu.classList.add('open');picker.setAttribute('aria-expanded','true')}return}
+  const multi=e.target.closest('[data-multi-person]');
+  if(multi){e.stopPropagation();toggleGroupPerson(multi.closest('.person-menu').dataset.menuFor,multi.dataset.multiPerson);return}
+  const groupClear=e.target.closest('[data-group-clear]');
+  if(groupClear){e.stopPropagation();clearGroup(groupClear.closest('.person-menu').dataset.menuFor);return}
+  const groupDone=e.target.closest('[data-group-done]');
+  if(groupDone){e.stopPropagation();closeMenus();return}
+  const groupCustom=e.target.closest('[data-group-custom]');
+  if(groupCustom){e.stopPropagation();addGroupCustom(groupCustom.closest('.person-menu').dataset.menuFor);return}
   const opt=e.target.closest('[data-person]');
   if(opt){e.stopPropagation();setAssignment(opt.closest('.person-menu').dataset.menuFor,opt.dataset.person);return}
   const custom=e.target.closest('[data-custom-person]');
