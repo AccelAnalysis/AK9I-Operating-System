@@ -7,7 +7,7 @@ Modular interactive presentation for the AK9I management operating system, brand
 **Full operating system:**  
 https://accelanalysis.github.io/AK9I-Operating-System/
 
-**One-slide executive summary:**  
+**Five-slide executive summary:**  
 https://accelanalysis.github.io/AK9I-Operating-System/executive/
 
 The executive summary is a separate entry point for concise leadership review. It links into the supporting Management, Brand, and Customer Pipeline sections without changing the full presentation.
@@ -22,9 +22,9 @@ The included Pages workflow deploys the entire `site/` directory whenever `main`
 site/
   index.html                         # Full presentation shell / controls
   executive/
-    index.html                       # Standalone one-slide executive summary
-    executive.css                    # Executive summary responsive/print styling
-    executive.js                     # Fullscreen and Print/PDF controls
+    index.html                       # Standalone five-slide executive summary
+    executive.css                    # Executive mini-deck layout, responsive and print styling
+    executive.js                     # Slide navigation, fullscreen and Print/PDF controls
   assets/
     css/
       theme.css                      # AK9I brand tokens: colors, stage dimensions
@@ -70,16 +70,15 @@ site/
 
 ## Executive summary
 
-The `/executive/` page is intentionally independent from the full slide application. It reuses the AK9I theme and provides:
+The `/executive/` route is intentionally independent from the full slide application. It uses five focused slides:
 
-- the high-level recommendation
-- four immediate actions under each of the three operating systems
-- the expected result of each system
-- direct links into the supporting full presentation
-- the three immediate leadership decisions
-- fullscreen and landscape Print/PDF controls
+1. **High-Level Recommendation** — the recommendation and three overall operating-system actions only.
+2. **Management Operating System** — four immediate actions, expected result, and a link to the full Management section.
+3. **AK9I Brand System** — four immediate actions, expected result, and a link to the full Brand section.
+4. **Customer Pipeline — End to Beginning** — four immediate actions, expected result, and a link to the full Pipeline section.
+5. **Immediate Leadership Decisions** — Confirm the Structure → Approve the Standards → Authorize the Pipeline Sequence, a note that implementation detail will be covered in the working meeting, and the Brawner Group value foundation.
 
-Update executive-summary content in `site/executive/index.html` and its presentation styling in `site/executive/executive.css`.
+The executive summary supports keyboard navigation, fullscreen presentation, and five-page landscape Print/PDF output. Update its content in `site/executive/index.html`, layout in `site/executive/executive.css`, and navigation behavior in `site/executive/executive.js`.
 
 ## Organization views
 
