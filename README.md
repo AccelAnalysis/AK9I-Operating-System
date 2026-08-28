@@ -4,11 +4,15 @@ Modular interactive presentation for the AK9I management operating system, brand
 
 ## Live presentation
 
-Once GitHub Pages has deployed `main`, the presentation is available at:
+**Full operating system:**  
+https://accelanalysis.github.io/AK9I-Operating-System/
 
-**https://accelanalysis.github.io/AK9I-Operating-System/**
+**One-slide executive summary:**  
+https://accelanalysis.github.io/AK9I-Operating-System/executive/
 
-The included Pages workflow uses GitHub Actions and attempts to enable Pages automatically on first deployment.
+The executive summary is a separate entry point for concise leadership review. It links into the supporting Management, Brand, and Customer Pipeline sections without changing the full presentation.
+
+The included Pages workflow deploys the entire `site/` directory whenever `main` changes.
 
 > Deployment status: GitHub Pages workflow installed on `main`.
 
@@ -16,7 +20,11 @@ The included Pages workflow uses GitHub Actions and attempts to enable Pages aut
 
 ```text
 site/
-  index.html                         # Presentation shell / controls only
+  index.html                         # Full presentation shell / controls
+  executive/
+    index.html                       # Standalone one-slide executive summary
+    executive.css                    # Executive summary responsive/print styling
+    executive.js                     # Fullscreen and Print/PDF controls
   assets/
     css/
       theme.css                      # AK9I brand tokens: colors, stage dimensions
@@ -59,6 +67,19 @@ site/
   roles/index.html                   # Shared route for all linked job descriptions
 .github/workflows/pages.yml          # GitHub Pages deployment
 ```
+
+## Executive summary
+
+The `/executive/` page is intentionally independent from the full slide application. It reuses the AK9I theme and provides:
+
+- the high-level recommendation
+- four immediate actions under each of the three operating systems
+- the expected result of each system
+- direct links into the supporting full presentation
+- the three immediate leadership decisions
+- fullscreen and landscape Print/PDF controls
+
+Update executive-summary content in `site/executive/index.html` and its presentation styling in `site/executive/executive.css`.
 
 ## Organization views
 
@@ -104,15 +125,18 @@ Edit the relevant modular stylesheet under `site/assets/css/`.
 
 ## Local preview
 
-Because the presentation uses native ES modules, preview it through a small local web server rather than opening `index.html` directly from Finder:
+Because the full presentation uses native ES modules, preview it through a small local web server rather than opening `index.html` directly from Finder:
 
 ```bash
 cd site
 python3 -m http.server 8080
 ```
 
-Then open `http://localhost:8080`.
+Then open:
+
+- Full presentation: `http://localhost:8080/`
+- Executive summary: `http://localhost:8080/executive/`
 
 ## Deployment
 
-Every push to `main` triggers `.github/workflows/pages.yml`. The workflow uploads only the `site/` directory and deploys it to GitHub Pages.
+Every push to `main` triggers `.github/workflows/pages.yml`. The workflow uploads the complete `site/` directory and deploys it to GitHub Pages.
