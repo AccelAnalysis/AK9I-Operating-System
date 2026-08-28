@@ -21,6 +21,7 @@ applyPipelineDetailOverrides(DETAILS);
 const mainOrder=MAIN_SLIDES.map(s=>s.id);
 const slideTitles=Object.fromEntries(MAIN_SLIDES.map(s=>[s.id,s.title]));
 DETAILS.forEach(d=>slideTitles[d.id]=d.title);
+slideTitles.s4h='AK9I Reporting Hierarchy';
 slideTitles.sources='Sources and Implementation Notes';
 
 document.getElementById('slides').innerHTML=[
