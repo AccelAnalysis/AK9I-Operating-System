@@ -23,7 +23,8 @@ site/
       presentation.css               # Core presentation layout and components
       org-chart-v2.css               # Org-chart menus and legacy compatibility
       deck-refinements.css           # Deck-specific refinements
-      authority-chart.css            # Direct-report trees and authority styling
+      authority-chart.css            # Direct-report hierarchy styling
+      functional-work-chart.css      # Primary functional-work chart styling
       contract-lane.css              # Contract / Field Operations customer lane
     js/
       app.js                         # Navigation, fullscreen, overview, interactions
@@ -32,6 +33,7 @@ site/
       data/
         employees.js                 # Shared employee roster for org-chart selectors
         org-roles.js                 # Reporting hierarchy, teams, defaults, relationships
+        functional-work.js           # Major work displayed under each functional owner
         org-storage.js               # Versioned browser-local draft assignments
         job-descriptions.js          # Base job-description content
         authority-job-overrides.js   # Approved authority and growth-function profiles
@@ -39,13 +41,14 @@ site/
         details.js                   # Detail-slide registry
       components/
         shared.js                    # Slide chrome, action buttons, pipeline stage helper
-        org-chart.js                 # Native interactive authority chart
+        functional-work-chart.js     # Primary owner + work-scope visualization
+        org-chart.js                 # Linked native reporting-hierarchy view
         flight-plan.js               # Business Flight Plan visualization
         pipeline-chart.js            # Original native clickable student pipeline
         contract-lane.js             # Contract / Field Operations pipeline translation
       slides/
         opening.js                   # Slides 1–2
-        management.js                # Slides 3–6
+        management.js                # Slides 3–6 plus linked hierarchy view
         brand.js                     # Slides 7–10
         pipeline.js                  # Slides 11–20
         closing.js                   # Slide 21
@@ -57,18 +60,26 @@ site/
 .github/workflows/pages.yml          # GitHub Pages deployment
 ```
 
-## Authority model
+## Organization views
 
+The presentation deliberately uses two organizational views because they answer different questions:
+
+1. **Functional Work Chart — primary slide:** Who owns each functional category, and what major work belongs inside that function?
+2. **Reporting Hierarchy — linked view:** Who directly reports to whom?
+
+On the hierarchy view:
 - Solid lines represent direct personnel reporting and supervisory authority.
 - Dotted relationships represent coordination, contracted execution, deployment tasking, or transition.
-- The organizational chart answers **who reports to whom**.
-- Linked job-description pages answer **what each position owns**.
-- Customer-pipeline slides answer **how the customer moves between functions**.
+
+Linked job-description pages answer **what each position is accountable for in detail**. Customer-pipeline slides answer **how work and customers move between functions**.
 
 ## Common updates
 
+### Change the work shown under a functional category
+Edit `site/assets/js/data/functional-work.js`. This changes the primary functional-work chart without changing reporting authority.
+
 ### Change an employee, reporting line, or org-chart role
-Edit `site/assets/js/data/org-roles.js`. Nested `children` create solid-line reporting trees. The in-presentation selectors remain interactive and save presenter choices as browser-local drafts.
+Edit `site/assets/js/data/org-roles.js`. Nested `children` create solid-line reporting trees in the linked hierarchy view. The in-presentation selectors remain interactive and save presenter choices as browser-local drafts.
 
 ### Add or remove employee names from dropdowns
 Edit `site/assets/js/data/employees.js`.
