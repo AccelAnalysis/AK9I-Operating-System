@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=yes">
+<meta name="theme-color" content="#0B2239">
+<title>AK9I Executive Summary — Mobile</title>
+<style>
+:root{--navy:#0B2239;--gold:#F3B61F;--steel:#2D6280;--slate:#425466;--field:#F7F8FA;--graphite:#101820;--white:#fff;--teal:#168A93;--orange:#C87513}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:var(--navy);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Arial,sans-serif;color:var(--graphite);-webkit-font-smoothing:antialiased;overscroll-behavior:none}
+body{overflow:hidden}
+.deck{position:relative;width:100%;height:100dvh;min-height:100svh;background:var(--field);overflow:hidden}
+.slide{position:absolute;inset:0;display:none;flex-direction:column;padding:calc(18px + env(safe-area-inset-top)) 22px calc(86px + env(safe-area-inset-bottom));background:var(--field);overflow:hidden}
+.slide.active{display:flex}
+.brand{display:flex;align-items:center;gap:11px;min-height:48px;border-bottom:1px solid rgba(11,34,57,.12);padding-bottom:11px;flex:none}.brand-mark{font-family:Impact,"Arial Narrow",sans-serif;font-size:31px;line-height:1;letter-spacing:.025em;color:var(--navy)}.brand-rule{width:4px;height:33px;background:var(--gold)}.brand-copy{display:grid;gap:2px;line-height:1.15;text-transform:uppercase}.brand-copy strong{font-size:10px;letter-spacing:.09em;color:var(--navy)}.brand-copy span{font-size:9px;font-weight:800;letter-spacing:.065em;color:var(--slate)}
+.eyebrow{margin:18px 0 7px;font-size:12px;line-height:1.1;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:var(--steel)}
+h1{margin:0;color:var(--navy);font-family:Impact,"Arial Narrow",sans-serif;font-weight:700;letter-spacing:-.012em;font-size:clamp(34px,9.2vw,44px);line-height:.98}.lead{margin:12px 0 0;color:var(--slate);font-size:17px;line-height:1.35;font-weight:600}
+.opening{justify-content:flex-start}.opening h1{font-size:clamp(38px,10.8vw,52px);max-width:10ch}.opening .lead{max-width:28ch}.three{display:grid;gap:13px;margin-top:24px}.point{display:grid;grid-template-columns:46px 1fr;gap:12px;align-items:start;padding:13px 0;border-top:1px solid rgba(11,34,57,.13)}.point:first-child{border-top:3px solid var(--gold)}.num{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:2px solid var(--gold);font-weight:900;font-size:18px;color:var(--navy)}.point h2{margin:0 0 4px;font-size:20px;line-height:1.12;color:var(--navy)}.point p{margin:0;font-size:15px;line-height:1.32;color:var(--slate)}
+.system-slide{--accent:var(--steel)}.system-slide.brand-slide{--accent:var(--orange)}.system-slide.pipeline-slide{--accent:var(--teal)}.system-head{border-left:5px solid var(--accent);padding-left:14px;margin-top:17px}.system-head .eyebrow{margin:0 0 7px;color:var(--accent)}.system-head h1{font-size:clamp(32px,8.7vw,41px);line-height:1}.system-head .lead{font-size:16px;margin-top:8px}
+.actions{display:grid;gap:10px;margin:20px 0 12px;counter-reset:item}.action{position:relative;padding:0 0 0 38px;font-size:17px;line-height:1.31;color:var(--graphite);font-weight:600}.action::before{counter-increment:item;content:counter(item);position:absolute;left:0;top:0;width:25px;height:25px;border-radius:50%;display:grid;place-items:center;background:var(--navy);color:#fff;font-size:12px;font-weight:900}.action strong{color:var(--navy)}
+.result{margin-top:auto;padding:14px 0 0;border-top:2px solid var(--gold);font-size:16px;line-height:1.34;color:var(--slate)}.result strong{color:var(--navy);font-weight:900}.view-link{display:inline-block;align-self:flex-start;margin-top:13px;padding:8px 0 4px;color:var(--steel);font-size:16px;font-weight:900;text-decoration:none;border-bottom:3px solid var(--gold)}
+.closing{background:var(--navy);color:#fff}.closing .brand{border-bottom-color:rgba(255,255,255,.16)}.closing .brand-mark,.closing .brand-copy strong{color:#fff}.closing .brand-copy span{color:rgba(255,255,255,.72)}.closing .eyebrow{color:var(--gold);margin-top:23px}.closing h1{color:#fff;font-size:clamp(36px,10vw,47px)}.decisions{display:grid;gap:8px;margin-top:30px}.decision{font-family:Impact,"Arial Narrow",sans-serif;font-size:clamp(27px,7.6vw,35px);line-height:1.05;color:#fff}.arrow{font-size:22px;color:var(--gold);padding-left:4px}.meeting-note{margin:27px 0 0;padding:15px 0;border-top:1px solid rgba(255,255,255,.2);border-bottom:1px solid rgba(255,255,255,.2);font-size:16px;line-height:1.36;color:rgba(255,255,255,.83)}.values-label{margin-top:auto;font-size:10px;font-weight:900;letter-spacing:.15em;text-transform:uppercase;color:var(--gold)}.values{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:9px}.value{min-height:48px;display:grid;place-items:center;text-align:center;border:1px solid rgba(243,182,31,.62);background:rgba(243,182,31,.08);font-size:14px;font-weight:800;padding:7px}
+.controls{position:absolute;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:58px 1fr 58px;align-items:center;gap:10px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:linear-gradient(to top,rgba(247,248,250,.98),rgba(247,248,250,.92));border-top:1px solid rgba(11,34,57,.12)}.closing~.controls{background:transparent}.nav{width:50px;height:48px;border:0;border-radius:50%;background:var(--navy);color:#fff;font-size:24px;font-weight:900}.nav:disabled{opacity:.25}.counter{text-align:center;color:var(--slate);font-size:14px;font-weight:800}.hint{display:block;font-size:10px;font-weight:600;margin-top:2px;color:#73808b}.dots{display:flex;justify-content:center;gap:6px;margin-bottom:3px}.dot{width:6px;height:6px;border-radius:50%;background:rgba(11,34,57,.2)}.dot.active{background:var(--gold);transform:scale(1.25)}
+.tap-zone{position:absolute;top:58px;bottom:78px;width:16%;z-index:5;background:transparent;border:0}.tap-prev{left:0}.tap-next{right:0}
+@media(max-height:700px){.slide{padding-top:calc(12px + env(safe-area-inset-top));padding-left:18px;padding-right:18px}.brand{min-height:42px;padding-bottom:8px}.brand-mark{font-size:27px}.brand-rule{height:29px}.eyebrow{margin-top:13px}.opening h1{font-size:36px}.three{margin-top:14px;gap:5px}.point{padding:9px 0}.point h2{font-size:18px}.point p{font-size:14px}.system-head{margin-top:12px}.system-head h1{font-size:31px}.actions{margin-top:14px;gap:7px}.action{font-size:15.5px;line-height:1.27}.result{font-size:14.5px;padding-top:10px}.view-link{font-size:15px;margin-top:8px}.closing .eyebrow{margin-top:15px}.closing h1{font-size:36px}.decisions{margin-top:18px;gap:5px}.decision{font-size:27px}.meeting-note{margin-top:17px;font-size:14.5px;padding:11px 0}.value{min-height:40px;font-size:13px}.values{gap:6px;margin-top:6px}}
+@media(min-width:600px){.slide{padding-left:max(34px,calc((100vw - 540px)/2));padding-right:max(34px,calc((100vw - 540px)/2))}.controls{padding-left:max(34px,calc((100vw - 540px)/2));padding-right:max(34px,calc((100vw - 540px)/2))}}
+@media(orientation:landscape) and (max-height:600px){body{background:#101820}.deck{max-width:1067px;margin:0 auto}.slide{padding-left:48px;padding-right:48px}.opening h1{max-width:20ch}.three{grid-template-columns:repeat(3,1fr);gap:22px}.point{grid-template-columns:38px 1fr}.point p{font-size:13px}.system-slide .actions{grid-template-columns:1fr 1fr;column-gap:34px}.closing .values{grid-template-columns:repeat(4,1fr)}}
+@media print{body{overflow:visible;background:#fff}.deck{height:auto;overflow:visible}.slide{position:relative;display:flex!important;min-height:100vh;page-break-after:always}.controls,.tap-zone{display:none!important}}
+</style>
+</head>
+<body>
+<main class="deck" id="deck" aria-live="polite">
+<section class="slide opening active" id="m1" data-index="0">
+  <div class="brand"><div class="brand-mark">AK9I</div><div class="brand-rule"></div><div class="brand-copy"><strong>A Brawner Group Company</strong><span>Train. Certify. Deploy. Protect.</span></div></div>
+  <p class="eyebrow">High-Level Recommendation</p>
+  <h1>Install a Repeatable AK9I Operating System.</h1>
+  <p class="lead">Three coordinated systems create Organization, Consistency, and Growth.</p>
+  <div class="three">
+    <div class="point"><div class="num">1</div><div><h2>Management Operating System</h2><p>Clear ownership, authority, cadence, KPIs, and employee execution.</p></div></div>
+    <div class="point"><div class="num">2</div><div><h2>AK9I Brand System</h2><p>One controlled identity and one consistent customer experience.</p></div></div>
+    <div class="point"><div class="num">3</div><div><h2>Customer Pipeline — End to Beginning</h2><p>Build growth from outcomes, loyalty, and advocacy backward.</p></div></div>
+  </div>
+</section>
+<section class="slide system-slide" id="m2" data-index="1">
+  <div class="brand"><div class="brand-mark">AK9I</div><div class="brand-rule"></div><div class="brand-copy"><strong>A Brawner Group Company</strong><span>Train. Certify. Deploy. Protect.</span></div></div>
+  <div class="system-head"><p class="eyebrow">1 · Organization</p><h1>Management Operating System</h1><p class="lead">Create clear accountability and a repeatable way to run the company.</p></div>
+  <div class="actions">
+    <div class="action"><strong>Confirm the functional work chart and reporting hierarchy.</strong></div>
+    <div class="action">Install Owner, Leadership, Staff, and Contractor meeting cadences using the Business Flight Plan.</div>
+    <div class="action">Assign 3–5 controllable KPIs to each accountable function and standardize reviews, rewards, and discipline.</div>
+    <div class="action">Make Connecteam the employee operating layer, connected appropriately to QuickBooks and Salesforce.</div>
+  </div>
+  <div class="result"><strong>Result:</strong> Everyone knows what they own, who they report to, how performance is measured, and where decisions are made.</div>
+  <a class="view-link" href="https://accelanalysis.github.io/AK9I-Operating-System/#s3" target="_blank" rel="noopener">View Management Detail →</a>
+</section>
+<section class="slide system-slide brand-slide" id="m3" data-index="2">
+  <div class="brand"><div class="brand-mark">AK9I</div><div class="brand-rule"></div><div class="brand-copy"><strong>A Brawner Group Company</strong><span>Train. Certify. Deploy. Protect.</span></div></div>
+  <div class="system-head"><p class="eyebrow">2 · Consistency</p><h1>AK9I Brand System</h1><p class="lead">Make every AK9I customer and public touchpoint consistent.</p></div>
+  <div class="actions">
+    <div class="action"><strong>Formally adopt the AK9I Brand Standards and controlled asset library.</strong></div>
+    <div class="action">Implement uniform, dress, and physical-environment standards.</div>
+    <div class="action">Standardize events and outreach with approved materials, branded gear, messaging, and Connecteam readiness checklists.</div>
+    <div class="action">Require staff and contractors to use approved standards, templates, assets, claims, and source-file controls.</div>
+  </div>
+  <div class="result"><strong>Result:</strong> AK9I presents and delivers one recognizable professional identity everywhere.</div>
+  <a class="view-link" href="https://accelanalysis.github.io/AK9I-Operating-System/#s7" target="_blank" rel="noopener">View Brand Detail →</a>
+</section>
+<section class="slide system-slide pipeline-slide" id="m4" data-index="3">
+  <div class="brand"><div class="brand-mark">AK9I</div><div class="brand-rule"></div><div class="brand-copy"><strong>A Brawner Group Company</strong><span>Train. Certify. Deploy. Protect.</span></div></div>
+  <div class="system-head"><p class="eyebrow">3 · Growth</p><h1>Customer Pipeline — End to Beginning</h1><p class="lead">Build growth from successful outcomes and relationships backward.</p></div>
+  <div class="actions">
+    <div class="action"><strong>Activate Alumni, Contract Clients, and Employees as advocates.</strong></div>
+    <div class="action">Build loyalty and recurring revenue through scent kits, replenishment, webinars, continuing education, and repeatable services.</div>
+    <div class="action">Strengthen student outcomes, placement, customer experience, contract renewals, and account expansion.</div>
+    <div class="action">Establish Sales as a distinct function beginning at Consideration, with Salesforce controlling stage, owner, next action, and follow-up.</div>
+  </div>
+  <div class="result"><strong>Result:</strong> Existing relationships create repeat revenue, proof, referrals, and a stronger foundation for acquisition.</div>
+  <a class="view-link" href="https://accelanalysis.github.io/AK9I-Operating-System/#s12" target="_blank" rel="noopener">View Pipeline Detail →</a>
+</section>
+<section class="slide closing" id="m5" data-index="4">
+  <div class="brand"><div class="brand-mark">AK9I</div><div class="brand-rule"></div><div class="brand-copy"><strong>A Brawner Group Company</strong><span>Train. Certify. Deploy. Protect.</span></div></div>
+  <p class="eyebrow">Immediate Leadership Decisions</p>
+  <h1>What We Need to Decide Now.</h1>
+  <div class="decisions"><div class="decision">Confirm the Structure</div><div class="arrow">↓</div><div class="decision">Approve the Standards</div><div class="arrow">↓</div><div class="decision">Authorize the Pipeline Sequence</div></div>
+  <p class="meeting-note">We will cover the supporting structure, responsibilities, standards, pipeline actions, systems, and implementation details in the working meeting.</p>
+  <div class="values-label">Brawner Group Value Foundation</div>
+  <div class="values"><div class="value">Integrity</div><div class="value">Lasting Relationships</div><div class="value">Quality</div><div class="value">Reliability</div></div>
+</section>
+<button class="tap-zone tap-prev" id="tapPrev" aria-label="Previous slide"></button><button class="tap-zone tap-next" id="tapNext" aria-label="Next slide"></button>
+<nav class="controls" aria-label="Mobile presentation controls"><button class="nav" id="prev" aria-label="Previous slide">‹</button><div class="counter"><div class="dots" id="dots"></div><span id="count">1 / 5</span><span class="hint">Swipe or tap sides</span></div><button class="nav" id="next" aria-label="Next slide">›</button></nav>
+</main>
+<script>
+(()=>{const slides=[...document.querySelectorAll('.slide')],prev=document.getElementById('prev'),next=document.getElementById('next'),count=document.getElementById('count'),dots=document.getElementById('dots');let index=0,startX=null,startY=null;dots.innerHTML=slides.map((_,i)=>'<span class="dot'+(i===0?' active':'')+'"></span>').join('');const dotEls=[...dots.children];
+function show(i,replace=false){index=Math.max(0,Math.min(slides.length-1,i));slides.forEach((s,n)=>s.classList.toggle('active',n===index));dotEls.forEach((d,n)=>d.classList.toggle('active',n===index));count.textContent=(index+1)+' / '+slides.length;prev.disabled=index===0;next.disabled=index===slides.length-1;const hash='#m'+(index+1);if(location.hash!==hash){if(replace)history.replaceState(null,'',hash);else history.pushState(null,'',hash)}}
+prev.addEventListener('click',()=>show(index-1));next.addEventListener('click',()=>show(index+1));document.getElementById('tapPrev').addEventListener('click',e=>{if(!e.target.closest('a'))show(index-1)});document.getElementById('tapNext').addEventListener('click',e=>{if(!e.target.closest('a'))show(index+1)});
+document.addEventListener('touchstart',e=>{if(e.touches.length!==1)return;startX=e.touches[0].clientX;startY=e.touches[0].clientY},{passive:true});document.addEventListener('touchend',e=>{if(startX==null||!e.changedTouches[0])return;const dx=e.changedTouches[0].clientX-startX,dy=e.changedTouches[0].clientY-startY;startX=startY=null;if(Math.abs(dx)>55&&Math.abs(dx)>Math.abs(dy)*1.25)show(index+(dx<0?1:-1))},{passive:true});
+document.addEventListener('keydown',e=>{if(e.key==='ArrowLeft')show(index-1);else if(e.key==='ArrowRight'||e.key===' '){e.preventDefault();show(index+1)}else if(e.key==='Home')show(0);else if(e.key==='End')show(slides.length-1)});addEventListener('popstate',()=>{const n=parseInt(location.hash.replace('#m',''),10);if(n>=1&&n<=slides.length)show(n-1,true)});const initial=parseInt(location.hash.replace('#m',''),10);show(initial>=1&&initial<=slides.length?initial-1:0,true);})();
+</script>
+</body>
+</html>
