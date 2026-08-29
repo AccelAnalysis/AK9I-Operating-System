@@ -6,6 +6,7 @@ import {applyPipelineDetailOverrides} from './data/pipeline-detail-overrides.js'
 import {registerManagementDetails} from './details/management.js';
 import {registerBrandDetails} from './details/brand.js';
 import {registerPipelineDetails} from './details/pipeline.js';
+import {registerAdvisoryBoardDetail} from './details/advisory-board.js';
 import {renderOpeningSlides} from './slides/opening.js';
 import {renderManagementSlides} from './slides/management.js';
 import {renderBrandSlides} from './slides/brand.js';
@@ -16,6 +17,7 @@ import {renderDetails,renderSources} from './renderers.js';
 registerManagementDetails(addDetail);
 registerBrandDetails(addDetail);
 registerPipelineDetails(addDetail);
+registerAdvisoryBoardDetail(addDetail);
 applyPipelineDetailOverrides(DETAILS);
 
 const mainOrder=MAIN_SLIDES.map(s=>s.id);
