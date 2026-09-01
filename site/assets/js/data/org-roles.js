@@ -38,7 +38,7 @@ export const ORG_ROLES=[
    ]}),
    g('field-ops-specialists','Operations Specialist Pool',['Kyle Davis'],{
     coordinationFrom:'contractsOps',
-    coordinationLabel:'Dotted tasking relationship: contract deployments are coordinated by Jasmine.'
+    coordinationLabel:'Dotted tasking relationship: contract deployments are coordinated by {coordinator}.'
    })
   ]
  },
