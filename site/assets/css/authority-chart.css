@@ -11,7 +11,7 @@
 .authority-chart.hierarchy-v2 .hierarchy-executives{position:relative;z-index:3;width:1110px;height:108px;margin:0 auto;display:grid;grid-template-columns:1fr 1.14fr 1fr;gap:72px;align-items:start}
 .authority-chart.hierarchy-v2 .hierarchy-exec-card{position:relative;min-height:94px;padding:11px 15px 10px;border:1px solid rgba(11,34,57,.18);border-radius:11px;background:#fff;box-shadow:var(--soft);text-align:center;z-index:3}
 .authority-chart.hierarchy-v2 .hierarchy-exec-card.regulatory,.authority-chart.hierarchy-v2 .hierarchy-exec-card.coo{margin-top:5px}
-.authority-chart.hierarchy-v2 .hierarchy-exec-card.regulatory{border-color:rgba(243,182,31,.85);background:#fffaf0}
+.authority-chart.hierarchy-v2 .hierarchy-exec-card.regulatory{transform:translateY(-32px);border-color:rgba(243,182,31,.85);background:#fffaf0}
 .authority-chart.hierarchy-v2 .hierarchy-exec-card.ceo{background:var(--navy);border-color:var(--navy);color:#fff}
 .authority-chart.hierarchy-v2 .hierarchy-exec-card.coo{border:1px dashed rgba(184,135,19,.72);background:#fffaf0}
 .authority-chart.hierarchy-v2 .hierarchy-exec-card h3{font-family:"Roboto Condensed","Arial Narrow",Arial,sans-serif;font-size:20px;line-height:1.08;margin:0 0 7px;text-transform:uppercase;letter-spacing:.02em}

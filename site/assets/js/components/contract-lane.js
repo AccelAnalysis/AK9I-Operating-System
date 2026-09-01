@@ -3,8 +3,9 @@ const STAGES=[
  {n:2,title:'Consideration',color:'#648E43',owner:'Sales + Business Development',body:'Discovery, fit, proof, demonstrations, scope, decision criteria, authority, timing, and next-step definition.'},
  {n:3,title:'Commitment / Award',color:'#D69D10',owner:'Sales → Contracts & Field Operations',body:'Proposal, approved pricing, negotiation, award, executed agreement, and complete operating handoff.'},
  {n:4,title:'Service Delivery',color:'#6958A6',owner:'Contracts & Field Operations',body:'Staffing, canine readiness, deployment, client coordination, incident response, service evidence, and billing support.'},
- {n:5,title:'Renewal & Expansion',color:'#168A93',owner:'Contracts & Field Operations + Sales',body:'Satisfaction, renewal, added sites or services, recurring engagement, and measurable account growth.'},
- {n:6,title:'Advocacy',color:'#0B3B69',owner:'Marketing + Business Development',body:'References, case studies, testimonials, peer introductions, referrals, and joint outreach.'}
+ {n:5,title:'Loyalty',color:'#168A93',owner:'Contracts & Field Operations + Sales',body:'Service outcomes, satisfaction, issue resolution, trust, relationship health, and demonstrated customer value.'},
+ {n:6,title:'Recurring Relationships',color:'#256F78',owner:'Sales + Contracts & Field Operations',body:'Renewal, added sites or services, continuing engagement, replenishment where applicable, and measurable account expansion.'},
+ {n:7,title:'Advocacy',color:'#0B3B69',owner:'Marketing + Business Development',body:'References, case studies, testimonials, peer introductions, referrals, and joint outreach.'}
 ];
 const ENABLEMENT=[
  ['Data & Systems','Salesforce, source attribution, automation, webinar/LMS support, and reporting'],

@@ -34,6 +34,7 @@ site/
       authority-chart.css            # Direct-report hierarchy styling
       functional-work-chart.css      # Primary functional-work chart styling
       contract-lane.css              # Contract / Field Operations customer lane
+      pipeline-seven-stage.css       # Seven-stage student/contract pipeline fit overrides
     js/
       app.js                         # Navigation, fullscreen, overview, interactions
       renderers.js                   # Detail and sources rendering
@@ -52,7 +53,7 @@ site/
         functional-work-chart.js     # Primary owner + work-scope visualization
         org-chart.js                 # Linked native reporting-hierarchy view
         flight-plan.js               # Business Flight Plan visualization
-        pipeline-chart.js            # Original native clickable student pipeline
+        pipeline-chart.js            # Canonical seven-stage clickable student pipeline
         contract-lane.js             # Contract / Field Operations pipeline translation
       slides/
         opening.js                   # Slides 1–2
@@ -93,6 +94,18 @@ On the hierarchy view:
 
 Linked job-description pages answer **what each position is accountable for in detail**. Customer-pipeline slides answer **how work and customers move between functions**.
 
+## Customer Pipeline authority
+
+The canonical customer sequence is:
+
+**Awareness → Consideration → Enrollment / Commitment → Training & Experience / Delivery → Loyalty → Recurring Relationships → Advocacy**
+
+- **Stage 5 — Loyalty:** Outcomes and placement are one part of Loyalty, alongside satisfaction, trust, service results, relationship health, and the customer's willingness to remain connected.
+- **Stage 6 — Recurring Relationships:** Loyal relationships become repeatable value through renewals, continuing education, replenishment, refreshers, account expansion, and other ongoing products or services.
+- **Stage 7 — Advocacy:** Successful relationships create references, testimonials, referrals, introductions, recruiting, reputation, and other credible proof.
+
+Outcomes are therefore **not** a standalone pipeline stage. The student/education pipeline and contract-client translation use the same seven-stage architecture while adapting stage language to the customer type.
+
 ## Common updates
 
 ### Change the work shown under a functional category
@@ -114,7 +127,7 @@ Edit `site/assets/js/slides/management.js` and, when needed, `site/assets/js/det
 Edit `site/assets/js/slides/brand.js` and `site/assets/js/details/brand.js`.
 
 ### Change pipeline or advocacy content
-Edit `site/assets/js/slides/pipeline.js` and `site/assets/js/details/pipeline.js`. The original student pipeline is in `site/assets/js/components/pipeline-chart.js`; the contract lane is in `site/assets/js/components/contract-lane.js`.
+Edit `site/assets/js/slides/pipeline.js` and `site/assets/js/details/pipeline.js`. The canonical student pipeline is in `site/assets/js/components/pipeline-chart.js`; the contract lane is in `site/assets/js/components/contract-lane.js`.
 
 ### Change colors or core brand tokens
 Edit `site/assets/css/theme.css`.
