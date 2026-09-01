@@ -2,6 +2,8 @@ import {MAIN_SLIDES} from './data/main-slides.js';
 import {DETAILS,addDetail} from './data/details.js';
 import {findOrgPosition} from './data/org-roles.js';
 import {getOrgAssignment,saveOrgAssignment} from './data/org-storage.js';
+import {findPortfolioAction,getPortfolioImplementation} from './data/portfolio-matrix.js';
+import {getPortfolioOwners,savePortfolioOwner} from './data/portfolio-storage.js';
 import {applyPipelineDetailOverrides} from './data/pipeline-detail-overrides.js';
 import {registerManagementDetails} from './details/management.js';
 import {registerBrandDetails} from './details/brand.js';
@@ -12,6 +14,7 @@ import {renderManagementSlides} from './slides/management.js';
 import {renderBrandSlides} from './slides/brand.js';
 import {renderPipelineSlides} from './slides/pipeline.js';
 import {renderClosingSlides} from './slides/closing.js';
+import {renderPortfolioSlides} from './components/portfolio-matrix.js';
 import {renderDetails,renderSources} from './renderers.js';
 
 registerManagementDetails(addDetail);
@@ -24,6 +27,9 @@ const mainOrder=MAIN_SLIDES.map(s=>s.id);
 const slideTitles=Object.fromEntries(MAIN_SLIDES.map(s=>[s.id,s.title]));
 DETAILS.forEach(d=>slideTitles[d.id]=d.title);
 slideTitles.s4h='AK9I Reporting Hierarchy';
+slideTitles['portfolio-foundations']='90-Day Initiative Portfolio Foundations';
+slideTitles['portfolio-matrix']='90-Day Initiative Portfolio Matrix';
+slideTitles['portfolio-detail']='Pipeline Implementation Detail';
 slideTitles.sources='Sources and Implementation Notes';
 
 document.getElementById('slides').innerHTML=[
@@ -31,6 +37,7 @@ document.getElementById('slides').innerHTML=[
   renderManagementSlides(),
   renderBrandSlides(),
   renderPipelineSlides(),
+  renderPortfolioSlides(),
   renderClosingSlides(),
   renderDetails(DETAILS,slideTitles),
   renderSources()
@@ -40,10 +47,10 @@ let currentId='s1';
 function resizeStage(){const scale=Math.min(innerWidth/1920,innerHeight/1080);document.getElementById('stage').style.transform=`scale(${scale})`}
 function closeMenus(){document.querySelectorAll('.person-menu.open').forEach(m=>m.classList.remove('open'));document.querySelectorAll('.person-picker[aria-expanded="true"]').forEach(b=>b.setAttribute('aria-expanded','false'))}
 function showSlide(id,{updateHash=true}={}){const target=document.getElementById(id);if(!target)return;document.querySelectorAll('.slide.active').forEach(s=>s.classList.remove('active'));target.classList.add('active');currentId=id;closeMenus();updateCounter();if(updateHash)history.replaceState(null,'','#'+id);document.title=`${slideTitles[id]||'AK9I Presentation'} — AK9I`}
-function mainIndex(){const s=document.getElementById(currentId);if(s?.dataset.main==='true')return mainOrder.indexOf(currentId);return Math.max(0,mainOrder.indexOf(s?.dataset.origin))}
+function mainIndex(){const s=document.getElementById(currentId);if(s?.dataset.main==='true')return mainOrder.indexOf(currentId);const origin=s?.dataset.origin;if(mainOrder.includes(origin))return Math.max(0,mainOrder.indexOf(origin));if(origin&&document.getElementById(origin)?.dataset.origin)return Math.max(0,mainOrder.indexOf(document.getElementById(origin).dataset.origin));return 0}
 function nextMain(){const i=mainIndex();showSlide(mainOrder[Math.min(i+1,mainOrder.length-1)])}
 function prevMain(){const i=mainIndex();showSlide(mainOrder[Math.max(i-1,0)])}
-function updateCounter(){const el=document.getElementById('control-counter'),s=document.getElementById(currentId);el.textContent=s?.dataset.main==='true'?`${Number(s.dataset.mainNum)} / ${mainOrder.length}`:currentId==='sources'?'Sources':'Detail'}
+function updateCounter(){const el=document.getElementById('control-counter'),s=document.getElementById(currentId);el.textContent=s?.dataset.main==='true'?`${Number(s.dataset.mainNum)} / ${mainOrder.length}`:currentId==='sources'?'Sources':currentId.startsWith('portfolio-')?'Portfolio':'Detail'}
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(t._timer);t._timer=setTimeout(()=>t.classList.remove('show'),1800)}
 function displayValue(role,value){if(!role?.multiple)return String(value||'Vacant / TBD');if(!value?.length)return 'Vacant / TBD';if(value.length<=2)return value.join(' • ');return `${value.slice(0,2).join(' • ')} +${value.length-2}`}
 function refreshTeamRoster(key,role,value){if(!role?.multiple)return;const names=Array.isArray(value)&&value.length?value:['Vacant / TBD'];document.querySelectorAll(`[data-team-roster="${key}"]`).forEach(list=>{const nodes=names.map(name=>{const item=document.createElement('span');item.className='team-roster-name';item.textContent=name;return item});list.replaceChildren(...nodes);list.classList.toggle('large-roster',names.length>6)})}
@@ -58,7 +65,30 @@ function toggleGroupPerson(key,name){const role=findOrgPosition(key);if(!role?.m
 function clearGroup(key){const role=findOrgPosition(key);if(!role?.multiple)return;saveOrgAssignment(role,[]);refreshAssignment(key);toast('Team assignment cleared.')}
 function addGroupCustom(key){const role=findOrgPosition(key);if(!role?.multiple)return;const name=prompt('Enter the name to add to this team:');if(!name?.trim())return;const current=[...getOrgAssignment(role)];if(!current.includes(name.trim()))current.push(name.trim());saveOrgAssignment(role,current);refreshAssignment(key);toast(`${name.trim()} added.`)}
 
+function openPortfolioDetail(actionId,stage){
+ const detail=getPortfolioImplementation(actionId,stage);if(!detail)return;
+ const {action,stageDef,implementation}=detail,slide=document.getElementById('portfolio-detail');
+ slide.style.setProperty('--stage-color',stageDef.color);
+ document.getElementById('portfolioDetailEyebrow').textContent=`${stage} — ${stageDef.name}`;
+ document.getElementById('portfolioDetailTitle').textContent=action.title;
+ document.getElementById('portfolioDetailSubtitle').textContent=`Priority posture: ${action.posture}. This view explains what implementation means at this specific point in the customer lifecycle.`;
+ const badge=document.getElementById('portfolioDetailBadge');badge.textContent=`${stage} · ${stageDef.name}`;badge.style.setProperty('--stage-color',stageDef.color);
+ document.getElementById('portfolioDetailWhy').textContent=stageDef.goal;
+ document.getElementById('portfolioDetailImplementation').textContent=implementation;
+ document.getElementById('portfolioDetailSource').textContent=action.sourceNote||'';
+ document.getElementById('portfolioDetailEvidence').textContent=stageDef.evidence;
+ document.getElementById('portfolioDetailOwners').textContent=getPortfolioOwners(action).join(' • ');
+ showSlide('portfolio-detail');
+}
+function changePortfolioOwner(key,name){
+ const split=key.lastIndexOf(':'),id=key.slice(0,split),index=Number(key.slice(split+1)),action=findPortfolioAction(id);if(!action||Number.isNaN(index))return;
+ savePortfolioOwner(action,index,name);toast(`${name} assigned to portfolio action.`);
+ if(currentId==='portfolio-detail')document.getElementById('portfolioDetailOwners').textContent=getPortfolioOwners(action).join(' • ');
+}
+
 document.addEventListener('click',e=>{
+  const portfolioCheck=e.target.closest('[data-portfolio-check]');
+  if(portfolioCheck){e.preventDefault();openPortfolioDetail(portfolioCheck.dataset.portfolioCheck,portfolioCheck.dataset.portfolioStage);return}
   const picker=e.target.closest('[data-person-picker]');
   if(picker){e.stopPropagation();const key=picker.dataset.personPicker,menu=picker.parentElement.querySelector(`[data-menu-for="${key}"]`),was=menu.classList.contains('open');closeMenus();if(!was){menu.classList.add('open');picker.setAttribute('aria-expanded','true')}return}
   const multi=e.target.closest('[data-multi-person]');
@@ -77,6 +107,12 @@ document.addEventListener('click',e=>{
   const g=e.target.closest('[data-go]');if(g){e.preventDefault();showSlide(g.dataset.go);return}
   const r=e.target.closest('[data-return]');if(r){e.preventDefault();showSlide(r.dataset.return);return}
   if(!e.target.closest('a'))closeMenus();
+});
+
+document.addEventListener('change',e=>{
+ const select=e.target.closest('[data-portfolio-owner-select]');
+ if(!select)return;
+ changePortfolioOwner(select.dataset.portfolioOwnerSelect,select.value);
 });
 
 function buildOverview(){document.getElementById('overviewGrid').innerHTML=MAIN_SLIDES.map(s=>`<button type="button" class="overview-item" data-overview-go="${s.id}"><strong>${String(s.num).padStart(2,'0')} — ${s.title}</strong><span>${s.summary}</span></button>`).join('')}
