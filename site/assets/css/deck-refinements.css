@@ -12,3 +12,19 @@
 .uniform-people.four .uniform-person.office .torso{background:var(--slate)!important}
 .uniform-people.four .uniform-person.kennel .torso{background:#3A7754!important}
 .uniform-actions{gap:13px!important}
+.uniform-people.four .uniform-person-link{appearance:none;border:0;background:transparent;color:inherit;padding:0;cursor:pointer;border-radius:18px}
+.uniform-people.four .uniform-person-link:focus-visible{outline:4px solid var(--gold);outline-offset:8px}
+.uniform-people.four .uniform-person-link .torso{transition:transform .18s ease,filter .18s ease,box-shadow .18s ease}
+.uniform-people.four .uniform-person-link:hover .torso,.uniform-people.four .uniform-person-link:focus-visible .torso{transform:translateY(-7px);filter:brightness(1.08);box-shadow:0 16px 28px rgba(11,34,57,.18)}
+.uniform-people.four .uniform-person-link .role-label{display:grid;gap:4px}
+.uniform-people.four .uniform-person-link .role-label small{font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--steel)}
+.uniform-concept-slide .slide-inner{padding-top:105px;padding-bottom:112px}
+.uniform-concept-header{display:flex;justify-content:space-between;gap:36px;align-items:flex-start}
+.uniform-concept-header .headline{font-size:52px;max-width:1450px}
+.uniform-concept-header .subheadline{font-size:20px;line-height:1.35;margin-top:11px;max-width:1360px}
+.uniform-concept-grid{width:1050px;margin:23px auto 0;display:grid;grid-template-columns:repeat(2,1fr);gap:86px}
+.uniform-concept-grid figure{margin:0;min-width:0;text-align:center}
+.uniform-concept-grid img{display:block;width:100%;height:590px;object-fit:contain;object-position:center bottom;border-top:5px solid var(--gold);background:#f1f1f2;box-shadow:0 16px 38px rgba(11,34,57,.12)}
+.uniform-concept-grid figcaption{display:flex;justify-content:space-between;align-items:baseline;gap:18px;padding:13px 2px 0;border-top:1px solid rgba(11,34,57,.14);color:var(--navy)}
+.uniform-concept-grid figcaption strong{font-family:"Roboto Condensed";font-size:24px}
+.uniform-concept-grid figcaption span{font-size:13px;font-weight:800;letter-spacing:.055em;text-transform:uppercase;color:var(--slate)}

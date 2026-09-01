@@ -30,6 +30,7 @@ slideTitles.s4h='AK9I Reporting Hierarchy';
 slideTitles['portfolio-foundations']='90-Day Initiative Portfolio Foundations';
 slideTitles['portfolio-matrix']='90-Day Initiative Portfolio Matrix';
 slideTitles['portfolio-detail']='Pipeline Implementation Detail';
+slideTitles.d9u='AK9I School Handler Uniform Concepts';
 slideTitles.sources='Sources and Implementation Notes';
 
 document.getElementById('slides').innerHTML=[
