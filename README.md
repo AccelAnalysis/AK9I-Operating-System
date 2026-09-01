@@ -52,14 +52,14 @@ site/
         functional-work-chart.js     # Primary owner + work-scope visualization
         org-chart.js                 # Linked native reporting-hierarchy view
         flight-plan.js               # Business Flight Plan visualization
-        pipeline-chart.js            # Canonical six-stage clickable student pipeline
+        pipeline-chart.js            # Canonical seven-stage clickable student pipeline
         contract-lane.js             # Contract / Field Operations pipeline translation
       slides/
         opening.js                   # Slides 1–2
         management.js                # Slides 3–6 plus linked hierarchy view
         brand.js                     # Slides 7–10
-        pipeline.js                  # Slides 11–19
-        closing.js                   # Slide 20
+        pipeline.js                  # Slides 11–20
+        closing.js                   # Slide 21
       details/
         management.js                # Linked management detail content
         brand.js                     # Linked brand detail content
@@ -97,11 +97,13 @@ Linked job-description pages answer **what each position is accountable for in d
 
 The canonical customer sequence is:
 
-**Awareness → Consideration → Enrollment / Commitment → Training & Experience / Delivery → Loyalty → Advocacy**
+**Awareness → Consideration → Enrollment / Commitment → Training & Experience / Delivery → Loyalty → Recurring Relationships → Advocacy**
 
-**Outcomes and placement are managed within Loyalty, not as a standalone stage.** Loyalty covers the value and continuing relationship created after successful delivery: graduate outcomes and placement, client satisfaction and results, renewal and expansion, continuing education, replenishment, recurring services, and other ongoing relationship value. Advocacy is a separate final stage in which successful relationships generate references, testimonials, referrals, introductions, recruiting, reputation, and other credible proof.
+- **Stage 5 — Loyalty:** Outcomes and placement are one part of Loyalty, alongside satisfaction, trust, service results, relationship health, and the customer's willingness to remain connected.
+- **Stage 6 — Recurring Relationships:** Loyal relationships become repeatable value through renewals, continuing education, replenishment, refreshers, account expansion, and other ongoing products or services.
+- **Stage 7 — Advocacy:** Successful relationships create references, testimonials, referrals, introductions, recruiting, reputation, and other credible proof.
 
-The student/education pipeline and contract-client translation use this same six-stage architecture while adapting stage language to the customer type.
+Outcomes are therefore **not** a standalone pipeline stage. The student/education pipeline and contract-client translation use the same seven-stage architecture while adapting stage language to the customer type.
 
 ## Common updates
 
