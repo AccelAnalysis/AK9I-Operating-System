@@ -2,7 +2,7 @@ import {EMPLOYEES} from '../data/employees.js';
 import {ORG_ROLES,ORG_RESOLUTIONS,findOrgPosition} from '../data/org-roles.js';
 import {getOrgAssignment} from '../data/org-storage.js';
 
-function esc(v){return String(v).replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c]))}
+function esc(v){return String(v).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
 function displayAssignment(r){const value=getOrgAssignment(r);if(!r.multiple)return String(value||'Vacant / TBD');if(!value.length)return 'Vacant / TBD';if(value.length<=2)return value.join(' • ');return `${value.slice(0,2).join(' • ')} +${value.length-2}`}
 function rosterValues(r){const value=getOrgAssignment(r);if(!r.multiple)return [String(value||'Vacant / TBD')];return value.length?value:['Vacant / TBD']}
 function orgMenu(r){
