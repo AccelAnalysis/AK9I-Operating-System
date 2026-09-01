@@ -34,6 +34,7 @@ site/
       authority-chart.css            # Direct-report hierarchy styling
       functional-work-chart.css      # Primary functional-work chart styling
       contract-lane.css              # Contract / Field Operations customer lane
+      pipeline-seven-stage.css       # Seven-stage student/contract pipeline fit overrides
     js/
       app.js                         # Navigation, fullscreen, overview, interactions
       renderers.js                   # Detail and sources rendering
