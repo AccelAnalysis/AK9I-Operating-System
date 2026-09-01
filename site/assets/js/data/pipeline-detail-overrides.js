@@ -32,7 +32,12 @@ export function applyPipelineDetailOverrides(details){
    'Repeat purchase, continuing-education participation, recurring revenue, engagement, and lifetime value.',
    'Cross-service conversion, relationship reactivation, and progression into Advocacy.'
   ];
+  continuing.next='d16a';
  }
+ const outcomeTrack=detail(details,'d16a'),employers=detail(details,'d16b'),outcomeEvidence=detail(details,'d16c');
+ if(outcomeTrack){outcomeTrack.origin='s15';outcomeTrack.prev='d15b';outcomeTrack.next='d16b';outcomeTrack.code='3.5A'}
+ if(employers){employers.origin='s15';employers.prev='d16a';employers.next='d16c';employers.code='3.5B'}
+ if(outcomeEvidence){outcomeEvidence.origin='s15';outcomeEvidence.prev='d16b';outcomeEvidence.code='3.5C'}
  const recurring=detail(details,'d15c');
  if(recurring){
   recurring.columns[0].bullets=[
