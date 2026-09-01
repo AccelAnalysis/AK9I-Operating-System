@@ -2,7 +2,7 @@ import {EMPLOYEES} from '../data/employees.js';
 import {ORG_ROLES,ORG_RESOLUTIONS,findOrgPosition} from '../data/org-roles.js';
 import {getOrgAssignment} from '../data/org-storage.js';
 
-function esc(v){return String(v).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
+function esc(v){return String(v).replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c]))}
 function displayAssignment(r){const value=getOrgAssignment(r);if(!r.multiple)return String(value||'Vacant / TBD');if(!value.length)return 'Vacant / TBD';if(value.length<=2)return value.join(' • ');return `${value.slice(0,2).join(' • ')} +${value.length-2}`}
 function rosterValues(r){const value=getOrgAssignment(r);if(!r.multiple)return [String(value||'Vacant / TBD')];return value.length?value:['Vacant / TBD']}
 function orgMenu(r){
@@ -46,6 +46,7 @@ export function renderOrg(){
  const branches=funcs.filter(r=>r.children?.length).map(renderDepartmentBranch).join('');
  return `<div class="org-canvas authority-chart hierarchy-v2">
   <svg class="hierarchy-links" viewBox="0 0 1000 650" preserveAspectRatio="none" aria-hidden="true">
+   <path class="authority-line executive-link regulatory-ceo-link" d="M342 18 H374 V50 H408"/>
    <path class="authority-line executive-link" d="M592 50 H658"/>
    <path class="authority-line" d="M500 96 V132"/>
    <path class="authority-line" d="M63 132 H938"/>
