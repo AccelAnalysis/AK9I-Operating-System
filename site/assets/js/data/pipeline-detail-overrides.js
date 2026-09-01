@@ -18,12 +18,20 @@ export function applyPipelineDetailOverrides(details){
  }
  const continuing=detail(details,'d15b');
  if(continuing){
+  continuing.title='Manage Outcomes and the Continuing Relationship';
+  continuing.columns[0].title='Outcomes + relationship portfolio';
   continuing.columns[0].bullets=[
-   'Recurring webinars, continuing education, LMS access, and scheduled professional updates.',
-   'Refresher training, workshops, recertification-related services where appropriate, gear, food, scent kits, and other replenishment.',
-   'Alumni events, networking, mentorship, employment opportunity, and professional recognition.'
+   'Track verified graduate outcomes and placement, employer feedback, contract-client results, satisfaction, renewal, and expansion as evidence of value created.',
+   'Use recurring webinars, continuing education, LMS access, refresher training, workshops, recertification-related services where appropriate, gear, food, scent kits, and other replenishment.',
+   'Use alumni events, networking, mentorship, employment opportunity, professional recognition, and appropriate client check-ins to keep the relationship active.'
   ];
-  addBullet(continuing.columns[1],'Use webinar attendance, LMS activity, outcomes, purchases, and stated interests to determine the next relevant offer.');
+  addBullet(continuing.columns[1],'Use webinar attendance, LMS activity, outcomes, purchases, client results, renewal status, and stated interests to determine the next relevant offer or relationship action.');
+  continuing.columns[2].title='Measures';
+  continuing.columns[2].bullets=[
+   'Verified graduate outcomes, placement/advancement, employer feedback, client satisfaction, renewal, expansion, and retention.',
+   'Repeat purchase, continuing-education participation, recurring revenue, engagement, and lifetime value.',
+   'Cross-service conversion, relationship reactivation, and progression into Advocacy.'
+  ];
  }
  const recurring=detail(details,'d15c');
  if(recurring){
