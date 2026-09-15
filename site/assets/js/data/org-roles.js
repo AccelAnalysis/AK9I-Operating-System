@@ -14,7 +14,7 @@ export const ORG_ROLES=[
   key:'schoolAdmin',title:'School Administrator',initial:'Tim Baird',color:'#2D6280',
   chartNote:'Academy authority',
   children:[
-   p('school-training-lead','Training & Instruction Lead','Kenneth Gregory',{children:[
+   p('school-training-lead','Branch Chief, Training Division','Kenneth Gregory',{children:[
     g('school-instructor-team','Instructor / Trainer Team',['Stephane Hubert','Jerad Poor'])
    ]}),
    p('school-student-services','Student Services','Michelle Hartman')
