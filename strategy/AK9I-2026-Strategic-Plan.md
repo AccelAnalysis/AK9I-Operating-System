@@ -340,3 +340,151 @@ These differences **are not profit**: direct instructional expense, housing, fix
 
 ---
 
+## 3. Business Goals
+
+### Objective 7 — Increase Revenue Value and Performance of Operational Contracts
+
+**2026 goal:** Grow profitable working-K9 contracts through a complete, accountable process for opportunity development, award, service delivery, documentation, invoicing, renewal, and customer success.
+
+**Responsible functions:** Business Development (pipeline/award); Contracts and Field Operations (delivery); Finance, Kennels, and Regulatory/Quality (enablement).
+
+**Reported opportunity developments:** Paul's handwritten notes refer to a Department of the Interior opportunity described as a five-year sole-source arrangement; CBP; a potential long-term Kurdistan-related opportunity; and an additional school district. **These are reported descriptions requiring documentary verification of parties, status, scope, contract value, and award.** The strategic plan does not count an unsigned opportunity as an award or booked revenue.
+
+**Area 7.1 — Tailor marketing and promotion**
+1. Identify districts, government agencies, law-enforcement organizations, and private clients where AK9I's relevant canine capability matches the actual operational need.
+2. Use approved materials to describe canine detection, school safety, professional handler services, and verified capabilities.
+3. Document introductions, discovery, qualified requirements, proposals, and decision-makers in Salesforce.
+4. Require a written BD activity and expenditure plan rather than accepting ad hoc travel or events without qualified targets.
+
+**Area 7.2 — Networking and partnerships**
+1. Develop relationships with procurement offices, decision-makers, contract partners, professional associations, and credible referral sources.
+2. Identify applicable competitions, solicitation schedules, teaming requirements, insurance, credentialing, and performance standards.
+3. Record relationship owners and follow-up dates.
+4. Prioritize activities by expected pipeline movement and allowable business-development budget.
+
+**Area 7.3 — School district targeting**
+1. Confirm the reported additional school district and document whether it represents a lead, signed agreement, expanded scope, or active revenue.
+2. Rank further districts by fit, geographic practicality, student safety needs, procurement requirements, and projected margin.
+3. Offer authorized demonstrations and peer introductions using real contract-customer references and service outcomes.
+4. Protect student welfare, privacy, school policies, and professional deployment standards.
+
+**Area 7.4 — Contract and field-operations execution**
+1. Assign a contract operations owner for scheduling, client contact, deployment oversight, and evidence of services delivered.
+2. Track handler licensing, fingerprints/clearances, K9 certifications, training records, appropriate probable-cause folders, medical readiness, incidents, and recertification dates.
+3. Reconcile **actual time worked, contractual minimum billable units, employee pay obligations, training time, and invoiced amounts**; do not assume these are identical.
+4. Evaluate Connecteam and UAttend through a controlled timekeeping/payroll pilot and document the responsible system of record.
+5. Implement a regular audit of training logs and required field readiness before a record deficiency becomes a safety, contractual, or legal problem.
+6. Confirm that client-specific work can be delivered without materially reducing staffing needed for approved educational programs.
+
+**Area 7.5 — Renewal, loyalty, and advocacy**
+1. Create account-review, client-satisfaction, service-recovery, renewal-warning, and contract-expansion workflows.
+2. Capture approved quotes, references, demonstrations, case studies, and peer introductions with explicit permission.
+3. Translate the seven-stage pipeline for contract customers: Awareness → Consideration → Commitment/Award → Service Delivery → Loyalty → Recurring Relationships → Advocacy.
+
+**Evaluation:** qualified pipeline, signed awards, actual collected revenue, contract contribution margin, deployed-versus-required coverage, billable/paid hour accuracy, client satisfaction, incident trends, repeat business, and attributable referrals. The original 25% revenue-growth objective becomes a new leadership target only after the 2026 baseline is established.
+
+### Objective 8 — Develop the AK9I National Certification Standard Program
+
+**2026 goal:** Advance a credible, defensible K9 certification-standard concept through industry participation, appropriate public-sector dialogue, feasibility analysis, and a gated governance model. Do not represent exploratory work as an established recognized standard.
+
+**Status:** **Active exploration; implementation not approved.** AK9I reports contact and discussions with **staff in U.S. Representative Jen Kiggans's office** about moving the national certification-standard conversation forward. Management observes limited movement during the current 2026 election cycle. The existence of contact does **not** imply the office has endorsed, sponsored, approved, or recognized an AK9I standard; no explanation for the external pace should be asserted without substantiation.
+
+**Responsible functions:** Designated certification initiative sponsor, School Administration/Quality, Training, Data/Systems; outside legal and technical advisers as appropriate.
+
+**Area 8.1 — Define need and scope**
+1. Identify the practical inconsistency or public-value gap that a standard would remedy.
+2. Distinguish educational course-completion certificates, voluntary certification standards, third-party competency assessment, institutional accreditation, DCJS licensing, and any potential governmental recognition.
+3. Map existing standards and stakeholder interests rather than inventing a “national” label solely through company marketing.
+
+**Area 8.2 — Engage relevant stakeholders**
+1. Maintain a factual, nonpartisan briefing packet and a tracked record of staff communications, questions, responses, and agreed next steps with Representative Kiggans's office.
+2. Seek input from appropriate employers, training institutions, independent evaluators, professional associations, law-enforcement and K9 operational experts.
+3. Continue constructive engagement without making the initiative's feasibility, financial forecast, or completion date dependent on the 2026 election cycle.
+4. Identify what type of industry acceptance, accreditation, legislative or agency action, if any, would actually be necessary for a particular proposed model.
+
+**Area 8.3 — Technical certification and governance design**
+1. Draft competency criteria, standardized evaluations, evidence retention rules, appeals, renewal and auditing processes.
+2. Define who may become a certifier and assess whether AK9I instructors or independent third parties can properly satisfy competence and independence requirements.
+3. Evaluate conflicts of interest, intellectual property, contractual liability, quality assurance, consumer disclosures, and impartiality.
+4. Document program costs, participant demand, delivery method, database needs, and protections for applicant/participant records.
+
+**Area 8.4 — Investment and launch gates**
+
+| Gate | Decision requirement | Authorization status |
+|---|---|---|
+| **A. Feasibility** | Gap analysis, stakeholder validation, appropriate legal review, draft governance | Exploration may continue within approved limits |
+| **B. Technical design** | Written standard, certifier qualifications, defensible assessment, costed pilot | Requires explicit approval |
+| **C. Independent pilot** | Qualified participants, consistent results, independent quality checks, measured demand | Requires explicit approval |
+| **D. Formal launch** | Validated governance, audited delivery capacity, legally accurate claims, sustainable economics | Not currently authorized |
+
+**Evaluation:** written stakeholder feedback, meetings and next steps, feasibility deliverables, governance completeness, documented industry demand, pilot outcomes (if authorized), and careful distinction of proposal, pilot, and recognition status.
+
+**Relationship to former Objective 11:** The former separate “Develop and Implement” objective is retired from the active plan. Any future membership, certifier network, website, digital records, or program rollout belongs behind the stage gates in Objective 8; nothing is recorded as already implemented without evidence.
+
+### Objective 9 — Optimize Zuni and K9 Training Facilities
+
+**2026 goal:** Strengthen AK9I's financial position by choosing the highest-value sustainable use or disposition of Zuni and maintaining required training, housing, canine, and operating capacity.
+
+**Leadership decision:** The agreed **preferred course is to sell Zuni** and use the resulting financial improvement to support AK9I stability. **Retaining Zuni remains a conditional alternative** if near-term contract developments **come to fruition** and support a demonstrable and economically superior longer-term need for the property. This is not a decision to hold the asset indefinitely based on speculative leads.
+
+**Responsible functions:** CEO and COO/Finance for approval and capital strategy; School Administration, Facilities, Training, Kennels, Student Services, and Contracts for operational inputs.
+
+**Area 9.1 — Sale as the base case**
+1. Obtain property valuation, title and debt/lien information, transaction/tax cost estimates, net proceeds, and any sale constraints.
+2. Confirm actual ongoing Zuni cost, debt service, maintenance requirements, insurance, utilities, personnel allocation, and deferred capital work.
+3. Map current usage: student housing, training sites, canine capacity, administrative functions, equipment/storage, and future contracted services.
+4. Compare alternate student accommodations and training configurations using verified availability, authorization, housing safety, travel, program quality, and total operating cost.
+5. Prepare a time-bound sale/transition process that protects current students, animals, staff, and existing contractual responsibilities.
+
+**Area 9.2 — Retention only with evidence of a long-term operating need**
+
+A retention proposal must document all of the following:
+
+1. **Contract actuality:** whether one or more near-term opportunities are awarded or otherwise meet a formally approved, documented contract milestone; mere discussions do not justify abandoning the sale strategy.
+2. **Economic support:** contract revenue, duration, start date, cash receipts, margin after labor/canine/facility costs, and a defensible downside forecast.
+3. **Property necessity:** exactly what Zuni provides that Carrsville, leasing, third-party arrangements, or another location cannot provide at better risk-adjusted cost.
+4. **Longer-term fit:** foreseeable post-award capacity, training, housing, deployment or animal-care needs and the asset's useful role beyond a single speculative contract.
+5. **Funding and risk:** ability to pay operating costs, debt, repair/capital expense and safety obligations without compromising core education, kennel welfare, or other vendor/payroll commitments.
+6. **Alternative value:** a clear comparison of property-retention value versus liquidity and savings obtainable by sale, including delayed starts, termination, non-renewal, and customer concentration.
+
+**Area 9.3 — Explicit Zuni decision gate**
+- Build three financial cases: **sell and transition; retain on supported awards; hold briefly while a defined contract milestone is evaluated**.
+- Name a responsible decision-maker, evidence deadline, review date, and interim spending constraints.
+- Record sale or retention approval and supporting documents in executive leadership records.
+- If the exception's milestones fail, return to the preferred sale path without extending the hold by default.
+- Maintain campus and canine safety throughout any transition or interim hold.
+
+**Area 9.4 — Training facility investments**
+- Continue necessary preventive maintenance and compliance work at existing usable sites.
+- Reassess the older hotel relocation, warehouse-style training sites, and container-city concepts only after determining Zuni's disposition and a current cash and operational plan.
+- No new $1 million construction or consolidation program is approved solely by virtue of appearing in the 2024 plan.
+
+**Evaluation:** verified net sale proceeds and cash effect; full monthly carrying cost; usable student/K9 capacity; approved transition costs; contract contribution supporting retention; required repair liabilities; and sensitivity of the decision to lost/delayed awards.
+
+### Objective 10 — Gain Market Share for K9 Support Contracts
+
+**2026 goal:** Pursue appropriate and profitable public-sector and private-entity market share through disciplined qualification, proposal development, professional delivery, partnerships, and account retention. Major sports and entertainment may remain opportunistic markets but are not the defining focus of this objective.
+
+**Responsible functions:** Business Development, Contracts/Field Operations, CEO/COO as required for material agreements.
+
+**Area 10.1 — Market research**
+1. Prioritize government agencies at relevant levels, school districts, law enforcement, private security buyers, and other qualified commercial sectors.
+2. Determine unmet customer needs, specific purchasing authorities, funding timing, security and licensing obligations, geographic restrictions, and canine specialty requirements.
+3. Screen opportunities by likely contribution, deployment readiness, funding, payment timing, staffing and asset needs.
+
+**Area 10.2 — Targeted sales and proposals**
+1. Create sector-appropriate capability statements, proposal examples, references, performance evidence, and price models.
+2. Maintain Salesforce opportunity owner, stage, next action, next date, proposal decision, and contract-award outcome.
+3. Coordinate marketing participation and travel through a prioritized event plan and approved expense limits.
+4. Distinguish signed contract value, backlog, forecasts, and speculative pipeline in all executive reports.
+
+**Area 10.3 — Alliances, capabilities, and client success**
+1. Evaluate teaming/subcontracting opportunities with suitable providers, agencies, security companies, and professional partners.
+2. Confirm contract readiness: qualified handlers, canine suitability, insurance, records, staffing plans, and customer operational requirements.
+3. Integrate contract growth with the Zuni facility decision only where a documented awarded or near-award requirement creates real need.
+4. Develop references, renewals, expansion of existing accounts, and introductions within peer sectors.
+
+**Evaluation:** qualified opportunities, proposals, award rate, signed value, actual revenue, margin, customer retention, measurable client results, referral-based opportunities, and controlled business-development expense.
+
+---
+
