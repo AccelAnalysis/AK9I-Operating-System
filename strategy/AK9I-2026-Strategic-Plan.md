@@ -195,3 +195,148 @@ Paul's markup reports approximately **a 50% decline in fourth-quarter enrollment
 
 **Evaluation:** source-to-start conversion, application and acceptance rates, contact speed, benefit/document completeness, deferrals and no-shows with reason codes, actual starts, and confidence in the supported causes.
 
+### Objective 3A — Revise Course Offerings to Align with Industry Needs
+
+**2026 goal:** Maintain properly authorized and effective 5-, 8-, and 12-week programs while scheduling within student, instructor, dog, housing, and financial capacity.
+
+**Responsible functions:** Training, Curriculum/Data, Student Services, School Administration, Kennels, and Finance.
+
+**Reported historical progress:** Paul's marked plan labels development of the 8-week program, change from a 13-week to a 12-week program, development of further offerings, and updating student/course materials as “Done.” The necessary regulatory approvals and exact curriculum versions must be verified against controlled records before administratively closing those actions.
+
+**Area 3.1 — Current approved curriculum**
+1. Maintain the approved instructional objectives, practical assessments, syllabi, manuals, and course records for each active program.
+2. Correct the original plan's drafting mistake: its 8-week course implementation section repeated language about converting a 13-week trainer course to 12 weeks.
+3. Include appropriate K9 handling, health, husbandry, kennel safety, legal/operational scenarios, and professional career expectations in the approved curriculum.
+4. Avoid implying that short-duration graduates possess advanced field experience or certifications they have not actually achieved.
+5. Obtain applicable SCHEV and other authorizations before implementing changes that require approval.
+
+**Area 3.2 — Schedule optimization and graduation**
+1. Assess the following as a **planning scenario, not an approved class calendar**: 12-week courses once per quarter, 8-week courses twice per quarter, and 5-week courses every month.
+2. Evaluate a maximum of **one formal graduation exercise per month** where the calendar and academic requirements permit.
+3. Model start dates, overlapping cohorts, instructional contact hours, practical supervision, housing turnovers, and canine availability.
+4. Complete required assessment records and administrative handoffs before certificates, transcripts, and commencement arrangements are finalized.
+
+**Area 3.3 — Canine acquisition and program profitability**
+1. Coordinate canine procurement, pre-screening, health, inventory, and training suitability with actual projected program demand.
+2. Review each cohort's cash receipts, dog acquisition, instructor capacity, student housing, training supplies, and shared cost allocation.
+3. Monitor changes in Zuni carrying costs or alternate lodging costs separately under the Objective 9 facility scenarios.
+4. Review alternative course mixes if growth would violate authorized capacity or create unacceptable operating losses.
+
+**Planning assumptions from September 2026 analysis (not audited actuals)**
+
+| Program | Student tuition | Dog acquisition | Tuition less dog acquisition only |
+|---|---:|---:|---:|
+| 12-week | $27,500 | $11,160 | $16,340 |
+| 8-week | $22,700 | $7,500 | $15,200 |
+| 5-week | $17,500 | $7,500 | $10,000 |
+
+These differences **are not profit**: direct instructional expense, housing, fixed expenses, administrative costs, other program supplies, and financial overhead remain to be allocated. The scenario inputs discussed in September were approximately $30,000 per month for Carrsville, $41,666 for Zuni, and $23,333 for instructor salaries, totaling approximately **$94,999 monthly** for those three cost categories. Use current General Ledger detail and utilization analysis before approving a course or property investment decision.
+
+**Evaluation:** educational outcomes, starts and completions, student/teacher coverage, canine readiness, schedule reliability, cost and contribution per cohort, required approvals, and graduation documentation completed on time.
+
+### Objective 4 — Maintain a 7:1 Student-to-Instructor Ratio
+
+**2026 goal:** Maintain a **7:1** student-to-instructor planning ratio consistent with AK9I's Student Catalog while providing sufficient instructional coverage for specific practical activities, approved curricula, and safety requirements.
+
+**Responsible functions:** Training leadership, with Curriculum/Data and School Administration.
+
+**Area 4.1 — Class scheduling optimization**
+1. Review actual simultaneous cohorts, instructor assignments, student enrollment, instructional contact, and training site demands.
+2. Use staggered starts, smaller groups, or instructional rotations where course requirements allow.
+3. Monitor instructor availability and workload by day and program, not only by quarterly student averages.
+
+**Area 4.2 — Instructor recruitment and development**
+1. Identify actual specialty and hour-based gaps before recruiting.
+2. Hire, cross-train, or contract qualified instructors only against a defined requirement and approved budget.
+3. Document professional development, field assessment, classroom observation, and instructional consistency.
+
+**Area 4.3 — Monitoring and correction**
+1. Track projected and actual student-to-instructor coverage throughout each active course.
+2. Review ratio reports quarterly and any material deviation promptly.
+3. Apply more restrictive supervision for higher-risk activities when required by safety, instructional design, contracts, or governing standards.
+
+**Evaluation:** planned and actual ratio, specialty coverage, approved exceptions, instructor hours, student progress, and corrective actions. **Illustration only:** three fully available instructors provide a maximum nominal concurrent instructional capacity of 21 students under the general 7:1 standard; real capacity may be lower. Larger modeled concurrent student populations require a validated staffing or instructional schedule.
+
+### Objective 5 — Enhance the Student Experience
+
+**2026 goal:** Improve training spaces, housing quality, support, academic experience, formal graduation, and alumni handoffs so that each student's experience is professional and consistent.
+
+**Responsible functions:** Student Services, Training, School Administration, Facilities, and Kennels.
+
+**Area 5.1 — Academic quality and practical learning**
+- Review industry, instructor, employer, and student feedback and update controlled training materials when justified.
+- Continue to improve equipment, training areas, working-dog practical activities, and student support.
+- Document the reported reinstatement of the five-week course in response to industry demand once its approved status and curriculum are verified.
+
+**Area 5.2 — Housing and facilities experience**
+- Maintain safe, clean student accommodations and facilities, documented room inspections, maintenance escalation, issue handling, and standard arrival/checkout instructions.
+- Coordinate student departure and incoming housing turnover with the academic calendar, housekeeping, and training/administration staff.
+- Review how a Zuni sale or retention decision would change lodging, training logistics, and student experience before implementing any property transition.
+
+**Area 5.3 — Student community and graduation**
+- Establish a predictable student welcome, expectations, and support contact process.
+- Restore or maintain formal graduation exercises with advance time/place notices, accurate certifications, optional family/guest attendance, approved speakers, photographs, and appropriate permission to use recording or images.
+- Use graduation week to finalize assessments, documentation, dorm checkout, animal/equipment requirements, and alumni enrollment without last-day administrative emergencies.
+- Follow through with staff assignment of unresolved student support or career questions.
+
+**Area 5.4 — Career pathways and post-graduation support**
+- Track real outcomes, provide appropriate employer introductions, and identify alumni who can serve as mentors or speakers.
+- Maintain the Student Business Packet as a self-startup guide including practical business registration, licensing checks, and suitable resources; professional counsel remains an available option rather than a default mandatory route.
+- Provide an authorized pathway for continuing education and applicable LMS offerings.
+
+**Evaluation:** student satisfaction and completion; academic and housing complaints; resolved service issues; graduation preparedness; campus and equipment inspection results; verified graduate outcomes; and alumni engagement.
+
+### Objective 6 — Develop and Optimize an AK9I Advertising Campaign
+
+**2026 goal:** Increase qualified inquiries and establish a consistent, professional AK9I market position, using measurable campaigns and authorized credentials rather than unsupported claims.
+
+**Responsible functions:** Business Development/Marketing, with Data/Systems and designated brand/quality reviewers.
+
+**Reported status from Paul's markup:** original advertising development is marked “Done”; targeted marketing, measurement, and ongoing refinement remain continuing work. Deployment and outcomes require verification.
+
+**Area 6.1 — Brand and content**
+1. Apply AK9I's approved 2026 Brand Standards across all websites, presentations, uniforms, certificates, advertising partners, and merchandise.
+2. Use documented program outcomes, properly permissioned testimonials, credible instructor and employer evidence, and supportable credential claims.
+3. Avoid describing an exploratory certification standard as officially nationally recognized.
+4. Verify rights to logos, copyrighted imagery, other institutions' marks, testimonials, music, and advertising assets.
+
+**Area 6.2 — Targeted campaigns**
+1. Tailor messages for veterans, civilians, law enforcement, agencies, K9 operations buyers, and employers as appropriate.
+2. Connect landing-page lead capture, career webinars, professional events, follow-up calls, and referrals to the stages in Objective 2.
+3. Position contact forms and calls to action where users can readily find them, without overwhelming the first interaction with unnecessary sensitive questions.
+4. Maintain deeper earnings/career discussions in an appropriately supported information pathway that can be kept accurate.
+
+**Area 6.3 — Measurement and optimization**
+1. Approve test budgets, campaign periods, source-tracking conventions, and target economics before scaling spending.
+2. Monitor reach and engagement **as intermediate metrics**, with application, student start, contract opportunity, and contribution as stronger indicators.
+3. Perform A/B testing and channel comparisons; make changes based on conversion, not aesthetic preference alone.
+4. Review outside marketing vendor performance against published Brand Standards and measurable results.
+
+**Evaluation:** lead quality, cost per qualified inquiry, conversion to start or contract, documented permissions, source completeness, performance by channel, and contribution after marketing cost.
+
+**Funding note:** The original advertising estimate of $250,000 is a historical proposal, not an approved 2026 allocation.
+
+### Objective 3B — Continue Revising Course Offerings to Align with Industry Needs
+
+**2026 goal:** Make curriculum improvement a recurring evidence-based process, not a one-time expansion exercise.
+
+**Responsible functions:** Curriculum/Data and Training leadership with Student Services and Business Development.
+
+**Reported progress:** Paul marked the historic course-revision objective completed but described employer outreach, industry feedback, surveys, and graduate employment tracking as “Ongoing.”
+
+**Area 3B.1 — Soliciting industry feedback**
+1. Maintain controlled graduate, student, employer, and instructor surveys.
+2. Conduct industry interviews and examine operational requirements of employers hiring handlers.
+3. Compare feedback across the 5-, 8-, and 12-week programs and by career pathway.
+
+**Area 3B.2 — Ongoing instructional enhancement**
+1. Identify recurring skill gaps and problems observed during field deployment, placement, or graduate self-employment.
+2. Consider canine husbandry, basic health recognition, legal considerations, procurement, field operations, and business operations as suitable curriculum or continuing-education topics.
+3. Complete required review and approvals before changing course requirements.
+
+**Method of evaluation — leading indicators:** survey coverage and responses, employer/instructor contacts, identified skills gaps, corrective actions, curriculum review completion, and course-program demand.
+
+**Method of evaluation — lagging indicators:** verified employment and professional outcomes, satisfaction, course completion, observed graduate readiness, time to employment when known, and demonstrable results following curriculum changes.
+
+---
+
