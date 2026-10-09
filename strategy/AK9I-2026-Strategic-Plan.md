@@ -523,3 +523,80 @@ The original 2024 strategy contemplated an internally managed breeding operation
 
 ---
 
+## 5. Performance Scorecard
+
+Each approved strategic objective must have an accountable owner, verified baseline, target/date, source of evidence, and regular review.
+
+| Area | Core measures | Cadence |
+|---|---|---|
+| Cash and budget | 13-week cash forecast, actual/budget variance, receivables, collected tuition, course and contract contribution | Weekly cash; monthly finance |
+| Student pipeline | Qualified inquiry, conversion by stage, response time, missing-document aging, committed-to-start rate, reasons for deferral/withdrawal | Weekly funnel; monthly trends |
+| Education | Actual 7:1 coverage, teaching hours, student progress, completion, verified competency, course economics | Weekly course; quarterly review |
+| Graduate success | Employment evidence/attestations, verified outcomes, alumni engagement, satisfaction and referrals | Monthly/quarterly cohorts |
+| Contracts | Qualified opportunities, signed awards, handler/K9 readiness, billable and payroll hours, invoice accuracy, margin, renewal | Weekly field; monthly finance |
+| Canine operations | Health records, medical and medication compliance, kennel capacity, training records, preventable incidents | Daily operations; monthly trend |
+| Facilities | Zuni disposition milestones, verified net sale value, cost/usage scenarios, transition readiness, work orders | Monthly and at decision gates |
+| Certification concept | Stakeholder response, documented feasibility, standards/governance readiness, approved pilot status | Quarterly |
+| Management and compliance | Assigned roles, on-time tasks, filed regulatory reports, open findings, corrective-action closure | Weekly tasks; quarterly plan |
+
+**Reporting rule:** Distinguish verified complete, active/on track, active/at risk, proposed, deferred, and discontinued. Do not equate a discussion, meeting, proposal, or customer inquiry with a finished deliverable.
+
+## 6. Proposed First 90 Days
+
+| Window after approval | Primary work | Deliverable |
+|---|---|---|
+| **Days 1–30** | Validate finance and functional ownership, implement cash forecast and spend controls, confirm catalog ratio, audit Salesforce configuration, define the disputed enrollment decline | Finance baseline, responsibility register, known-data-gap log |
+| **Days 31–60** | Pilot seven-stage communications and consent; test course calendar/instructor coverage; improve K9 and handler record controls; model Zuni sale versus contract-supported retention; advance Objective 8 stakeholder and feasibility materials | Pipeline pilot, capacity scenario, facility options report, certification feasibility checkpoint |
+| **Days 61–90** | Decide Zuni disposition or approve a bounded contract-based exception; complete enrollment attribution study; approve realistic 2027 program and marketing budgets; establish leadership scorecard | Decision record, validated enrollment findings, approved execution plan |
+| **Subsequent quarters** | Scale proven education, alumni and contract programs; monitor certification discussions; reassess deferred capital ideas only through written gates | Quarterly strategy and performance report |
+
+The sequence is a proposed management timetable, not a statement that the work has already been authorized or completed.
+
+## 7. Financial Resources and Capital Authorization
+
+The original June 2024 plan's **$2.22 million** represented historical estimates, not approved 2026 funding. Its executive summary also appears to have switched the Business and Education classification labels. Reconciliation to individual historical objectives yields:
+
+| Historical category | Short-term | Long-term | Total |
+|---|---:|---:|---:|
+| Education | $100,000 | $400,000 | $500,000 |
+| Business | $1,065,000 | $655,000 | $1,720,000 |
+| **Total** | **$1,165,000** | **$1,055,000** | **$2,220,000** |
+
+Included in those historical estimates were the $1 million facilities concept, $125,000 standalone national-certification implementation, and $500,000 breeding proposal. Their current dispositions have changed. **No new aggregate 2026 investment requirement is approved here.** Updated resource needs must be built from current Finance and operating information with explicit capital authorization.
+
+All significant new commitments follow: **strategic need → feasibility → forecast and full cost → legal/regulatory/risk review → funding capacity → written approval → performance review**.
+
+## 8. Revision and Verification Register
+
+| Subject | 2026 treatment |
+|---|---|
+| Plan date | 2026; leadership-review draft |
+| Instructional planning ratio | 7:1, subject to approved catalog and specific supervision requirements |
+| Salesforce / Area 2.2 | Existing CRM; implement communications and handoffs across all seven customer stages |
+| Student support | Preserve Student Resource Packet and related instruction |
+| Fixed open houses | Remove original twice-monthly commitment |
+| Enrollment downturn | Reported fourth-quarter reduction; verify period, size and cause before attributing to economy |
+| Seven-to-ten monthly students | Management-reported baseline requiring cohort validation |
+| Course revisions | Historical work marked complete by Paul; verify controlled curriculum and approval evidence |
+| Advertising | Initial work reported completed; measurement/optimization ongoing |
+| Operational opportunities | Additional district and other opportunities reported; signed awards not assumed |
+| National certification | Objective 8 retained as exploratory; document discussions with Representative Kiggans's office and stage gates |
+| Former Objective 11 | Retired as independent implementation objective |
+| Zuni | Sale preferred; retention only if realized near-term contracts justify long-term operational and economic use |
+| Former Objective 12 | Deferred pending extensive economic, operational, facility and animal-welfare feasibility |
+| Financial totals | Corrected historical classifications; no automatic carry-forward |
+
+**Required final evidence:** current Student Catalog, approvals and syllabi; actual enrollment/withdrawal history; Salesforce stages and consent settings; current financials and property records; signed contract status; certification stakeholder correspondence; current roles and delegation; student outcomes and K9/handler records.
+
+## Conclusion
+
+The 2026 strategy emphasizes **financial stabilization, measurable student success, professional K9 delivery, a consistent seven-stage customer relationship, disciplined facilities decisions, and future investments only when supported by evidence**. The preferred sale of Zuni is reconciled with a narrowly defined contract-supported retention option. Exploratory national certification continues with realistic milestones; breeding is thoughtfully deferred until the financial and operating case warrants reconsideration.
+
+This document is ready for substantive leadership review. Formatting, formal approval, and transfer of approved objectives into the action tracker are separate next steps.
+
+### Source lineage
+
+- *AK9I 2024 Strategic Plan*, June 2024, version 3.2.
+- Paul Roushia's handwritten annotated copy, reviewed October 2026.
+- AK9I finance, student-services, course economics, marketing, leadership, and contract discussions through October 9, 2026.
+- [AK9I Operating System GitHub repository](https://github.com/AccelAnalysis/AK9I-Operating-System) and its canonical seven-stage student and contract-customer pipeline.
