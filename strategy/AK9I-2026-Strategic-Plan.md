@@ -488,3 +488,38 @@ A retention proposal must document all of the following:
 
 ---
 
+## 4. Former Objectives Not Funded or Independently Pursued in 2026
+
+### Former Objective 11 — National Certification Program Implementation
+
+**Disposition:** Remove as an independent active implementation objective. Paul marked the proposed implementation as not having moved forward. Any future certifier database, member services, agreements, certification portal, or scaled operation must pass Objective 8's feasibility, technical, pilot, and launch approval gates. Neither an operational program nor formal national recognition is claimed at this time.
+
+### Former Objective 12 — Comprehensive K9 Breeding Program
+
+**Disposition:** Strategically defer. The program is not authorized for investment or implementation in 2026, although the concept may be evaluated during a future planning cycle.
+
+**Basis for the decision**
+
+The original 2024 strategy contemplated an internally managed breeding operation and estimated **$500,000** in resources. Although breeding might eventually improve AK9I's control of canine supply, health screening, desirable working traits, and long-term inventory, it is a distinct operating venture with longer time to usable canine supply and greater risk than buying and screening working-dog candidates.
+
+1. **Capital and liquidity:** Existing educational delivery, salaries, campus requirements, dog procurement, contractual obligations, and canine welfare have earlier claims on limited capital. Committing substantial funding to breeding before the operating budget is stable would raise financial exposure.
+2. **Extended time to working readiness:** Breeding, gestation, early care, socialization, screening, preliminary training, and suitability evaluation cannot address near-term needs for student and deployed working dogs.
+3. **Medical, biological, and welfare uncertainty:** Canine health, fertility, genetic conditions, litter sizes, puppy development, disease, temperament, medical intervention, and suitability for working roles make cost and yield uncertain. An ethically managed program also needs continuing care and humane alternatives for dogs that do not qualify for working roles.
+4. **Staffing and facilities:** Appropriate veterinary oversight, qualified handlers, specialized equipment, kennel space, isolation capacity, and daily animal-care staffing would be required. These resource needs are difficult to commit before resolving the Zuni property disposition and contract-driven needs.
+5. **Opportunity cost and alternative procurement:** A proper economic comparison must calculate the fully allocated cost per successfully qualified working dog, and compare it against sourcing tested candidates from established suppliers. The original target pass rate of 90–95% is not accepted as a verified operational assumption.
+6. **Execution focus:** Current priorities—reliable instruction, enrollment conversion, K9 health, financial controls, existing contracts, and sound capital decisions—should reach stable performance before AK9I undertakes another complex operation.
+
+**Gates for reconsideration**
+
+- Validate multi-year dog demand by course and contract specialty, including possible changes caused by new contract awards.
+- Show sufficient operating liquidity and a separately approved capital allocation.
+- Obtain veterinary and professional working-dog advice on breeding, care, welfare, recordkeeping, genetics, and facility requirements.
+- Produce a full cost and risk model for both internal breeding and outside canine procurement, including dogs unsuitable for intended working roles.
+- Demonstrate an appropriate facilities and staffing plan under either the sale or contract-supported retention of Zuni.
+- Propose a bounded pilot, measurable welfare and canine-quality criteria, independent review, and explicit stop/expand conditions.
+- Obtain written executive approval after the feasibility and investment review.
+
+**Strategic conclusion:** The breeding initiative is deferred because a prudent decision requires validated demand, financial capacity, animal-welfare safeguards, staffing, facilities, and measurable return—not merely because the initial expense is large. This preserves the option without placing unverified future commitments on the operating plan.
+
+---
+
