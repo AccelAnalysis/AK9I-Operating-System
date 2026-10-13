@@ -5,7 +5,8 @@
 **Planning horizon:** January 2027–December 2031 (five years), using 2026 results and decisions as the pre-plan baseline  
 **Version:** 2027–2031.2 — leadership review draft  
 **Executive sponsor:** CEO/President  
-**Operating sponsor:** Chief Operating Officer  
+**Operating sponsor:** Chief Operating Officer 
+**Administrative sponsor:** School Administrator
 **Approval status:** Draft — not an approved operating budget, signed contract, accreditation action, or public certification claim.
 **Pipeline alignment:** Stage names and functional handoffs revised October 13, 2026 under the Operating System decision; other strategic recommendations retain draft status.
 
