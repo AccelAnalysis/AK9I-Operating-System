@@ -35,6 +35,7 @@ site/
       functional-work-chart.css      # Primary functional-work chart styling
       contract-lane.css              # Contract / Field Operations customer lane
       pipeline-seven-stage.css       # Seven-stage student/contract pipeline fit overrides
+      pipeline-communications.css    # Interactive communications cascade and node inspector
     js/
       app.js                         # Navigation, fullscreen, overview, interactions
       renderers.js                   # Detail and sources rendering
@@ -47,6 +48,7 @@ site/
         job-descriptions.js          # Base job-description content
         authority-job-overrides.js   # Approved authority and growth-function profiles
         main-slides.js               # Executive slide index / overview metadata
+        pipeline-communications.js   # 76 source-aligned Student / Contract communications
         details.js                   # Detail-slide registry
       components/
         shared.js                    # Slide chrome, action buttons, pipeline stage helper
@@ -55,12 +57,13 @@ site/
         flight-plan.js               # Business Flight Plan visualization
         pipeline-chart.js            # Canonical seven-stage clickable student pipeline
         contract-lane.js             # Contract / Field Operations pipeline translation
+        pipeline-communications.js   # Cascade rendering, lane filters, focus and details
       slides/
         opening.js                   # Slides 1–2
         management.js                # Slides 3–6 plus linked hierarchy view
         brand.js                     # Slides 7–10
-        pipeline.js                  # Slides 11–20
-        closing.js                   # Slide 21
+        pipeline.js                  # Pipeline slides, including interactive communications map (slide 14)
+        closing.js                   # Slide 22
       details/
         management.js                # Linked management detail content
         brand.js                     # Linked brand detail content
@@ -121,6 +124,20 @@ The same seven numbered stages apply to both customer lanes, but Stages 3 and 4 
 **One owner per record:** Every active Salesforce record requires one named accountable person, a next action and date, and source. Transfer ownership at the operational handoff while retaining functional contributions from supporting teams. Other formal stage entry/exit criteria and automation triggers must be defined and verified separately; this documentation does not claim the Salesforce org is configured.
 
 **Governance:** The [2027–2031 Strategic Plan](strategy/AK9I-2027-2031-Strategic-Plan.md#area-22--salesforce-crm-the-seven-stage-ak9i-customer-pipeline-and-communications) allocates shared functional responsibilities. The [Operating System presentation](https://accelanalysis.github.io/AK9I-Operating-System/#s13), its stage details, and linked job descriptions define accountable operating ownership and handoffs.
+
+## Interactive Student / Contract communications slide
+
+**Open slide 14:** [AK9I Pipeline Communications Map](https://accelanalysis.github.io/AK9I-Operating-System/#s13m)
+
+This interactive slide extends the seven-stage pipeline without modifying the exact lane-specific stage names. Cascading connectors emerge from each stage and branch to yellow **Student** nodes and blue **Contract** nodes. Dashed nodes represent internal tasks or alerts rather than external correspondence.
+
+- **Both lanes / Students / Contracts** filters make each audience's communication path readable.
+- **Select a stage** to expand its Student and Contract nodes; **All stages** returns to the complete waterfall view.
+- **Select any communication node** for owner, delivery type, proposed triggering event, timing, and whether the communication is from the strategic plan, Operating System, or a recommendation.
+- **Escape** closes a communication detail or focused view before returning to normal deck navigation.
+- **Source and safety boundaries:** This is a prospective communications blueprint, **not a live Salesforce configuration audit**. Proposed triggers and proposed timings are flagged. The AK9I unsolicited-contact cap, opt-outs, sequence transitions and currently disabled SMS are explicitly called out. The slide does not send messages or modify Salesforce records.
+
+Content lives in `site/assets/js/data/pipeline-communications.js`; presentation and interactions live in `site/assets/js/components/pipeline-communications.js`; styling is `site/assets/css/pipeline-communications.css`.
 
 ## Common updates
 
