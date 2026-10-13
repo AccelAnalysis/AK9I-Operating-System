@@ -61,20 +61,25 @@ export function applyPipelineDetailOverrides(details){
   ];
  }
  const admission=detail(details,'d18a');
- if(admission)addBullet(admission.columns[0],'Sales owns the Consideration-to-Commitment path until an accepted student is handed to School Administration and Student Services.');
+ if(admission){
+  addBullet(admission.columns[0],'Sales owns active Consideration and application conversion until acceptance; at acceptance the named record owner transfers to Student Services through actual course start.');
+  addBullet(admission.columns[1],'Student Services supplies admissions expertise; School Administration, Admissions/Registrar and designated SCO handle regulated records and benefits in support.');
+ }
  const prestart=detail(details,'d18c');
  if(prestart){
   prestart.columns[0].bullets=[
    'Funding, documents, housing, travel, equipment, schedule, expectations, and first-day readiness.',
    'Use the webinar platform for pre-start orientation: what to expect, what to bring, Student Handbook overview, rules of engagement, key contacts, and next actions.',
-   'Use a countdown sequence, named contact, and readiness checklist; confirm critical milestones before the start date.'
+   'Student Services owns accepted-student readiness from acceptance through actual course start, with School Administration/Admissions and the SCO supporting required documentation.','Use a countdown sequence, named contact, and readiness checklist; confirm critical milestones before the start date.'
   ];
   addBullet(prestart.columns[2],'Webinar registration, attendance, orientation completion, questions resolved, and readiness checklist completion.');
  }
  const guided=detail(details,'d19b');
- if(guided)addBullet(guided.columns[0],'Sales is the primary functional owner once a qualified prospect reaches active Consideration; Business Development remains involved where relationship continuity matters.');
+ if(guided)addBullet(guided.columns[0],'Sales owns active qualified Consideration records; BD develops relationships and Student Services advises on admissions, eligibility and funding.');
  const nurture=detail(details,'d19c');
- if(nurture)addBullet(nurture.columns[0],'Sales owns active Consideration records; Marketing and Business Development remain authoritative sources, not substitute owners.');
+ if(nurture)addBullet(nurture.columns[0],'Every active qualified Consideration record has one Sales owner, next action and date; Marketing owns campaigns, BD supports relationships and Student Services advises on admissions.');
+ const training=detail(details,'d17a');
+ if(training)addBullet(training.columns[1],'Training is accountable for Stage 4 at actual course start; Student Services, Kennels and Facilities support delivery.');
  const awareness=detail(details,'d20b');
  if(awareness)addBullet(awareness.columns[1],'Marketing owns contracted campaign execution and source capture; Business Development owns targeted relationships and strategic outreach.');
 }
