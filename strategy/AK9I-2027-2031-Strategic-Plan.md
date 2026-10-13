@@ -1,9 +1,9 @@
-# AK9I 2027–2029 Strategic Plan
+# AK9I 2027–2031 Strategic Plan
 
 **American K-9 Interdiction, LLC (AK9I)**  
 **Prepared:** October 9, 2026  
-**Planning horizon:** January 2027–December 2029, using 2026 results and decisions as the pre-plan baseline  
-**Version:** 2027–2029.1 — leadership review draft  
+**Planning horizon:** January 2027–December 2031 (five years), using 2026 results and decisions as the pre-plan baseline  
+**Version:** 2027–2031.1 — leadership review draft  
 **Executive sponsor:** CEO/President  
 **Operating sponsor:** Chief Operating Officer  
 **Approval status:** Draft — not an approved operating budget, signed contract, accreditation action, or public certification claim.
@@ -14,9 +14,9 @@
 
 American K-9 Interdiction is a working-K9 education and services company whose mission is to prepare capable working-dog handlers and trainers, deliver professional K9 operations, and support lasting student and customer success.
 
-The 2024 plan placed considerable emphasis on enrollment growth, certification expansion, major facilities changes, new contracts, and establishing an internal breeding program. The 2027–2029 plan retains the underlying educational and operational ambitions while changing the order of execution: **first stabilize finances and execution; then validate program and contract economics; then scale what produces repeatable, verified outcomes.**
+The 2024 plan placed considerable emphasis on enrollment growth, certification expansion, major facilities changes, new contracts, and establishing an internal breeding program. The 2027–2031 plan retains the underlying educational and operational ambitions while changing the order of execution: **first stabilize finances and execution; then validate program and contract economics; then scale what produces repeatable, verified outcomes.**
 
-### Five 2027–2029 strategic priorities
+### Five 2027–2031 strategic priorities
 
 1. **Financial resilience and management accountability:** departmental budgets, spending authorization, 13-week cash forecasting, reliable financial reporting, defined responsibilities, and documented actions.
 2. **Educational excellence:** catalog-aligned **7:1** student-to-instructor planning, financially viable 5-/8-/12-week course delivery, student support, accurate instructional records, graduate completion, and employment outcomes.
@@ -32,11 +32,13 @@ The 2024 plan placed considerable emphasis on enrollment growth, certification e
 - **Certification:** Objective 8 is retained as exploratory work. AK9I has reported discussions with staff in **U.S. Representative Jen Kiggans's office**, with little forward movement during the 2026 election cycle, according to October 2026 discussions. The conversations do not constitute an endorsement, recognition, or approved certification scheme. Objective 11 is not retained as a duplicate standalone launch initiative.
 - **Zuni:** leadership has agreed that **selling Zuni is the preferred direction to strengthen AK9I's financial position**. Retention is a conditional alternative only if near-term contracts come to fruition and demonstrably justify long-term property needs and costs.
 - **Breeding:** former Objective 12 is deferred as a funded initiative, with a comprehensive capital allocation, operational readiness, canine welfare, and economic rationale.
-- **Historical amounts:** the 2024 estimates do not represent authorized 2027–2029 budgets and must be replaced with current validated financials.
+- **Historical amounts:** the 2024 estimates do not represent authorized 2027–2031 budgets and must be replaced with current validated financials.
 
 ### Organization of this plan
 
 Education Objectives **1, 2, 3A, 4, 5, 6, and 3B** and Business Objectives **7, 8, 9, and 10** retain their historical identifiers to make reconciliation practical. Finance, organizational accountability, regulatory readiness, and data governance are mandatory cross-cutting controls. Former Objectives **11 and 12** are documented in a separate disposition section rather than presented as funded active projects.
+
+The five-year horizon runs through December 2031. Annual operating plans and reviews translate these objectives into year-specific actions; extending the horizon does not postpone near-term financial controls or the Zuni decision, or automatically authorize deferred initiatives.
 
 No numerical growth target, official credential claim, capital investment, or contract opportunity is treated as achieved without an identified evidence source.
 
@@ -105,7 +107,7 @@ These management systems supplement, rather than replace, approved academic prog
 
 ### Objective 1 — Conduct Market Research and Update Marketing Plan
 
-**2027–2029 goal:** Increase qualified inquiry and application activity and recruit students who can realistically succeed in the chosen AK9I programs. The former 15% inquiry-growth goal requires a fresh baseline and executive approval.
+**2027–2031 goal:** Increase qualified inquiry and application activity and recruit students who can realistically succeed in the chosen AK9I programs. The former 15% inquiry-growth goal requires a fresh baseline and executive approval.
 
 **Responsible functions:** Marketing and Business Development, with Student Services, School Administration, and Data/Systems.
 
@@ -128,7 +130,7 @@ These management systems supplement, rather than replace, approved academic prog
 
 ### Objective 2 — Implement Targeted Marketing Strategies and Enrollment Initiatives
 
-**2027–2029 goal:** Use Salesforce and coordinated staff communications to support applicants from first engagement to confirmed start, successful training, measurable outcomes, enduring relationships, and advocacy. Growth targets will be based on reconciled 2026 cohort data and realistic 2027–2029 capacity projections.
+**2027–2031 goal:** Use Salesforce and coordinated staff communications to support applicants from first engagement to confirmed start, successful training, measurable outcomes, enduring relationships, and advocacy. Growth targets will be based on reconciled 2026 cohort data and realistic 2027–2031 capacity projections.
 
 **Responsible functions:** Student Services, Marketing/BD, School Administration, Training, Data/Systems.
 
@@ -197,7 +199,7 @@ Paul's markup reports approximately **a 50% decline in fourth-quarter enrollment
 
 ### Objective 3A — Revise Course Offerings to Align with Industry Needs
 
-**2027–2029 goal:** Maintain properly authorized and effective 5-, 8-, and 12-week programs while scheduling within student, instructor, dog, housing, and financial capacity.
+**2027–2031 goal:** Maintain properly authorized and effective 5-, 8-, and 12-week programs while scheduling within student, instructor, dog, housing, and financial capacity.
 
 **Responsible functions:** Training, Curriculum/Data, Student Services, School Administration, Kennels, and Finance.
 
@@ -236,7 +238,7 @@ These differences **are not profit**: direct instructional expense, housing, fix
 
 ### Objective 4 — Maintain a 7:1 Student-to-Instructor Ratio
 
-**2027–2029 goal:** Maintain a **7:1** student-to-instructor planning ratio consistent with AK9I's Student Catalog while providing sufficient instructional coverage for specific practical activities, approved curricula, and safety requirements.
+**2027–2031 goal:** Maintain a **7:1** student-to-instructor planning ratio consistent with AK9I's Student Catalog while providing sufficient instructional coverage for specific practical activities, approved curricula, and safety requirements.
 
 **Responsible functions:** Training leadership, with Curriculum/Data and School Administration.
 
@@ -259,7 +261,7 @@ These differences **are not profit**: direct instructional expense, housing, fix
 
 ### Objective 5 — Enhance the Student Experience
 
-**2027–2029 goal:** Improve training spaces, housing quality, support, academic experience, formal graduation, and alumni handoffs so that each student's experience is professional and consistent.
+**2027–2031 goal:** Improve training spaces, housing quality, support, academic experience, formal graduation, and alumni handoffs so that each student's experience is professional and consistent.
 
 **Responsible functions:** Student Services, Training, School Administration, Facilities, and Kennels.
 
@@ -288,7 +290,7 @@ These differences **are not profit**: direct instructional expense, housing, fix
 
 ### Objective 6 — Develop and Optimize an AK9I Advertising Campaign
 
-**2027–2029 goal:** Increase qualified inquiries and establish a consistent, professional AK9I market position, using measurable campaigns and authorized credentials rather than unsupported claims.
+**2027–2031 goal:** Increase qualified inquiries and establish a consistent, professional AK9I market position, using measurable campaigns and authorized credentials rather than unsupported claims.
 
 **Responsible functions:** Business Development/Marketing, with Data/Systems and designated brand/quality reviewers.
 
@@ -314,11 +316,11 @@ These differences **are not profit**: direct instructional expense, housing, fix
 
 **Evaluation:** lead quality, cost per qualified inquiry, conversion to start or contract, documented permissions, source completeness, performance by channel, and contribution after marketing cost.
 
-**Funding note:** The original advertising estimate of $250,000 is a historical proposal, not an approved 2027–2029 allocation.
+**Funding note:** The original advertising estimate of $250,000 is a historical proposal, not an approved 2027–2031 allocation.
 
 ### Objective 3B — Continue Revising Course Offerings to Align with Industry Needs
 
-**2027–2029 goal:** Make curriculum improvement a recurring evidence-based process, not a one-time expansion exercise.
+**2027–2031 goal:** Make curriculum improvement a recurring evidence-based process, not a one-time expansion exercise.
 
 **Responsible functions:** Curriculum/Data and Training leadership with Student Services and Business Development.
 
@@ -344,7 +346,7 @@ These differences **are not profit**: direct instructional expense, housing, fix
 
 ### Objective 7 — Increase Revenue Value and Performance of Operational Contracts
 
-**2027–2029 goal:** Grow profitable working-K9 contracts through a complete, accountable process for opportunity development, award, service delivery, documentation, invoicing, renewal, and customer success.
+**2027–2031 goal:** Grow profitable working-K9 contracts through a complete, accountable process for opportunity development, award, service delivery, documentation, invoicing, renewal, and customer success.
 
 **Responsible functions:** Business Development (pipeline/award); Contracts and Field Operations (delivery); Finance, Kennels, and Regulatory/Quality (enablement).
 
@@ -385,7 +387,7 @@ These differences **are not profit**: direct instructional expense, housing, fix
 
 ### Objective 8 — Develop the AK9I National Certification Standard Program
 
-**2027–2029 goal:** Advance a credible, defensible K9 certification-standard concept through industry participation, appropriate public-sector dialogue, feasibility analysis, and a gated governance model. Do not represent exploratory work as an established recognized standard.
+**2027–2031 goal:** Advance a credible, defensible K9 certification-standard concept through industry participation, appropriate public-sector dialogue, feasibility analysis, and a gated governance model. Do not represent exploratory work as an established recognized standard.
 
 **Status:** **Active exploration; implementation not approved.** AK9I reports contact and discussions with **staff in U.S. Representative Jen Kiggans's office** about moving the national certification-standard conversation forward. Management reported limited movement during the 2026 election cycle as of October 2026. The existence of contact does **not** imply the office has endorsed, sponsored, approved, or recognized an AK9I standard; no explanation for the external pace should be asserted without substantiation.
 
@@ -423,7 +425,7 @@ These differences **are not profit**: direct instructional expense, housing, fix
 
 ### Objective 9 — Optimize Zuni and K9 Training Facilities
 
-**2027–2029 goal:** Strengthen AK9I's financial position by choosing the highest-value sustainable use or disposition of Zuni and maintaining required training, housing, canine, and operating capacity.
+**2027–2031 goal:** Strengthen AK9I's financial position by choosing the highest-value sustainable use or disposition of Zuni and maintaining required training, housing, canine, and operating capacity.
 
 **Leadership decision:** The agreed **preferred course is to sell Zuni** and use the resulting financial improvement to support AK9I stability. **Retaining Zuni remains a conditional alternative** if near-term contract developments **come to fruition** and support a demonstrable and economically superior longer-term need for the property. This is not a decision to hold the asset indefinitely based on speculative leads.
 
@@ -463,7 +465,7 @@ A retention proposal must document all of the following:
 
 ### Objective 10 — Gain Market Share for K9 Support Contracts
 
-**2027–2029 goal:** Pursue appropriate and profitable public-sector and private-entity market share through disciplined qualification, proposal development, professional delivery, partnerships, and account retention. Major sports and entertainment may remain opportunistic markets but are not the defining focus of this objective.
+**2027–2031 goal:** Pursue appropriate and profitable public-sector and private-entity market share through disciplined qualification, proposal development, professional delivery, partnerships, and account retention. Major sports and entertainment may remain opportunistic markets but are not the defining focus of this objective.
 
 **Responsible functions:** Business Development, Contracts/Field Operations, CEO/COO as required for material agreements.
 
@@ -488,7 +490,7 @@ A retention proposal must document all of the following:
 
 ---
 
-## 4. Former Objectives Deferred or Consolidated for 2027–2029
+## 4. Former Objectives Deferred or Consolidated for 2027–2031
 
 ### Former Objective 11 — National Certification Program Implementation
 
@@ -496,7 +498,7 @@ A retention proposal must document all of the following:
 
 ### Former Objective 12 — Comprehensive K9 Breeding Program
 
-**Disposition:** Strategically defer. The breeding program is not authorized as a funded initiative for 2027–2029 under this draft; feasibility may be reconsidered through a separately approved, evidence-based decision gate.
+**Disposition:** Strategically defer. The breeding program is not authorized as a funded initiative for 2027–2031 under this draft; feasibility may be reconsidered through a separately approved, evidence-based decision gate.
 
 **Basis for the decision**
 
@@ -527,6 +529,8 @@ The original 2024 strategy contemplated an internally managed breeding operation
 
 Each approved strategic objective must have an accountable owner, verified baseline, target/date, source of evidence, and regular review.
 
+**Five-year measurement:** Establish approved annual milestones for 2027, 2028, 2029, 2030, and 2031, together with the intended end-of-2031 result for each objective. Use verified 2026 information as the starting baseline where available, compare annual actual results with approved milestones, and document any target changes. Do not assume a uniform growth rate or invent numeric targets where validated data are missing.
+
 | Area | Core measures | Cadence |
 |---|---|---|
 | Cash and budget | 13-week cash forecast, actual/budget variance, receivables, collected tuition, course and contract contribution | Weekly cash; monthly finance |
@@ -541,30 +545,34 @@ Each approved strategic objective must have an accountable owner, verified basel
 
 **Reporting rule:** Distinguish verified complete, active/on track, active/at risk, proposed, deferred, and discontinued. Do not equate a discussion, meeting, proposal, or customer inquiry with a finished deliverable.
 
-## 6. Initial 2027 Execution and Three-Year Roadmap
+**Plan review:** Review execution quarterly and refresh annual operating priorities, budgets, assumptions, and risk assessments throughout 2027–2031. Conduct a mid-plan assessment in 2029 and a final five-year assessment in 2031. Record approved changes without rewriting historical baselines or treating an extended deadline as evidence of completion.
+
+## 6. Initial 2027 Execution and Five-Year Roadmap
 
 | Initial 2027 execution window | Primary work | Deliverable |
 |---|---|---|
 | **Days 1–30** | Validate finance and functional ownership, implement cash forecast and spend controls, confirm catalog ratio, audit Salesforce configuration, define the disputed enrollment decline | Finance baseline, responsibility register, known-data-gap log |
 | **Days 31–60** | Pilot seven-stage communications and consent; test course calendar/instructor coverage; improve K9 and handler record controls; model Zuni sale versus contract-supported retention; advance Objective 8 stakeholder and feasibility materials | Pipeline pilot, capacity scenario, facility options report, certification feasibility checkpoint |
-| **Days 61–90** | Decide Zuni disposition or approve a bounded contract-based exception; complete enrollment attribution study; validate the 2027 operating plan and develop 2028–2029 scenarios; establish leadership scorecard | Decision record, validated enrollment findings, approved execution plan |
+| **Days 61–90** | Decide Zuni disposition or approve a bounded contract-based exception; complete enrollment attribution study; validate the 2027 operating plan and develop 2028–2031 scenarios; establish leadership scorecard | Decision record, validated enrollment findings, approved execution plan |
 | **Subsequent quarters** | Scale proven education, alumni and contract programs; monitor certification discussions; reassess deferred capital ideas only through written gates | Quarterly strategy and performance report |
 
 **Timing:** The initial 90-day window is intended for Q1 2027. Leadership may authorize baseline preparation during Q4 2026, but such activity remains preparatory rather than a 2027 result. If the plan takes effect later, reset the execution dates accordingly.
 
-### Three-year phasing
+### Five-year phasing
 
 | Year | Strategic emphasis | Decision standard |
 |---|---|---|
 | **2027 — Stabilize and execute** | Establish financial and operational controls, validate enrollment attribution, improve Salesforce lifecycle communications, align course capacity, and resolve Zuni against actual contract requirements. | Verified baseline, operating budget, accountable owners, approved facility decision, recurring leadership scorecard. |
 | **2028 — Optimize and grow** | Scale profitable programs and client relationships, strengthen graduate outcomes and alumni services, refine instructional processes, and advance certification design only if feasibility gates pass. | Financial contribution, quality, customer results, liquidity, and documented authorizations. |
-| **2029 — Sustain and selectively expand** | Extend proven education or contract capacity and consider capital-intensive or national-scale initiatives only when demand, returns, staff, animal welfare, and compliance justify them. | Audited or otherwise verified operating evidence, separately approved investment case, and controlled implementation. |
+| **2029 — Sustain and selectively expand** | Extend proven education or contract capacity and consider capital-intensive or national-scale initiatives only when demand, returns, staff, animal welfare, and compliance justify them. Complete the mid-plan assessment and refine 2030–2031 priorities using actual results. | Audited or otherwise verified operating evidence, separately approved investment case, controlled implementation, and documented mid-plan decisions. |
+| **2030 — Strengthen resilience and repeatable performance** | Review the continuing economics of facilities, staffing, canine supply, contract renewals, and recurring relationships; sustain quality and improve established processes before adding further commitments. | Demonstrated operational capacity, reliable cash flow, verified student/client results, and investment reviews under the existing approval gates. |
+| **2031 — Evaluate five-year outcomes and renew the strategy** | Assess cumulative financial, educational, customer, canine, and operational results against the approved baseline and milestones; document completed, deferred, or discontinued initiatives and prepare the next strategic planning cycle. | Evidence-backed five-year evaluation, reconciliation of outstanding commitments, and leadership decisions on the succeeding strategic plan. |
 
-This is a proposed three-year management timetable, not a statement that the initiatives have already been authorized or completed.
+This is a proposed five-year management timetable, not a statement that the initiatives have already been authorized or completed. The additional years extend the existing strategic priorities; movement into a later year does not automatically authorize a certification launch, breeding investment, facilities expansion, or continued retention of Zuni.
 
 ## 7. Financial Resources and Capital Authorization
 
-The original June 2024 plan's **$2.22 million** represented historical estimates, not approved 2027–2029 funding. Its executive summary also appears to have switched the Business and Education classification labels. Reconciliation to individual historical objectives yields:
+The original June 2024 plan's **$2.22 million** represented historical estimates, not approved 2027–2031 funding. Its executive summary also appears to have switched the Business and Education classification labels. Reconciliation to individual historical objectives yields:
 
 | Historical category | Short-term | Long-term | Total |
 |---|---:|---:|---:|
@@ -572,15 +580,18 @@ The original June 2024 plan's **$2.22 million** represented historical estimates
 | Business | $1,065,000 | $655,000 | $1,720,000 |
 | **Total** | **$1,165,000** | **$1,055,000** | **$2,220,000** |
 
-Included in those historical estimates were the $1 million facilities concept, $125,000 standalone national-certification implementation, and $500,000 breeding proposal. Their current dispositions have changed. **No aggregate 2027–2029 investment requirement is approved by this draft.** Updated resource needs must be built from current Finance and operating information with explicit capital authorization.
+Included in those historical estimates were the $1 million facilities concept, $125,000 standalone national-certification implementation, and $500,000 breeding proposal. Their current dispositions have changed. **No aggregate 2027–2031 investment requirement is approved by this draft.** Updated resource needs must be built from current Finance and operating information with explicit capital authorization.
+
+**Five-year financial planning:** Maintain annual operating and capital scenarios for 2027, 2028, 2029, 2030, and 2031. Budget the next operating year in detail and treat later-year figures as conditional forecasts, refreshed annually using actual enrollment, contract status, staffing capacity, canine requirements, and facilities decisions. Separate recurring expenses, one-time investments, financing cash flows, and commitments extending beyond December 2031. The longer horizon does not validate unchanged 2026 prices or costs or authorize expenditure without the existing approval process.
 
 All significant new commitments follow: **strategic need → feasibility → forecast and full cost → legal/regulatory/risk review → funding capacity → written approval → performance review**.
 
 ## 8. Revision and Verification Register
 
-| Subject | 2027–2029 treatment |
+| Subject | 2027–2031 treatment |
 |---|---|
-| Plan years | 2027–2029; prepared October 2026; leadership-review draft |
+| Plan years | January 2027–December 2031; five-year plan; prepared October 2026; leadership-review draft |
+| Five-year execution and evaluation | Annual phases and financial scenarios through 2031; mid-plan review in 2029; final five-year assessment in 2031 |
 | Instructional planning ratio | 7:1, subject to approved catalog and specific supervision requirements |
 | Salesforce / Area 2.2 | Existing CRM; implement communications and handoffs across all seven customer stages |
 | Student support | Preserve Student Resource Packet and related instruction |
@@ -600,7 +611,7 @@ All significant new commitments follow: **strategic need → feasibility → for
 
 ## Conclusion
 
-The 2027–2029 strategy emphasizes **financial stabilization, measurable student success, professional K9 delivery, a consistent seven-stage customer relationship, disciplined facilities decisions, and future investments only when supported by evidence**. The preferred sale of Zuni is reconciled with a narrowly defined contract-supported retention option. Exploratory national certification continues with realistic milestones; breeding is thoughtfully deferred until the financial and operating case warrants reconsideration.
+The 2027–2031 strategy emphasizes **financial stabilization, measurable student success, professional K9 delivery, a consistent seven-stage customer relationship, disciplined facilities decisions, and future investments only when supported by evidence**. The preferred sale of Zuni is reconciled with a narrowly defined contract-supported retention option. Exploratory national certification continues with realistic milestones; breeding is thoughtfully deferred until the financial and operating case warrants reconsideration.
 
 This document is ready for substantive leadership review. Formatting, formal approval, and transfer of approved objectives into the action tracker are separate next steps.
 
@@ -609,4 +620,5 @@ This document is ready for substantive leadership review. Formatting, formal app
 - *AK9I 2024 Strategic Plan*, June 2024, version 3.2.
 - Paul Roushia's handwritten annotated copy, reviewed October 2026.
 - AK9I finance, student-services, course economics, marketing, leadership, and contract discussions through October 9, 2026.
+- Subsequent owner instruction correcting the planning horizon to five years, January 2027–December 2031.
 - [AK9I Operating System GitHub repository](https://github.com/AccelAnalysis/AK9I-Operating-System) and its canonical seven-stage student and contract-customer pipeline.
