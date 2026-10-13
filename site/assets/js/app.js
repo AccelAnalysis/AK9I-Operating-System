@@ -13,6 +13,7 @@ import {renderOpeningSlides} from './slides/opening.js';
 import {renderManagementSlides} from './slides/management.js';
 import {renderBrandSlides} from './slides/brand.js';
 import {renderPipelineSlides} from './slides/pipeline.js';
+import {setupPipelineCommunications} from './components/pipeline-communications.js';
 import {renderClosingSlides} from './slides/closing.js';
 import {renderPortfolioSlides} from './components/portfolio-matrix.js';
 import {renderDetails,renderSources} from './renderers.js';
@@ -43,6 +44,7 @@ document.getElementById('slides').innerHTML=[
   renderDetails(DETAILS,slideTitles),
   renderSources()
 ].join('');
+setupPipelineCommunications();
 
 let currentId='s1';
 function resizeStage(){const scale=Math.min(innerWidth/1920,innerHeight/1080);document.getElementById('stage').style.transform=`scale(${scale})`}
