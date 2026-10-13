@@ -3,10 +3,11 @@
 **American K-9 Interdiction, LLC (AK9I)**  
 **Prepared:** October 9, 2026  
 **Planning horizon:** January 2027–December 2031 (five years), using 2026 results and decisions as the pre-plan baseline  
-**Version:** 2027–2031.1 — leadership review draft  
+**Version:** 2027–2031.2 — leadership review draft  
 **Executive sponsor:** CEO/President  
 **Operating sponsor:** Chief Operating Officer  
 **Approval status:** Draft — not an approved operating budget, signed contract, accreditation action, or public certification claim.
+**Pipeline alignment:** Stage names and functional handoffs revised October 13, 2026 under the Operating System decision; other strategic recommendations retain draft status.
 
 > **Purpose and provenance:** This document revises the June 2024 AK9I Strategic Plan (v3.2), incorporates Paul Roushia's handwritten 2026 status annotations and subsequent AK9I leadership decisions, and aligns with the AK9I Operating System's canonical seven-stage customer pipeline. Reported completion, approved strategic direction, draft recommendations, and unverified claims are distinguished rather than silently conflated.
 
@@ -143,19 +144,27 @@ These management systems supplement, rather than replace, approved academic prog
 
 #### Area 2.2 — Salesforce CRM, the seven-stage AK9I Customer Pipeline, and communications
 
-**Canonical stages:** **Awareness → Consideration → Enrollment / Commitment → Training & Experience / Delivery → Loyalty → Recurring Relationships → Advocacy**.
+**Canonical student lane:** **Awareness → Consideration → Enrollment → Training & Experience → Loyalty → Recurring Relationships → Advocacy**.
 
-The stages are consistent with the AK9I Operating System repository. **Outcomes and employment placement are managed within Stage 5 (Loyalty)**; they are not a competing eighth stage. **Recurring Relationships is Stage 6** and **Advocacy is Stage 7**.
+**Canonical contract-client lane:** **Awareness → Consideration → Commitment / Award → Service Delivery → Loyalty → Recurring Relationships → Advocacy**.
+
+Both lanes use seven numbered stages. Stage 3 and 4 names remain lane-specific in the Operating System and in CRM lifecycle stage values. The former combined terms “Enrollment / Commitment” and “Training & Experience / Delivery” are only cross-lane shorthand, **not individual stage values**. Graduate outcomes and employment placement remain within **Stage 5 (Loyalty)**, while **Recurring Relationships** is Stage 6 and **Advocacy** is Stage 7.
+
+The table below defines the student-lane purpose, communications and shared functional responsibilities. For single-record accountability and exact handoffs, follow the Operating System's operational stage cards and role documentation.
 
 | Stage | Primary purpose and transition | Communications and follow-up | Responsible records and teams |
 |---|---|---|---|
-| **1. Awareness** | Reach appropriate prospects and prompt first engagement. | Educational social/search content, vetted success stories, employer proof, event/job-fair invitation, partner/referral introduction, immediate inquiry acknowledgment. | Marketing/BD; record source, campaign, inquiry, consent, channel. |
-| **2. Consideration** | Assess fit, answer questions, and obtain a qualified next commitment. | Human response; program and pricing comparison; funding-path guidance; career webinar registration/reminders; training and eligibility FAQs; consultation reminders; unanswered-inquiry follow-up. | BD with Student Services; record qualification, questions, contact attempts, next owner/date. |
-| **3. Enrollment / Commitment** | Application, admission, funding/document readiness, tuition or fee commitment, and actual course start. | Application receipt; missing-document reminders; acceptance; payment link; new-student welcome; CEO message; instructor introduction and bio; campus, dorm, travel, equipment, and orientation information; countdown; final start confirmation; prioritized “red list” outreach. | Student Services/SCO and Admin; record COE/documents, acceptance, fees, commitment, readiness, start/deferral/no-show. |
-| **4. Training & Experience / Delivery** | Student attends, trains, receives support, and completes or has a documented exit. | Day-one orientation; weekly instructor out-briefs; progress and remediation communications; support/grievance responses; graduation invitation, family/guest information, certificate and housing checkout instructions; completion and transition notice. | Training, Student Services, Kennels, Facilities; record attendance, assessments, incidents, feedback, certificates. |
-| **5. Loyalty** | Verified outcomes, satisfaction, relationship value, and continuing trust. | Graduation thank-you; employment and employer follow-up; required outcome evidence/attestations; appropriate 30/60/90-day follow-ups; career support and alumni introduction; satisfaction and service-recovery communication. | Student Services/Alumni, Training/BD; record verified outcomes, employer, evidence, satisfaction, next action. |
+| **1. Awareness** | Reach appropriate prospects and prompt first engagement. | Educational social/search content, vetted success stories, employer proof, event/job-fair invitation, partner/referral introduction, immediate inquiry acknowledgment. | Marketing owns campaigns and source capture; BD owns targeted relationships. Record source, campaign, inquiry, consent, channel. |
+| **2. Consideration** | Assess fit, answer questions, and obtain a qualified next commitment. | Human response; program and pricing comparison; funding-path guidance; career webinar registration/reminders; training and eligibility FAQs; consultation reminders; unanswered-inquiry follow-up. | **Sales owns active qualified prospect records**; BD develops relationships and Student Services provides admissions/funding expertise. Record qualification, questions, contact attempts, owner, next action/date. |
+| **3. Enrollment** | Application, admission, funding/document readiness, tuition or fee commitment, and actual course start. | Application receipt; missing-document reminders; acceptance; payment link; new-student welcome; CEO message; instructor introduction and bio; campus, dorm, travel, equipment, and orientation information; countdown; final start confirmation; prioritized “red list” outreach. | **Sales owns applications/conversion until acceptance; Student Services becomes accountable at acceptance through actual course start.** School Administration, Admissions/Registrar, SCO and Admin support regulated documentation and benefits. Record COE/documents, acceptance, fees, commitment, readiness, start/deferral/no-show. |
+| **4. Training & Experience** | Student attends, trains, receives support, and completes or has a documented exit. | Day-one orientation; weekly instructor out-briefs; progress and remediation communications; support/grievance responses; graduation invitation, family/guest information, certificate and housing checkout instructions; completion and transition notice. | **Training accountable from actual course start**; Student Services, Kennels and Facilities support. Record attendance, assessments, incidents, feedback, certificates. |
+| **5. Loyalty** | Verified outcomes, satisfaction, relationship value, and continuing trust. | Graduation thank-you; employment and employer follow-up; required outcome evidence/attestations; appropriate 30/60/90-day follow-ups; career support and alumni introduction; satisfaction and service-recovery communication. | Student Services/Alumni leads graduate relationship follow-up; Training/BD supports. Record verified outcomes, employer, evidence, satisfaction, next action. |
 | **6. Recurring Relationships** | Make continued education, products, contracts, and professional value accessible. | Continuing-education/LMS updates, refresher invitations, optional replenishment and equipment offers, alumni events, mentoring, client renewal and account-expansion communications. | Alumni, BD, Operations, Finance; record participation, service renewal, orders, payments and preferences. |
 | **7. Advocacy** | Invite qualified, willing alumni, clients, and employees to represent AK9I credibly. | Testimonial/photo/video consent; referral and approved review invitations; alumni speaker and mentor opportunities; employer introductions; contract-client reference and case-study invitations. | Marketing/BD with alumni and account owners; record explicit permissions and attributable referrals. |
+
+**Contract-client responsibilities and handoffs:** Marketing runs campaigns while BD develops targeted relationships. Sales owns active qualified Consideration records and commercial conversion during **Commitment / Award** through execution. **Contracts & Field Operations** assumes **Service Delivery** after the executed agreement **and** complete operating handoff; it leads subsequent service outcomes with Sales support. Sales/Account Management owns commercial renewals and account expansion with Field Operations support. Marketing/BD coordinates voluntary Advocacy with account owners.
+
+**Governance and configuration boundary:** This strategic plan defines shared functional responsibilities; the Operating System's lane cards, stage recommendations, and role details define precise accountable owners and operating handoffs. Each record has one named owner. This is a documentation alignment, **not verification of deployed Salesforce automation**. Entry/exit criteria, detailed timing and other triggers still require approved implementation specifications.
 
 **Required process design**
 
@@ -169,7 +178,7 @@ The stages are consistent with the AK9I Operating System repository. **Outcomes 
 8. Track separate choices for **informational SMS, marketing SMS, and no texts**, maintain consent evidence, and honor opt-outs and applicable law before enabling sequences.
 9. End or reroute sequences at withdrawal, changed start date, opt-out, actual course start, graduation, account reassignment, or other relevant stage changes.
 10. Give every active Salesforce record an owner, next action, due date, and source; audit response times, aging, conversions, no-contact outcomes, and sequence performance.
-11. Establish a **parallel contract-client lane** under the same seven stages: Awareness → Consideration → Commitment/Award → Service Delivery → Loyalty → Recurring Relationships → Advocacy.
+11. Maintain the **parallel contract-client lane** under the same seven stages: Awareness → Consideration → Commitment / Award → Service Delivery → Loyalty → Recurring Relationships → Advocacy. Sales owns the commercial agreement until execution; Contracts & Field Operations owns delivery following the completed operating handoff.
 
 **Salesforce minimum record fields:** customer lane; person/organization; stage; source/campaign; assigned owner; next action/date; interest/program; necessary application/benefit readiness; communication consent/preferences; monetary milestones; actual start; completion/outcome; continuing relationship and referral/advocacy status.
 
@@ -381,7 +390,7 @@ These differences **are not profit**: direct instructional expense, housing, fix
 **Area 7.5 — Renewal, loyalty, and advocacy**
 1. Create account-review, client-satisfaction, service-recovery, renewal-warning, and contract-expansion workflows.
 2. Capture approved quotes, references, demonstrations, case studies, and peer introductions with explicit permission.
-3. Translate the seven-stage pipeline for contract customers: Awareness → Consideration → Commitment/Award → Service Delivery → Loyalty → Recurring Relationships → Advocacy.
+3. Translate the seven-stage pipeline for contract customers: Awareness → Consideration → Commitment / Award → Service Delivery → Loyalty → Recurring Relationships → Advocacy.
 
 **Evaluation:** qualified pipeline, signed awards, actual collected revenue, contract contribution margin, deployed-versus-required coverage, billable/paid hour accuracy, client satisfaction, incident trends, repeat business, and attributable referrals. The original 25% revenue-growth objective becomes a new leadership target only after the 2026 baseline is established.
 

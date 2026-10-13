@@ -96,15 +96,31 @@ Linked job-description pages answer **what each position is accountable for in d
 
 ## Customer Pipeline authority
 
-The canonical customer sequence is:
+The same seven numbered stages apply to both customer lanes, but Stages 3 and 4 use **different, exact names**. Use lane-specific names in the Operating System, lifecycle reports, and CRM stage values; never combine them into a single stage value.
 
-**Awareness → Consideration → Enrollment / Commitment → Training & Experience / Delivery → Loyalty → Recurring Relationships → Advocacy**
+| # | Student / education lane | Contract-client lane |
+|---|---|---|
+| 1 | Awareness | Awareness |
+| 2 | Consideration | Consideration |
+| 3 | **Enrollment** | **Commitment / Award** |
+| 4 | **Training & Experience** | **Service Delivery** |
+| 5 | Loyalty | Loyalty |
+| 6 | Recurring Relationships | Recurring Relationships |
+| 7 | Advocacy | Advocacy |
 
-- **Stage 5 — Loyalty:** Outcomes and placement are one part of Loyalty, alongside satisfaction, trust, service results, relationship health, and the customer's willingness to remain connected.
-- **Stage 6 — Recurring Relationships:** Loyal relationships become repeatable value through renewals, continuing education, replenishment, refreshers, account expansion, and other ongoing products or services.
-- **Stage 7 — Advocacy:** Successful relationships create references, testimonials, referrals, introductions, recruiting, reputation, and other credible proof.
+**Operating ownership and handoffs**
 
-Outcomes are therefore **not** a standalone pipeline stage. The student/education pipeline and contract-client translation use the same seven-stage architecture while adapting stage language to the customer type.
+- **Awareness:** Marketing owns campaigns, source capture and content. Business Development (BD) owns targeted relationship development and strategic outreach. A qualified prospect entering active Consideration receives a named Sales owner.
+- **Consideration:** **Sales owns active qualified prospect records** for both lanes. BD develops and sustains relationships; Student Services provides admissions, eligibility, program and funding expertise to student prospects. Supporting functions do not create duplicate record ownership.
+- **Student Enrollment:** **Sales remains accountable through acceptance**, including application conversion. **At acceptance, Student Services becomes the accepted-student relationship owner through actual course start.** School Administration, Admissions/Registrar, and the designated School Certifying Official (SCO) handle regulated admissions, records, and benefits in support. **At actual course start, Training assumes Stage 4 ownership**, supported by Student Services, Kennels, and Facilities.
+- **Contract Commitment / Award:** **Sales owns proposals, negotiations and commercial conversion through execution.** **Contracts & Field Operations owns delivery after the executed agreement and complete operating handoff**, not merely upon opportunity qualification.
+- **Loyalty:** Student Services/Alumni leads graduate relationship follow-up with Training/BD support; Contracts & Field Operations leads contract-client outcomes and account health with Sales support. Graduate outcomes and placement are part of Loyalty, not a separate stage.
+- **Recurring Relationships:** Alumni/Student Services coordinates student continuity with BD, Operations and Finance support; Sales/Account Management owns contract commercial renewals and expansion with Contracts & Field Operations support.
+- **Advocacy:** Marketing/BD coordinates voluntary advocacy with Alumni and contract account owners; requests require credible evidence and appropriate consent or permission.
+
+**One owner per record:** Every active Salesforce record requires one named accountable person, a next action and date, and source. Transfer ownership at the operational handoff while retaining functional contributions from supporting teams. Other formal stage entry/exit criteria and automation triggers must be defined and verified separately; this documentation does not claim the Salesforce org is configured.
+
+**Governance:** The [2027–2031 Strategic Plan](strategy/AK9I-2027-2031-Strategic-Plan.md#area-22--salesforce-crm-the-seven-stage-ak9i-customer-pipeline-and-communications) allocates shared functional responsibilities. The [Operating System presentation](https://accelanalysis.github.io/AK9I-Operating-System/#s13), its stage details, and linked job descriptions define accountable operating ownership and handoffs.
 
 ## Common updates
 

@@ -6,6 +6,10 @@
 .pipeline-stage .stage-num{font-size:12px;margin-bottom:16px}
 .pipeline-stage .metrics{left:17px;right:21px;bottom:23px}
 .pipeline-stage .metric{font-size:11px}
+.pipeline-stage .pipeline-owner{margin-top:10px;padding-top:10px;border-top:1px solid rgba(255,255,255,.45)}
+.pipeline-stage.gold .pipeline-owner{border-top-color:rgba(11,34,57,.3)}
+.pipeline-stage .pipeline-owner span{display:block;font-size:9px;font-weight:900;letter-spacing:.04em;text-transform:uppercase;opacity:.88}
+.pipeline-stage .pipeline-owner strong{display:block;font-size:11.5px;line-height:1.25;margin-top:5px}
 
 .contract-lane-stages{grid-template-columns:repeat(7,minmax(0,1fr));gap:11px}
 .contract-stage{padding-left:10px;padding-right:10px}
