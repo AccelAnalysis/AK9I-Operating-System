@@ -125,6 +125,8 @@ The same seven numbered stages apply to both customer lanes, but Stages 3 and 4 
 
 **Governance:** The [2027–2031 Strategic Plan](strategy/AK9I-2027-2031-Strategic-Plan.md#area-22--salesforce-crm-the-seven-stage-ak9i-customer-pipeline-and-communications) allocates shared functional responsibilities. The [Operating System presentation](https://accelanalysis.github.io/AK9I-Operating-System/#s13), its stage details, and linked job descriptions define accountable operating ownership and handoffs.
 
+Leadership-review draft: [2027–2031 Strategic Plan v2 (rev. 2026-10-14)](strategy/AK9I-2027-2031-Strategic-Plan-v2-rev-2026-10-14.md).
+
 ## Interactive Student / Contract communications slide
 
 **Open slide 14:** [AK9I Pipeline Communications Map](https://accelanalysis.github.io/AK9I-Operating-System/#s13m)
