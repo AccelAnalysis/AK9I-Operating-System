@@ -34,6 +34,7 @@ The 2024 plan placed considerable emphasis on enrollment growth, certification e
 - **Certification:** Objective 8 is retained as exploratory work. AK9I has reported discussions with staff in **U.S. Representative Jen Kiggans's office**, with little forward movement during the 2026 election cycle, according to October 2026 discussions. The conversations do not constitute an endorsement, recognition, or approved certification scheme. Objective 11 is not retained as a duplicate standalone launch initiative.
 - **Zuni:** leadership has agreed that **selling Zuni is the preferred direction to strengthen AK9I's financial position**. Retention is a conditional alternative only if near-term contracts come to fruition and demonstrably justify long-term property needs and costs.
 - **Breeding:** former Objective 12 is deferred as a funded initiative, with a comprehensive capital allocation, operational readiness, canine welfare, and economic rationale.
+- **Contract reporting:** Paul reports that the Department of the Interior five-year sole-source contract and CBP subcontract opportunity were awarded, subject to document-level confirmation. Contract wins are **not automatically secured funded backlog**: actual authorized, funded, undelivered work must be distinguished from total contract ceilings, unfunded options, earned revenue, cash collected, and prospective opportunities such as Kurdistan, 3P Canine, and a proposed nationwide helicopter/drone service.
 - **Historical amounts:** the 2024 estimates do not represent authorized 2027–2031 budgets and must be replaced with current validated financials.
 
 ### Organization of this plan
@@ -71,8 +72,10 @@ These management systems supplement, rather than replace, approved academic prog
 5. Compare actual versus budget and report aging receivables, unbilled services, student revenue, dog procurement, instructor utilization, course contribution, contract contribution, and net cash position.
 6. Require a formal business case and financing plan for significant facilities, staffing, technology, or service-line investments.
 7. Document critical finance and HR knowledge during leadership transitions and identify a primary operator and backup reviewer for each recurring process.
+8. Produce a monthly **contract position and cash conversion report** showing earned revenue, invoices, cash collected, funded work remaining to be performed, awarded but unfunded or undocumented work, unexercised options, and prospective opportunities **in separate categories**. Reconcile these to source contracts, finance records, and the BD opportunity register.
+9. Establish role-appropriate and governance-compliant access to financial reports for authorized executives, owners, and other designated recipients. Confirm applicable rights under the governing agreements, approve a report distribution schedule, and protect confidential records without informal information silos.
 
-**Evaluation:** forecast variance, cash runway, budget variance, unapproved spending, invoice age, reconciliations completed, payroll accuracy, course contribution, and contract contribution.
+**Evaluation:** forecast variance, cash runway, budget variance, unapproved spending, invoice age, reconciliations completed, payroll accuracy, course contribution, **documented funded backlog and cash conversion**, and contract contribution.
 
 ### 1.3 Cross-cutting goal — organizational accountability
 
@@ -85,8 +88,10 @@ These management systems supplement, rather than replace, approved academic prog
 3. Preserve sufficient protected administrative and financial capacity while maintaining adequate animal-care coverage and cross-training.
 4. Use weekly operational meetings, monthly financial reviews, quarterly strategic reviews, and a consistent action register with one owner, due date, next action, blocker, and evidence.
 5. Adopt written handoff and escalation procedures between Business Development, Student Services, Training, Kennels, Field Operations, Facilities, Data/Systems, and Finance.
+6. Reconcile the approved organizational chart against Paul's October 2026 discussion: retain the prior structure as the working baseline, show **Ron Brawner as CEO**, **Tim Baird as VP/Director of Training and Education**, and designate **Kayla Petersen for Canine Operations**, with her precise title, authority, and reporting line subject to explicit approval. No other reporting relationships change merely because of this discussion.
+7. Identify the two outstanding supporting documents that Paul said were expected from Michelle and Nigel, confirm their purpose and required status, and track completion before any related submission; their contents and titles are not specified in the transcript.
 
-**Evaluation:** approved role coverage, on-time actions, audit-ready personnel records, unresolved handoffs, and department scorecard completeness.
+**Evaluation:** approved role coverage, on-time actions, audit-ready personnel records, unresolved handoffs, authorized financial-report distribution, and department scorecard completeness.
 
 ### 1.4 Cross-cutting goal — compliance and quality assurance
 
@@ -360,7 +365,9 @@ These differences **are not profit**: direct instructional expense, housing, fix
 
 **Responsible functions:** Business Development (pipeline/award); Contracts and Field Operations (delivery); Finance, Kennels, and Regulatory/Quality (enablement).
 
-**Reported opportunity developments:** Paul's handwritten notes refer to a Department of the Interior opportunity described as a five-year sole-source arrangement; CBP; a potential long-term Kurdistan-related opportunity; and an additional school district. **These are reported descriptions requiring documentary verification of parties, status, scope, contract value, and award.** The strategic plan does not count an unsigned opportunity as an award or booked revenue.
+**October 2026 contract-status update (management report):** In a subsequent discussion Paul stated that **AK9I won a five-year Department of the Interior (DOI) sole-source contract**; he attributed qualification for the award to AK9I meeting an accreditation requirement. Paul also stated that **CBP work was won through Kayla and subcontracted to AK9I**. These are now classified as **management-reported awards**, rather than undifferentiated leads; the underlying executed award, subcontract documents, prime/subcontractor identities, obligated funding, start dates, and authorized work have not been supplied for independent reconciliation. Verify whether the DOI's five-year term includes unexercised option years, and what amount, if any, is funded and ordered. **Do not report either award's total stated or potential value as secured backlog without funding and work-authorization evidence.**
+
+**Prospective developments:** Paul separately describes the **Kurdistan-related opportunity and 3P Canine as active negotiations**, neither yet reported as awarded. He also refers to a potential **nationwide helicopter/drone-service opportunity** without an established scope, purchaser, or stage; classify it as **preliminary**. A previously mentioned additional school district remains status-unverified until a record establishes an actual award or active service. These opportunities belong in the prospective pipeline, not contract backlog or realized revenue.
 
 **Area 7.1 — Tailor marketing and promotion**
 1. Identify districts, government agencies, law-enforcement organizations, and private clients where AK9I's relevant canine capability matches the actual operational need.
@@ -393,7 +400,38 @@ These differences **are not profit**: direct instructional expense, housing, fix
 2. Capture approved quotes, references, demonstrations, case studies, and peer introductions with explicit permission.
 3. Translate the seven-stage pipeline for contract customers: Awareness → Consideration → Commitment / Award → Service Delivery → Loyalty → Recurring Relationships → Advocacy.
 
-**Evaluation:** qualified pipeline, signed awards, actual collected revenue, contract contribution margin, deployed-versus-required coverage, billable/paid hour accuracy, client satisfaction, incident trends, repeat business, and attributable referrals. The original 25% revenue-growth objective becomes a new leadership target only after the 2026 baseline is established.
+**Area 7.6 — Contract award, secured backlog, and prospective pipeline accounting**
+
+AK9I shall maintain **separate contract financial classifications** so that prospective sales estimates are not reported as secured revenue, and an award is not equated automatically with available cash.
+
+| Classification | What belongs in it | Financial and management treatment |
+|---|---|---|
+| **Earned / recognized revenue** | Value of services actually performed and recognized in the accounting records in the appropriate period. | Report separately from both future backlog and payments collected; reconcile to invoices and the General Ledger. |
+| **Secured, funded contract backlog** | The **remaining authorized, funded value of unperformed work** under executed contracts, subcontracts, task orders, or other enforceable work authorizations, after deducting earned amounts and reflecting modifications. | A forward-delivery measure, **not cash in the bank, a guaranteed receipt, or already earned revenue**. Disclose termination rights, funding limitations, timing, and collection risks. Count AK9I's contracted subcontract share, not the prime contractor's entire award. |
+| **Awarded work pending funding, authorization, or documentation** | Management-reported awards awaiting executed paperwork; signed contract ceilings without issued orders; unfunded periods; prospective option years; and work not yet supported by an authorized funded commitment. | Show separately as **awarded or potential contract value**, subject to a stated verification status. Do not include in secured funded backlog unless documentary conditions are met. |
+| **Prospective opportunity pipeline** | Qualified leads, proposals, negotiations, and early opportunities **without an executed and funded service commitment**. | Report as unweighted prospective value by stage; probability-weighted planning scenarios may be shown separately, with assumptions and no booking as revenue or backlog. |
+| **Cash collected** | Customer payments actually received. | Reconcile to bank and receivables records; do not confuse a payment, invoice, award, or backlog with one another. |
+
+**Current opportunity classifications from Paul's October 2026 statements**
+
+| Opportunity | Current description | Backlog treatment pending evidence |
+|---|---|---|
+| **U.S. Department of the Interior** | **Management-reported five-year sole-source award** to AK9I; accreditation qualification cited. | Inspect executed award, base and option periods, obligations, orders, modifications, and remaining authorized work before posting a funded backlog amount. |
+| **CBP-related work** | **Management-reported award leading to work subcontracted to AK9I through Kayla's efforts.** | Verify prime/customer, signed subcontract, work orders, funding terms, and **AK9I's share**; do not include the entire upstream award in AK9I backlog. |
+| **Kurdistan-related work** | **Active negotiations** for a potentially long-term arrangement. | Prospective pipeline only until award, executed terms, funding, and actual authorized performance are confirmed. |
+| **3P Canine** | **Active negotiations**. | Prospective pipeline only, with responsible owner and next milestone. |
+| **Nationwide helicopter/drone service** | **Preliminary opportunity**, with purchaser and operational scope not confirmed. | Early-stage prospective pipeline; identify counterparty, requirements, K9 role, geography, economics, and compliance before forecasting. |
+| **Additional school district referenced in earlier notes** | Status not established by the latest discussion. | Keep in unverified/qualified pipeline classification until a signed agreement and funded work are documented. |
+
+**Monthly reconciliation and reporting discipline**
+
+1. Record the customer and legal contracting parties, agreement or solicitation ID, contract owner, award status and date, signed terms, base and option periods, funding/obligation amount, required authorizations, value attributable to AK9I, and last verification date.
+2. For each documented commitment, calculate **funded backlog = authorized funded contract value for AK9I − earned/recognized contract value for the same authorized work − deobligations or reductions**, without double counting options, unissued orders, expired periods, or work already delivered. Maintain contract-specific adjustments for advance billing, cancellations, and amendments.
+3. Maintain separate columns for **total potential award ceiling**, **exercised/authorized award value**, **funded backlog**, **invoiced/receivable**, **cash collected**, **unexercised options**, and **prospective pipeline value**. Do not combine these into one headline sales figure.
+4. Show pipeline value both **unweighted** and, if useful, **probability weighted for internal scenarios only**; the weighted figure remains a forecast assumption, not secured business. Record probability, timing, costs, and owner explicitly.
+5. Reconcile BD records against signed contract/subcontract files and Finance each month; escalate missing agreements, disputed scope, funding expiry, or uncertain obligations. Report base, downside, and contingent cases separately.
+
+**Evaluation:** secured funded backlog, independently validated awarded commitments, prospective pipeline by stage, cash conversion, earned revenue, contract contribution margin, staffing/readiness coverage, billed/paid hour accuracy, client satisfaction, incident trends, renewals, and referral outcomes. The original 25% revenue-growth target requires a new verified baseline and leadership approval.
 
 ### Objective 8 — Develop the AK9I National Certification Standard Program
 
@@ -458,6 +496,7 @@ A retention proposal must document all of the following:
 4. **Longer-term fit:** foreseeable post-award capacity, training, housing, deployment or animal-care needs and the asset's useful role beyond a single speculative contract.
 5. **Funding and risk:** ability to pay operating costs, debt, repair/capital expense and safety obligations without compromising core education, kennel welfare, or other vendor/payroll commitments.
 6. **Alternative value:** a clear comparison of property-retention value versus liquidity and savings obtainable by sale, including delayed starts, termination, non-renewal, and customer concentration.
+7. **Backlog-versus-pipeline discipline:** evaluate the reported DOI and CBP awards for **actual funded backlog and property-specific performance needs**. Exclude unfunded options, speculative Kurdistan/3P Canine negotiations, and the preliminary nationwide helicopter/drone opportunity from the guaranteed retention base case; address them only in separately labeled conditional scenarios.
 
 **Area 9.3 — Explicit Zuni decision gate**
 - Build three financial cases: **sell and transition; retain on supported awards; hold briefly while a defined contract milestone is evaluated**.
@@ -488,13 +527,14 @@ A retention proposal must document all of the following:
 1. Create sector-appropriate capability statements, proposal examples, references, performance evidence, and price models.
 2. Maintain Salesforce opportunity owner, stage, next action, next date, proposal decision, and contract-award outcome.
 3. Coordinate marketing participation and travel through a prioritized event plan and approved expense limits.
-4. Distinguish signed contract value, backlog, forecasts, and speculative pipeline in all executive reports.
+4. Apply the **Objective 7.6 contract classifications** in every executive report: earned revenue, secured funded backlog, awarded-but-unfunded/pending-verification value, total ceiling and unexercised options, cash collected, and prospective pipeline. Use amounts attributable to AK9I, not upstream prime-contract totals.
 
 **Area 10.3 — Alliances, capabilities, and client success**
 1. Evaluate teaming/subcontracting opportunities with suitable providers, agencies, security companies, and professional partners.
 2. Confirm contract readiness: qualified handlers, canine suitability, insurance, records, staffing plans, and customer operational requirements.
 3. Integrate contract growth with the Zuni facility decision only where a documented awarded or near-award requirement creates real need.
 4. Develop references, renewals, expansion of existing accounts, and introductions within peer sectors.
+5. Qualify the reported DOI/CBP work for operational capacity and renewal opportunities; maintain Kurdistan, 3P Canine, and the preliminary nationwide helicopter/drone prospect as distinct pipeline records until an enforceable and appropriately funded performance commitment is established.
 
 **Evaluation:** qualified opportunities, proposals, award rate, signed value, actual revenue, margin, customer retention, measurable client results, referral-based opportunities, and controlled business-development expense.
 
@@ -547,7 +587,7 @@ Each approved strategic objective must have an accountable owner, verified basel
 | Student pipeline | Qualified inquiry, conversion by stage, response time, missing-document aging, committed-to-start rate, reasons for deferral/withdrawal | Weekly funnel; monthly trends |
 | Education | Actual 7:1 coverage, teaching hours, student progress, completion, verified competency, course economics | Weekly course; quarterly review |
 | Graduate success | Employment evidence/attestations, verified outcomes, alumni engagement, satisfaction and referrals | Monthly/quarterly cohorts |
-| Contracts | Qualified opportunities, signed awards, handler/K9 readiness, billable and payroll hours, invoice accuracy, margin, renewal | Weekly field; monthly finance |
+| Contracts | **Verified funded backlog versus prospective pipeline**, awards awaiting verification/funding, unexercised options, earned revenue, cash collected, handler/K9 readiness, margin, and renewal | Weekly field; monthly contract/finance reconciliation |
 | Canine operations | Health records, medical and medication compliance, kennel capacity, training records, preventable incidents | Daily operations; monthly trend |
 | Facilities | Zuni disposition milestones, verified net sale value, cost/usage scenarios, transition readiness, work orders | Monthly and at decision gates |
 | Certification concept | Stakeholder response, documented feasibility, standards/governance readiness, approved pilot status | Quarterly |
@@ -610,14 +650,21 @@ All significant new commitments follow: **strategic need → feasibility → for
 | Seven-to-ten monthly students | Management-reported baseline requiring cohort validation |
 | Course revisions | Historical work marked complete by Paul; verify controlled curriculum and approval evidence |
 | Advertising | Initial work reported completed; measurement/optimization ongoing |
-| Operational opportunities | Additional district and other opportunities reported; signed awards not assumed |
+| DOI award | **Management-reported five-year sole-source win**; verify executed award, accreditation criterion, base/options, obligated funds, task orders and remaining funded backlog before publishing monetary amounts. |
+| CBP subcontract | **Management-reported contract win/subcontract to AK9I**; verify upstream contracting parties, signed subcontract, funded authorizations, and AK9I-only value. |
+| Negotiated opportunities | Kurdistan-related and 3P Canine reported as **active negotiations**; prospective pipeline only until duly signed, funded work is established. |
+| Nationwide helicopter/drone prospect | Preliminary opportunity requiring customer, scope, timing, and feasibility qualification; prospective pipeline only. |
+| Additional school district | Previously reported; retain unverified status until supported by signed contract and service evidence. |
+| Contract financial classification | Monthly separation of earned revenue, funded backlog, awarded/unfunded work, contract ceilings/options, cash receipts, and unweighted/weighted prospective pipeline. |
+| Governance and organizational structure | Paul reports proposed restoration of the prior chart with Ron as CEO, Tim as VP/Director of Training and Education, and Kayla in Canine Operations; formal authority and chart approval pending. |
+| Financial information access | Define authorized owner/leadership reporting rights, confidentiality, schedule, and distribution, consistent with governing agreements. |
 | National certification | Objective 8 retained as exploratory; document discussions with Representative Kiggans's office and stage gates |
 | Former Objective 11 | Retired as independent implementation objective |
 | Zuni | Sale preferred; retention only if realized near-term contracts justify long-term operational and economic use |
 | Former Objective 12 | Deferred pending extensive economic, operational, facility and animal-welfare feasibility |
 | Financial totals | Corrected historical classifications; no automatic carry-forward |
 
-**Required final evidence:** current Student Catalog, approvals and syllabi; actual enrollment/withdrawal history; Salesforce stages and consent settings; current financials and property records; signed contract status; certification stakeholder correspondence; current roles and delegation; student outcomes and K9/handler records.
+**Required final evidence:** current Student Catalog, approvals and syllabi; actual enrollment/withdrawal history; Salesforce stages and consent settings; current financials and property records; **DOI executed award and funding/order documentation; CBP prime/subcontract chain and AK9I-funded scope; prospective opportunity records for Kurdistan, 3P Canine, the helicopter/drone lead and added district; monthly backlog reconciliation**; certification stakeholder correspondence; current roles and financial-report permissions; student outcomes and K9/handler records. Paul also described **two outstanding documents from Michelle and Nigel**, but the transcript does not identify them; their identity and submission relevance should be confirmed before treating them as required strategic-plan attachments.
 
 ## Conclusion
 
