@@ -90,9 +90,49 @@
 .comms-dialog-details>div{padding:12px 0 13px;border-top:3px solid #D4E0E7}
 .comms-dialog-details dt{font-size:12px;font-weight:900;color:var(--steel);letter-spacing:.1em;text-transform:uppercase;margin-bottom:7px}
 .comms-dialog-details dd{font-size:18px;line-height:1.34;margin:0;font-weight:700}
-.comms-dialog-policy{border-left:5px solid var(--gold);margin-top:24px;padding:12px 18px;background:#FFF8E8}
-.comms-dialog-policy h3{margin:0 0 7px;font-size:16px;font-weight:900}
-.comms-dialog-policy p{margin:0 0 7px;font-size:13px;line-height:1.36;color:var(--slate)}
-.comms-dialog-policy p:last-child{margin-bottom:0}
 .comms-dialog-done{background:var(--navy);color:#fff;border:0;border-radius:8px;padding:12px 23px;margin-top:20px;font-size:14px;font-weight:900;cursor:pointer}
+/* Build status tags: Live (in production), Sandbox (built, in testing), Planned (not built). */
+.comms-status-tag{display:inline-flex;align-items:center;gap:5px;flex:none;border-radius:999px;border:1px solid;padding:2px 8px 2px 6px;font-size:11px;font-weight:900;letter-spacing:.04em;line-height:1.3;text-transform:uppercase;white-space:nowrap}
+.comms-status-tag::before{content:'';width:7px;height:7px;border-radius:50%;background:currentColor}
+.comms-status-live{background:#E2F3E8;color:#1E6B3F;border-color:#7FBF97}
+.comms-status-sandbox{background:#EFE8FB;color:#5A3A93;border-color:#B49BDD}
+.comms-status-planned{background:#EEF2F5;color:#5C6F7E;border-color:#C2CED7}
+.comms-status-planned::before{background:transparent;border:1.5px solid currentColor;width:5px;height:5px}
+.comms-legend-status{display:inline-flex;gap:6px;margin-left:12px;padding-left:14px;border-left:1px solid #D2DCE4}
+.comms-node .comms-status-tag{position:absolute;top:4px;right:4px;width:11px;height:11px;padding:0;border-width:2px;border-color:#fff;font-size:0;box-shadow:0 1px 3px rgba(11,34,57,.25)}
+.comms-node .comms-status-tag::before{display:none}
+.comms-node .comms-status-live{background:#2F8A55}
+.comms-node .comms-status-sandbox{background:#7A55B8}
+.comms-node .comms-status-planned{background:#C9D3DB}
+.comms-cascades .comms-node{padding-right:16px}
+.comms-node-planned .comms-node-label{color:#55687A;font-weight:650}
+.comms-focus-nodes .comms-node .comms-status-tag,.comms-root[data-lane=students] .comms-node .comms-status-tag,.comms-root[data-lane=contracts] .comms-node .comms-status-tag{position:static;width:auto;height:auto;padding:2px 8px 2px 6px;border-width:1px;font-size:10.5px;box-shadow:none;margin-left:auto}
+.comms-focus-nodes .comms-node .comms-status-tag::before,.comms-root[data-lane=students] .comms-node .comms-status-tag::before,.comms-root[data-lane=contracts] .comms-node .comms-status-tag::before{display:block}
+.comms-focus-nodes .comms-node .comms-status-live,.comms-root[data-lane=students] .comms-node .comms-status-live,.comms-root[data-lane=contracts] .comms-node .comms-status-live{background:#E2F3E8;border-color:#7FBF97}
+.comms-focus-nodes .comms-node .comms-status-sandbox,.comms-root[data-lane=students] .comms-node .comms-status-sandbox,.comms-root[data-lane=contracts] .comms-node .comms-status-sandbox{background:#EFE8FB;border-color:#B49BDD}
+.comms-focus-nodes .comms-node .comms-status-planned,.comms-root[data-lane=students] .comms-node .comms-status-planned,.comms-root[data-lane=contracts] .comms-node .comms-status-planned{background:#EEF2F5;border-color:#C2CED7}
+.comms-focus-nodes .comms-node-arrow,.comms-root[data-lane=students] .comms-node-arrow,.comms-root[data-lane=contracts] .comms-node-arrow{margin-left:6px}
+.comms-dialog-flags .comms-status-tag{font-size:12.5px;padding:6px 12px 6px 10px}
+.comms-dialog-flags .comms-status-tag::before{width:9px;height:9px}
+/* Stage entry trigger in the expanded stage header. */
+.comms-entry{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;margin-top:7px;font-size:13.5px;line-height:1.3;color:var(--navy)}
+.comms-entry>strong{font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--steel)}
+.comms-entry>span{display:inline-flex;gap:6px;align-items:baseline;max-width:780px}
+.comms-entry b{flex:none;display:inline-grid;place-items:center;width:17px;height:17px;border-radius:5px;font-size:10px;background:#FFE2A2;color:#765000}
+.comms-entry-contracts b{background:#CCE8FC;color:#245B7D}
+.comms-root[data-lane=students] .comms-entry-contracts,.comms-root[data-lane=contracts] .comms-entry-students{display:none}
+/* Email wording on the expanded card. */
+.comms-dialog-wording{margin-top:22px;border-top:3px solid #D4E0E7;padding-top:12px}
+.comms-dialog-wording h3{margin:0;font-size:12px;font-weight:900;color:var(--steel);letter-spacing:.1em;text-transform:uppercase}
+.comms-wording-key{margin:5px 0 12px;font-size:12.5px;color:var(--slate)}
+.comms-email{background:#fff;border:1px solid #D5E0E8;border-radius:10px;padding:14px 18px;margin-bottom:12px}
+.comms-email-name{margin:0 0 8px;font-size:15px;font-weight:900;color:var(--navy)}
+.comms-email-meta{display:grid;grid-template-columns:max-content 1fr;gap:3px 12px;margin:0 0 10px;font-size:13.5px}
+.comms-email-meta>div{display:contents}
+.comms-email-meta dt{font-weight:900;color:var(--steel);text-transform:uppercase;font-size:11px;letter-spacing:.08em;padding-top:2px}
+.comms-email-meta dd{margin:0;font-weight:700;color:var(--navy)}
+.comms-email-body{white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;line-height:1.45;color:#233447;background:#F6F9FB;border-left:4px solid #C9D7E1;border-radius:6px;padding:12px 14px;max-height:340px;overflow:auto}
+.comms-merge{display:inline-block;background:#FFF2CD;color:#684B12;border:1px dashed #D9B45A;border-radius:5px;padding:0 5px;font-size:.92em;font-weight:800;line-height:1.35;white-space:nowrap}
+.comms-wording-missing{margin:8px 0 0;font-size:14px;font-weight:800;font-style:italic;color:#8A5A12}
+.comms-email-note{margin:8px 0 0;font-size:12.5px;color:var(--slate)}
 @media (prefers-reduced-motion:reduce){.comms-stage-card,.comms-node{transition:none}}
