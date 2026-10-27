@@ -16,21 +16,29 @@ export const COMMUNICATION_STAGES=[
         "label": "Inquiry acknowledgment",
         "kind": "External · Email",
         "owner": "Marketing / lead-assigned owner",
-        "trigger": "New student inquiry captured",
+        "trigger": "New student Lead created by someone who reached out themselves (website, Contact Us, outreach form); never imports or job-fair lists",
         "timing": "Immediately after inquiry",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Live",
+        "emails": [
+          {
+            "from": "enrollment@ak9i.com",
+            "to": "The lead",
+            "subject": "Thanks for reaching out to American K-9 Interdiction",
+            "body": "Hi {!Lead.FirstName},\n\nThank you for reaching out to American K-9 Interdiction. We received your inquiry, and a member of our team will be in touch with you soon.\n\nIf you would like to talk sooner, you can choose a time that works for you here:\nhttps://calendar.google.com/calendar/appointments/schedules/AcZssZ0YWLdKtae6gOxFoS4Aqk6RKrIAiHbc-8c18BmhGocY2ZTi0K21ssIlDsmn8Zd21cfYgT2aanFF\n\nWhen you are ready to get started, you can begin your enrollment form at any time:\nhttps://enrollmentform.ak9i.edu\n\nQuestions in the meantime? Email us at contact@ak9i.com or call (757) 304-9600.\n\nBest regards,\nThe AK9I Team\nAmerican K-9 Interdiction, LLC\ncontact@ak9i.com | (757) 304-9600\n\nYou are receiving this email because you contacted American K-9 Interdiction. To stop receiving these emails, reply with \"Unsubscribe\" and we will remove you from our list.\nAmerican K-9 Interdiction, LLC, 4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Live in production since Oct 27, 2026, 11:41 AM ET (template AK9I_S1_Inquiry_Ack). Not live yet: the 14-day Nurture hold after this acknowledgment is built and tested in the sandbox and waits on deploying the Nurture series to production (Jonathan's approval). The outreach-form field fix is drafted for Mashup Media and waiting to be posted."
+          }
+        ]
       },
       {
         "id": "s1-task",
         "label": "New-lead follow-up task",
         "kind": "Internal · Task",
-        "owner": "Assigned Sales owner",
-        "trigger": "New student lead created",
+        "owner": "The lead's owner",
+        "trigger": "Every new student Lead created, including imports",
         "timing": "Due within 1 business day",
         "source": "REC",
-        "status": "Planned"
+        "status": "Live"
       }
     ],
     "contracts": [
@@ -38,22 +46,30 @@ export const COMMUNICATION_STAGES=[
         "id": "c1-ack",
         "label": "Contract assessment acknowledgment",
         "kind": "External · Email",
-        "owner": "Business Development",
+        "owner": "Business Development (Chris Casora)",
         "trigger": "Agency, venue, or contract assessment inquiry received",
         "timing": "Same business day",
         "source": "REC",
-        "status": "Planned",
-        "emails": []
+        "status": "Live",
+        "emails": [
+          {
+            "from": "contact@ak9i.com",
+            "to": "The inquirer",
+            "subject": "We received your inquiry - American K-9 Interdiction",
+            "body": "Hi {!Lead.FirstName},\n\nThank you for contacting American K-9 Interdiction about K9 services for your agency or organization. We received your inquiry and have passed it to our Business Development team, who will contact you to discuss your needs and next steps.\n\nIf you would like to reach us sooner, call (757) 304-9600 or email contact@ak9i.com.\n\nBest regards,\nThe AK9I Team\nAmerican K-9 Interdiction, LLC\ncontact@ak9i.com | (757) 304-9600\n\nYou are receiving this email because you contacted American K-9 Interdiction. To stop receiving these emails, reply with \"Unsubscribe\" and we will remove you from our list.\nAmerican K-9 Interdiction, LLC, 4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Live in production since Oct 27, 2026, 11:41 AM ET (template AK9I_C1_Contract_Ack). The inquiry is routed to Chris Casora (BD)."
+          }
+        ]
       },
       {
         "id": "c1-route",
         "label": "Route inquiry to BD",
         "kind": "Internal · Task",
-        "owner": "Marketing → Business Development",
+        "owner": "Marketing → Business Development (Chris Casora)",
         "trigger": "Contract inquiry/source captured",
-        "timing": "At intake",
+        "timing": "At intake; follow-up task due within 1 business day",
         "source": "SITE",
-        "status": "Planned"
+        "status": "Live"
       }
     ]
   },
@@ -421,7 +437,8 @@ export const COMMUNICATION_STAGES=[
             "from": "enrollment@ak9i.com",
             "to": "The applicant, with the application PDF attached",
             "subject": "Thank you for applying to AK9I",
-            "body": "Hello {{{Recipient.FirstName}}},\n\nThank you for applying to the K9 Detection Program. We are excited to help you begin your journey toward certification and employment within the K9 industry.\n\nYour application has been received and is currently being reviewed. Over the next several days, a member of our team will contact you to discuss your goals, answer questions, and walk you through the next steps in the enrollment process.\n\nIf you have any immediate questions, please feel free to reply to this email or contact us directly.\n\nWe look forward to speaking with you soon.\n\nBest regards,\n\nThe AK9I Team\nAmerican K-9 Interdiction\nenrollment@ak9i.com\n(757) 304-9600"
+            "body": "Hello {{{Recipient.FirstName}}},\n\nThank you for applying to the K9 Detection Program. We are excited to help you begin your journey toward certification and employment within the K9 industry.\n\nYour application has been received and is currently being reviewed. Over the next several days, a member of our team will contact you to discuss your goals, answer questions, and walk you through the next steps in the enrollment process.\n\nIf you have any immediate questions, please feel free to reply to this email or contact us directly.\n\nWe look forward to speaking with you soon.\n\nBest regards,\n\nThe AK9I Team\nAmerican K-9 Interdiction\nenrollment@ak9i.com\n(757) 304-9600",
+            "note": "Full-record application PDF live since Oct 27, 2026 (enrollment form v27): every screen's answers, the full text of each initialed page with the initials, and the signature with its completion timestamp."
           }
         ]
       },
