@@ -45,8 +45,6 @@
 .comms-node.comms-internal{border-style:dashed}
 .comms-node:not(:first-child)::before{content:'';position:absolute;top:-9px;left:50%;height:7px;width:1px;background:#A7BDCB;pointer-events:none}
 .comms-node:hover{transform:translateY(-2px);border-color:var(--steel);box-shadow:0 5px 13px rgba(11,34,57,.16)}
-.comms-node-icon{flex:none;display:grid;place-items:center;width:17px;height:17px;background:#F0D28D;color:#6B4A00;border-radius:5px;font-size:10px;font-weight:900}
-.comms-contract .comms-node-icon{background:#B7D6EA;color:#224F6C}
 .comms-node-label{min-width:0;overflow-wrap:anywhere;hyphens:auto}
 .comms-node-arrow{margin-left:auto;font-size:11px;opacity:.6;display:none}
 .comms-status{display:flex;align-items:center;justify-content:space-between;gap:20px;flex:0 0 27px;border-top:1px solid #D8E0E7;font-size:12.5px;color:var(--slate)}
@@ -73,7 +71,6 @@
 .comms-lane-contracts .comms-focus-symbol{background:#CDE6F8;color:#245B7D}
 .comms-focus-nodes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-content:start;gap:9px;overflow:auto;min-height:0;padding:3px 5px 8px 0;scrollbar-width:thin}
 .comms-focus-nodes .comms-node{font-size:15px;line-height:1.28;min-height:49px;padding:11px 11px;align-items:center}
-.comms-focus-nodes .comms-node-icon{width:25px;height:25px;font-size:14px}
 .comms-focus-nodes .comms-node-arrow{display:inline;font-size:15px}
 .comms-focus-nodes .comms-node::before{display:none}
 .comms-root[data-lane=students] .comms-focus-grid,.comms-root[data-lane=contracts] .comms-focus-grid{grid-template-columns:1fr}

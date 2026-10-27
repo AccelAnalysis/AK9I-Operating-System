@@ -60,7 +60,7 @@ const nodeFor=(id)=>{
 };
 function renderNode(item,lane,stageNumber){
   const internal=item.kind.startsWith('Internal'),status=statusOf(item);
-  return `<button type="button" class="comms-node comms-${lane==='students'?'student':'contract'} ${internal?'comms-internal':''} comms-node-${status.key}" data-comms-node="${safe(item.id)}" aria-label="${safe(lane==='students'?'Student':'Contract')} stage ${stageNumber}: ${safe(item.label)}; status ${status.text}; open communication details" title="${safe(status.text)} · open trigger, timing, owner and wording"><span class="comms-node-icon" aria-hidden="true">${lane==='students'?'S':'C'}</span><span class="comms-node-label">${safe(item.label)}</span><span class="comms-status-tag comms-status-${status.key}">${safe(status.text)}</span><span class="comms-node-arrow" aria-hidden="true">↗</span></button>`;
+  return `<button type="button" class="comms-node comms-${lane==='students'?'student':'contract'} ${internal?'comms-internal':''} comms-node-${status.key}" data-comms-node="${safe(item.id)}" aria-label="${safe(lane==='students'?'Student':'Contract')} stage ${stageNumber}: ${safe(item.label)}; status ${status.text}; open communication details" title="${safe(status.text)} · open trigger, timing, owner and wording"><span class="comms-node-label">${safe(item.label)}</span><span class="comms-status-tag comms-status-${status.key}">${safe(status.text)}</span><span class="comms-node-arrow" aria-hidden="true">↗</span></button>`;
 }
 function laneColumn(stage,lane){
   const isStudent=lane==='students',items=stage[lane];
