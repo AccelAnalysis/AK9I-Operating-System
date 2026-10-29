@@ -3,7 +3,6 @@ const safe=(value)=>String(value??'').replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'
 const STATUS={
   Live:{key:'live',text:'Live',detail:'Live · running in production'},
   Sandbox:{key:'sandbox',text:'Sandbox',detail:'Sandbox · built and being tested in the Salesforce sandbox'},
-  Paused:{key:'paused',text:'Paused',detail:'Paused · built but turned off, waiting on an approval'},
   Planned:{key:'planned',text:'Planned',detail:'Planned · not built yet'}
 };
 const statusOf=(item)=>STATUS[item.status]||STATUS.Planned;
@@ -61,7 +60,7 @@ const nodeFor=(id)=>{
 };
 function renderNode(item,lane,stageNumber){
   const internal=item.kind.startsWith('Internal'),status=statusOf(item);
-  return `<button type="button" class="comms-node comms-${lane==='students'?'student':'contract'} ${internal?'comms-internal':''} comms-node-${status.key}" data-comms-node="${safe(item.id)}" aria-label="${safe(lane==='students'?'Student':'Contract')} stage ${stageNumber}: ${safe(item.label)}; status ${status.text}; open communication details" title="${safe(status.text)} · open trigger, timing, owner and wording"><span class="comms-status-dot comms-status-${status.key}" aria-hidden="true"></span><span class="comms-node-body"><span class="comms-node-label">${safe(item.label)}</span><span class="comms-node-status">${safe(item.statusNote||status.detail)}</span></span><span class="comms-node-arrow" aria-hidden="true">↗</span></button>`;
+  return `<button type="button" class="comms-node comms-${lane==='students'?'student':'contract'} ${internal?'comms-internal':''} comms-node-${status.key}" data-comms-node="${safe(item.id)}" aria-label="${safe(lane==='students'?'Student':'Contract')} stage ${stageNumber}: ${safe(item.label)}; status ${status.text}; open communication details" title="${safe(status.text)} · open trigger, timing, owner and wording"><span class="comms-status-dot comms-status-${status.key}" aria-hidden="true"></span><span class="comms-node-label">${safe(item.label)}</span><span class="comms-node-arrow" aria-hidden="true">↗</span></button>`;
 }
 function laneColumn(stage,lane){
   const isStudent=lane==='students',items=stage[lane];
@@ -87,7 +86,7 @@ function renderFocus(stage){
 }
 export function renderPipelineCommunications(){
   return `<div class="comms-root" data-lane="both" id="commsRoot">
-    <div class="comms-toolbar"><div class="comms-legend"><span class="comms-key comms-key-student">S</span><strong>Students</strong><span class="comms-key comms-key-contract">C</span><strong>Contracts</strong><span class="comms-key comms-key-internal">⋯</span><span>Dashed = internal task / alert</span><span class="comms-legend-status"><span class="comms-status-tag comms-status-live">Live</span><span class="comms-status-tag comms-status-sandbox">Sandbox</span><span class="comms-status-tag comms-status-paused">Paused</span><span class="comms-status-tag comms-status-planned">Planned</span></span></div>
+    <div class="comms-toolbar"><div class="comms-legend"><span class="comms-key comms-key-student">S</span><strong>Students</strong><span class="comms-key comms-key-contract">C</span><strong>Contracts</strong><span class="comms-key comms-key-internal">⋯</span><span>Dashed = internal task / alert</span><span class="comms-legend-status"><span class="comms-status-tag comms-status-live">Live</span><span class="comms-status-tag comms-status-sandbox">Sandbox</span><span class="comms-status-tag comms-status-planned">Planned</span></span></div>
     <div class="comms-actions" role="group" aria-label="Communication audience filter"><span>Display</span><button type="button" data-comms-filter="both" aria-pressed="true">Both lanes</button><button type="button" data-comms-filter="students" aria-pressed="false">Students</button><button type="button" data-comms-filter="contracts" aria-pressed="false">Contracts</button></div></div>
     <div class="comms-stage-strip" aria-label="Seven pipeline stages">${COMMUNICATION_STAGES.map(stageCard).join('')}</div>
     <div class="comms-overview" id="commsOverview"><div class="comms-cascades">${COMMUNICATION_STAGES.map(stage=>`<div class="comms-cascade-column" style="--comms-stage-color:${stage.color}"><div class="comms-two-lanes">${laneColumn(stage,'students')}${laneColumn(stage,'contracts')}</div></div>`).join('')}</div></div>
@@ -136,7 +135,7 @@ export function setupPipelineCommunications(){
     const sources={PLAN:'2027–2031 Strategic Plan §2.2',SITE:'AK9I Operating System pipeline',REC:'Implementation recommendation',BUILD:'AK9I seven-stage Salesforce build'};
     slide.querySelector('#commsDialogSource').textContent=sources[item.source]||item.source;
     const status=statusOf(item);
-    slide.querySelector('#commsDialogFlags').replaceChildren(el('span',`comms-status-tag comms-status-${status.key}`,item.statusNote?`${status.text} · ${item.statusNote}`:status.detail));
+    slide.querySelector('#commsDialogFlags').replaceChildren(el('span',`comms-status-tag comms-status-${status.key}`,status.detail));
     const wording=slide.querySelector('#commsDialogWording'),isEmail=Array.isArray(item.emails)||/email/i.test(item.kind);
     const emails=Array.isArray(item.emails)&&item.emails.length?item.emails:[{}];
     wording.hidden=!isEmail;
