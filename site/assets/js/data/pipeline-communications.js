@@ -1,4 +1,4 @@
-/** AK9I Salesforce communications map. Status: Live = running in production; Sandbox = built and being tested in the Salesforce sandbox; Paused = built but turned off, waiting on an approval; Planned = not built yet. Email wording is copied word for word from Salesforce (seven-stage pipeline document, Oct 27, 2026); "Wording not yet written" marks copy that does not exist yet. */
+/** AK9I Salesforce communications map. Status: Live = running in production; Sandbox = built and being tested in the Salesforce sandbox; Planned = not built yet. Email wording is copied word for word from Salesforce (seven-stage pipeline document, Oct 27, 2026); "Wording not yet written" marks copy that does not exist yet. */
 export const COMMUNICATION_STAGES=[
   {
     "number": 1,
@@ -111,7 +111,6 @@ export const COMMUNICATION_STAGES=[
         "timing": "Day 0",
         "source": "BUILD",
         "status": "Live",
-        "statusNote": "Live in production since Oct 27, 2026 (flow AK9I Consideration Series, version 1). The day 0 email is held for 14 days after an Awareness acknowledgment; that hold is live.",
         "emails": [
           {
             "name": "Nurture welcome email",
@@ -145,8 +144,7 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Lead Status is still Nurture; each email re-checks status, opt-out and the 2-per-30-days limit before sending",
         "timing": "Days 16, 32, 48, 64, 80, 96, 112, 130, 180, 200, 250 and 275 after Nurture starts",
         "source": "BUILD",
-        "status": "Paused",
-        "statusNote": "Built, but off in production: the Nurture Email Scheduler flow is not active, so Emails 1–12 are not sending. Turning it on needs Jonathan's approval.",
+        "status": "Sandbox",
         "emails": [
           {
             "name": "Nurture Email 1 · day 16",
@@ -244,7 +242,6 @@ export const COMMUNICATION_STAGES=[
         "timing": "Day 0, day 60 and day 90; stops if the status changes",
         "source": "BUILD",
         "status": "Live",
-        "statusNote": "Live in production since Oct 27, 2026 (flow AK9I Interested Future Series, version 1).",
         "emails": [
           {
             "name": "Day 0 · first email (by lead source)",
@@ -278,8 +275,7 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Enrollment form started (Lead Status = Applicant) and still not submitted",
         "timing": "Days 1, 4 and 10 after the form was started; stops once submitted",
         "source": "BUILD",
-        "status": "Paused",
-        "statusNote": "Built and in production, but turned off (flow AK9I Partial Form Series is not active). Waiting on Jonathan's approval of the email wording before it is turned on.",
+        "status": "Sandbox",
         "emails": [
           {
             "name": "Day 1 · first email (by lead source)",
@@ -313,8 +309,7 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Qualified student inquiry assigned to Sales",
         "timing": "Response SLA to be approved",
         "source": "PLAN",
-        "status": "Sandbox",
-        "statusNote": "Manual email template built in the sandbox (Oct 27, 2026); not in production. Wording waits on Jonathan's approval."
+        "status": "Sandbox"
       },
       {
         "id": "s2-program",
@@ -325,7 +320,6 @@ export const COMMUNICATION_STAGES=[
         "timing": "During active consideration",
         "source": "PLAN",
         "status": "Sandbox",
-        "statusNote": "Manual email template built in the sandbox (Oct 27, 2026); not in production. Wording waits on Jonathan's approval.",
         "emails": []
       },
       {
@@ -337,7 +331,6 @@ export const COMMUNICATION_STAGES=[
         "timing": "As needed before application",
         "source": "PLAN",
         "status": "Sandbox",
-        "statusNote": "Manual email template built in the sandbox (Oct 27, 2026); not in production. Wording waits on Jonathan's approval.",
         "emails": []
       },
       {
@@ -349,7 +342,6 @@ export const COMMUNICATION_STAGES=[
         "timing": "Upon registration; reminder schedule to approve",
         "source": "PLAN",
         "status": "Sandbox",
-        "statusNote": "Reminder flow (1 day and 1 hour before) built in the sandbox (Oct 27, 2026) and being tested; not in production. Wording waits on Jonathan's approval.",
         "emails": []
       },
       {
@@ -361,7 +353,6 @@ export const COMMUNICATION_STAGES=[
         "timing": "Reminders before the booked consultation (schedule to be set)",
         "source": "PLAN",
         "status": "Sandbox",
-        "statusNote": "Manual reminder template built in the sandbox (Oct 27, 2026); not in production. Open question: use Google appointment reminders instead.",
         "emails": []
       },
       {
@@ -373,7 +364,6 @@ export const COMMUNICATION_STAGES=[
         "timing": "Based on approved follow-up cadence",
         "source": "PLAN",
         "status": "Sandbox",
-        "statusNote": "Day 3 email and day 7 call task flow built in the sandbox (Oct 27, 2026) and being tested; not in production. Wording waits on Jonathan's approval.",
         "emails": []
       },
       {
@@ -384,8 +374,7 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Qualified inquiry has no response",
         "timing": "After 2 business days",
         "source": "REC",
-        "status": "Sandbox",
-        "statusNote": "Alert flow (task and email after 2 business days) built in the sandbox (Oct 27, 2026) and being tested; not in production."
+        "status": "Sandbox"
       }
     ],
     "contracts": [
@@ -398,7 +387,6 @@ export const COMMUNICATION_STAGES=[
         "timing": "Next agreed touch",
         "source": "SITE",
         "status": "Sandbox",
-        "statusNote": "Manual email template built in the sandbox (Oct 27, 2026); not in production. Wording waits on Jonathan's approval.",
         "emails": []
       },
       {
@@ -410,7 +398,6 @@ export const COMMUNICATION_STAGES=[
         "timing": "According to buyer next step",
         "source": "SITE",
         "status": "Sandbox",
-        "statusNote": "Manual email template built in the sandbox (Oct 27, 2026); not in production. Wording waits on Jonathan's approval.",
         "emails": []
       },
       {
@@ -421,8 +408,7 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Authority, timing, criteria or next commitment identified",
         "timing": "Dated at every material touch",
         "source": "SITE",
-        "status": "Sandbox",
-        "statusNote": "Next-step task flow built in the sandbox (Oct 27, 2026) and being tested; not in production."
+        "status": "Sandbox"
       }
     ]
   },

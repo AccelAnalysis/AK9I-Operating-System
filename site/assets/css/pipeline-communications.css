@@ -93,7 +93,6 @@
 .comms-status-tag::before{content:'';width:7px;height:7px;border-radius:50%;background:currentColor}
 .comms-status-live{background:#E2F3E8;color:#1E6B3F;border-color:#7FBF97}
 .comms-status-sandbox{background:#EFE8FB;color:#5A3A93;border-color:#B49BDD}
-.comms-status-paused{background:#FDEBD8;color:#8A4B0F;border-color:#E3A86B}
 .comms-status-planned{background:#EEF2F5;color:#5C6F7E;border-color:#C2CED7}
 .comms-status-planned::before{background:transparent;border:1.5px solid currentColor;width:5px;height:5px}
 .comms-legend-status{display:inline-flex;gap:6px;margin-left:12px;padding-left:14px;border-left:1px solid #D2DCE4}
@@ -102,16 +101,12 @@
 .comms-focus-nodes .comms-node-arrow,.comms-root[data-lane=students] .comms-node-arrow,.comms-root[data-lane=contracts] .comms-node-arrow{margin-left:6px}
 .comms-dialog-flags .comms-status-tag{font-size:12.5px;padding:6px 12px 6px 10px}
 .comms-dialog-flags .comms-status-tag::before{width:9px;height:9px}
-/* Cards show only the colored status dot; the full status text sits in the card body. */
+/* Cards show only the colored status dot; no status pill. */
 .comms-status-dot{position:absolute;top:4px;right:4px;width:11px;height:11px;border-radius:50%;border:2px solid #fff;box-shadow:0 1px 3px rgba(11,34,57,.25)}
 .comms-status-dot.comms-status-live{background:#2F8A55}
 .comms-status-dot.comms-status-sandbox{background:#7A55B8}
-.comms-status-dot.comms-status-paused{background:#D9822B}
 .comms-status-dot.comms-status-planned{background:#C9D3DB}
-.comms-node-body{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
-.comms-node-status{display:none;font-size:.78em;line-height:1.3;font-weight:600;color:#55687A}
-.comms-focus-nodes .comms-node,.comms-root[data-lane=students] .comms-node,.comms-root[data-lane=contracts] .comms-node{padding-right:20px;align-items:flex-start}
-.comms-focus-nodes .comms-node-status,.comms-root[data-lane=students] .comms-node-status,.comms-root[data-lane=contracts] .comms-node-status{display:block}
+.comms-focus-nodes .comms-node,.comms-root[data-lane=students] .comms-node,.comms-root[data-lane=contracts] .comms-node{padding-right:20px}
 /* Stage entry trigger in the expanded stage header. */
 .comms-entry{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;margin-top:7px;font-size:13.5px;line-height:1.3;color:var(--navy)}
 .comms-entry>strong{font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:var(--steel)}
