@@ -39,6 +39,25 @@ export const COMMUNICATION_STAGES=[
         "timing": "Due within 1 business day",
         "source": "REC",
         "status": "Live"
+      },
+      {
+        "id": "s1-contactus",
+        "label": "Contact Us message alert",
+        "kind": "Internal · Email alert",
+        "owner": "James Overton and Michelle Hartman",
+        "trigger": "Someone sends a message through the Contact Us form on ak9i.edu (Lead Source Contact Us, self-submitted)",
+        "timing": "Immediately after the message is received",
+        "source": "BUILD",
+        "status": "Live",
+        "emails": [
+          {
+            "from": "contact@ak9i.com",
+            "to": "James Overton and Michelle Hartman",
+            "subject": "New Contact Us message: {First} {Last}",
+            "body": "A new message came in through the Contact Us form on ak9i.edu. The expectation has been set for follow up within one business day.\n\nName: {First} {Last}\nEmail: {Email}\nPhone: {Phone}\nText message opt-in: Yes / No\n\nMessage:\n{Message}\n\nOpen the lead in Salesforce: {fRecordLink}",
+            "note": "Live in production since Oct 30, 2026 (flow AK9I_Contact_Us_Alert). The sender also receives the inquiry acknowledgment, and the lead owner gets the follow-up task."
+          }
+        ]
       }
     ],
     "contracts": [
@@ -638,8 +657,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Accepted student handed off from Sales",
         "timing": "Upon acceptance",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S3_New_Student_Welcome",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Welcome to American K-9 Interdiction",
+            "body": "Hi {!Contact.FirstName},\n\nWelcome to American K-9 Interdiction. We are glad you have been accepted, and our Student Services team is now your main point of contact as you get ready for your course.\n\nHere is what happens next:\n- Upload your enrollment documents if you have not already done so.\n- Complete your administrative fee and confirm your funding.\n- Once all of that is in, we will confirm your enrollment and send you information before your start date.\n\nIf you are using VA education benefits (including VR&E) or SkillBridge, let us know and we will help you with the paperwork.\n\nYou can review course details at https://ak9i.edu/courses/. If you have questions, reply to this email or call (757) 304-9600.\n\nBest regards,\nThe AK9I Team\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Automated: AK9I_Accepted_Welcome, 3 days after Status = Accepted, via F0 (solicited, not marketing)). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s3-ceo",
@@ -649,8 +677,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Accepted student preparing for assigned course",
         "timing": "In pre-start welcome sequence",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S3_CEO_Welcome",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "A welcome from American K-9 Interdiction leadership",
+            "body": "Hi {!Contact.FirstName},\n\nOn behalf of everyone at American K-9 Interdiction, welcome. We are glad you chose to train with us.\n\n[Personal message from the CEO, in their own words.]\n\nOur instructors and Student Services team will be in touch before your start date with everything you need. If you have questions before then, contact enrollment@ak9i.com or (757) 304-9600.\n\nI look forward to meeting you.\n\nSincerely,\n[CEO name]\n[Title]\nAmerican K-9 Interdiction\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, staff send in pre-start sequence. Signer is an open decision.). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s3-instructor",
@@ -660,8 +697,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Instructor and class assignment confirmed",
         "timing": "Before course start",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S3_Instructor_Intro",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Meet your instructor",
+            "body": "Hi {!Contact.FirstName},\n\nWe would like to introduce the instructor for your course starting {!Contact.Course_Start_Date__c}.\n\nInstructor: [Instructor name]\nAbout your instructor: [Short bio approved by the instructor]\n\nYour instructor will lead your training and is a great resource throughout the course. If you have questions before you arrive, reply to this email or call (757) 304-9600.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, once instructor and class are confirmed). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s3-logistics",
@@ -671,8 +717,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Course location, travel, dorm, or equipment plan confirmed",
         "timing": "Before course start",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S3_Campus_Logistics",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Your arrival, housing and equipment information",
+            "body": "Hi {!Contact.FirstName},\n\nHere is the information you need for your course starting {!Contact.Course_Start_Date__c}.\n\nTraining location: 4007 Burdette Rd, Carrsville, VA 23315\nArrival day and time: [arrival day and time]\nHousing: [housing arrangement, or \"not applicable\"]\nEquipment and supplies to bring: [equipment list]\nOther notes: [parking, meals or other details]\n\nIf any of this does not work for you, reply to this email or call (757) 304-9600 so we can help.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, once location, travel, housing or equipment plan is confirmed). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s3-orientation",
@@ -682,8 +737,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Student accepted into a scheduled class",
         "timing": "Before course start",
         "source": "SITE",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S3_Orientation_Invite",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "You're invited: pre-start orientation",
+            "body": "Hi {!Contact.FirstName},\n\nYou are invited to a pre-start orientation for your upcoming course.\n\nDate and time: [date and time]\nFormat: [in person at 4007 Burdette Rd, Carrsville, VA 23315, or online link]\n\nWe will go over what to expect during training, what to bring and who to contact. Please reply to confirm whether you can attend.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, for a scheduled class before start). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s3-d30",
@@ -711,8 +775,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Student is Enrolled and the course start date is 14 days away",
         "timing": "14 days before start",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S3_Countdown_14",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Two weeks until your course starts",
+            "body": "Hi {!Contact.FirstName},\n\nYour course at American K-9 Interdiction starts in two weeks.\n\nCourse: {!Contact.Course__c}\nStart date: {!Contact.Course_Start_Date__c}\n\nNow is a good time to:\n- Finalize your travel plans.\n- Confirm your housing arrangements, if applicable.\n- Gather the equipment and supplies on your packing list.\n- Make sure any outstanding paperwork is complete.\n\nIf anything has changed or you need help, reply to this email or call (757) 304-9600.\n\nBest regards,\nThe AK9I Team\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Automated: AK9I_PreStart_Countdown, 14 days before Course_Start_Date__c, Status = Enrolled, via F0 (solicited, not marketing)). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s3-d7",
@@ -740,8 +813,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Student is Enrolled and the course start date is 3 days away",
         "timing": "3 days before start",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S3_Countdown_3",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Three days until your course starts",
+            "body": "Hi {!Contact.FirstName},\n\nYour course starts in three days, on {!Contact.Course_Start_Date__c}.\n\nBefore you travel, please:\n- Double-check your travel plans and arrival time.\n- Pack the equipment and supplies on your list.\n- Review the arrival details we sent you.\n\nOur address is 4007 Burdette Rd, Carrsville, VA 23315.\n\nIf something comes up that could affect your start, please call us right away at (757) 304-9600 or reply to this email.\n\nBest regards,\nThe AK9I Team\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Automated: AK9I_PreStart_Countdown, 3 days before Course_Start_Date__c, Status = Enrolled, via F0 (solicited, not marketing)). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s3-d1",
@@ -751,8 +833,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Student is Enrolled and the course start date is 1 day away",
         "timing": "1 day before start",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S3_Countdown_1",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Your course starts tomorrow",
+            "body": "Hi {!Contact.FirstName},\n\nYour course at American K-9 Interdiction starts tomorrow, {!Contact.Course_Start_Date__c}.\n\nIf you are running late or anything changes, call us at (757) 304-9600.\n\nWe look forward to seeing you.\n\nBest regards,\nThe AK9I Team\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Automated: AK9I_PreStart_Countdown, 1 day before Course_Start_Date__c, Status = Enrolled, via F0 (solicited, not marketing)). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s3-confirm",
@@ -762,8 +853,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "All pre-start readiness requirements checked",
         "timing": "Immediately before start",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S3_Final_Start_Confirmation",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Confirming your start",
+            "body": "Hi {!Contact.FirstName},\n\nWe are confirming that everything is ready for your start on {!Contact.Course_Start_Date__c}.\n\n- Enrollment documents: [complete / still needed: list]\n- Funding: [confirmed / still needed: details]\n- Arrival: [arrival day and time]\n\nPlease reply to confirm you will be there, or call (757) 304-9600 if anything has changed.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, after the call task from AK9I_PreStart_Countdown (2 days before start)). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s3-red",
@@ -773,7 +873,7 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Missing documents, unresolved funding, non-response, or possible deferral",
         "timing": "When a readiness risk is identified",
         "source": "PLAN",
-        "status": "Planned"
+        "status": "Sandbox"
       }
     ],
     "contracts": [
@@ -785,8 +885,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Approved proposal/price issued to buyer",
         "timing": "According to decision timetable",
         "source": "SITE",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_B_Proposal_Followup",
+            "from": "contact@ak9i.com",
+            "to": "The client contact",
+            "subject": "Following up on our proposal",
+            "body": "Hello [Name],\n\nI wanted to follow up on the proposal we sent on [date] for [scope of services].\n\nDo you have any questions about the scope or terms? If it would help, I am happy to set up a call. Our understanding is that your decision timeline is [timeline]; please let me know if that has changed.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\ncontact@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, BD, per the buyer's decision timetable). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "c3-award",
@@ -796,8 +905,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Buyer awards work or agreement is executed",
         "timing": "At award or execution",
         "source": "SITE",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_B_Award_Confirmation",
+            "from": "contact@ak9i.com",
+            "to": "The client contact",
+            "subject": "Confirming our agreement",
+            "body": "Hello [Name],\n\nThank you for choosing American K-9 Interdiction. This confirms that [agreement or award name] was [awarded / executed] on [date].\n\nNext steps:\n- [Next step, owner, date]\n- Our operations team will contact you to schedule a kickoff.\n\nPlease let me know if anything in this summary does not match your records.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\ncontact@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, BD, at award or execution). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "c3-kickoff",
@@ -807,8 +925,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Executed agreement with agreed kickoff logistics",
         "timing": "Before services begin",
         "source": "REC",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_B_Kickoff_Confirmation",
+            "from": "contact@ak9i.com",
+            "to": "The client contact",
+            "subject": "Kickoff confirmation",
+            "body": "Hello [Name],\n\nThis confirms our kickoff for [agreement or project name].\n\nDate and time: [date and time]\nLocation or call details: [details]\nAttendees: [names]\nAgenda: [topics]\n\nPlease let me know if anything needs to change.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\ncontact@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, Contracts & Field Operations, before services begin). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "c3-handoff",
@@ -818,7 +945,7 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Agreement executed and operating package complete",
         "timing": "At complete handoff",
         "source": "SITE",
-        "status": "Planned"
+        "status": "Sandbox"
       }
     ]
   },
@@ -867,7 +994,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Student actually begins the course",
         "timing": "Day 1",
         "source": "PLAN",
-        "status": "Planned"
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S4_Day_One_Orientation",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Welcome to day one",
+            "body": "Hi {!Contact.FirstName},\n\nWelcome to your first day of training at American K-9 Interdiction.\n\nToday's schedule: [day-one schedule]\nYour instructor: [Instructor name]\nWho to contact with questions: Student Services, enrollment@ak9i.com or (757) 304-9600\n\nWe are glad you are here.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, on day one of the course). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s4-outbrief",
@@ -877,7 +1014,16 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Current active course/cohort",
         "timing": "Weekly",
         "source": "PLAN",
-        "status": "Planned"
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S4_Weekly_Outbrief_Internal",
+            "to": "Internal (AK9I staff)",
+            "subject": "Weekly out-brief: [course] week [number]",
+            "body": "INTERNAL - not for students.\n\nCourse: [course]\nWeek: [number]\nInstructor: {!User.Name}\n\nAttendance concerns: [names and details, or \"none\"]\nProgress concerns / remediation needed: [names and details, or \"none\"]\nStudents doing well: [names, or \"none\"]\nEquipment, dog or facility issues: [details, or \"none\"]\nActions needed from Student Services: [details, or \"none\"]",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, internal (instructor to Student Services). Not for students.). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s4-week2",
@@ -906,8 +1052,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Progress assessment or remediation need",
         "timing": "As required by instruction",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S4_Progress_Remediation",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Your training progress",
+            "body": "Hi {!Contact.FirstName},\n\nWe want to follow up on your progress in [course].\n\nWhat is going well: [summary]\nWhere you need to improve: [specific skill or requirement]\nPlan: [remediation steps, dates and who will help]\n\nOur goal is to help you succeed. Please talk to your instructor or reply to this email if you have questions about this plan.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, when instruction requires). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s4-support",
@@ -917,7 +1072,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Student support request, grievance or service issue",
         "timing": "According to approved response process",
         "source": "PLAN",
-        "status": "Planned"
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S4_Support_Response",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Following up on your request",
+            "body": "Hi {!Contact.FirstName},\n\nThank you for letting us know about [summary of the request or concern]. We take this seriously.\n\nWhat we are doing: [action taken or planned]\nWho is handling it: [name]\nWhen you will hear from us next: [date]\n\nIf you have anything to add, reply to this email or call (757) 304-9600.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, per the approved response process). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s4-gradprep",
@@ -946,8 +1111,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Graduation ceremony planned for the cohort (graduation day, the Friday of the course's final week (courses start on a Monday))",
         "timing": "Before final graduation activity",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S4_Graduation_Invitation",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "You're invited: graduation",
+            "body": "Hi {!Contact.FirstName},\n\nCongratulations on nearing the end of your course. You are invited to graduation on [graduation date], the Friday of your final week.\n\nTime: [time]\nLocation: [location]\n\nFamily and guests are welcome. We will send guest information separately. Please reply to let us know you will attend and how many guests you plan to bring.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, before graduation (task from AK9I_Training_Milestone_Tasks, 21 days before Course_End_Date__c)). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s4-guests",
@@ -957,8 +1131,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Graduation invitation/guest arrangements ready",
         "timing": "Before graduation",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S4_Family_Guest_Info",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Graduation information for your family and guests",
+            "body": "Hi {!Contact.FirstName},\n\nHere is information to share with family and guests attending your graduation on [graduation date].\n\nAddress: [location]\nArrival time: [time]\nParking: [parking details]\nOther details: [seating, what to expect, accessibility]\n\nIf your guests have questions, they can call (757) 304-9600.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, once guest arrangements are ready). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s4-checkout",
@@ -968,8 +1151,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Student nears completion and planned departure",
         "timing": "Before course completion",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S4_Certificate_Housing_Checkout",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Before you leave: certificate and checkout",
+            "body": "Hi {!Contact.FirstName},\n\nAs you finish your course, here is what to do before you leave.\n\nCertificate: [how and when the certificate is issued]\nHousing checkout: [checkout time and steps, or \"not applicable\"]\nEquipment return: [items to return, or \"not applicable\"]\nContact details: please make sure we have your current email address and phone number.\n\nIf you have questions, reply to this email or call (757) 304-9600.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, before completion (task from AK9I_Training_Milestone_Tasks, 3 days before Course_End_Date__c)). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s4-gradday",
@@ -998,8 +1190,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Course completed or documented student exit",
         "timing": "At completion or documented exit",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S4_Completion_Transition",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Completing your course: what happens next",
+            "body": "Hi {!Contact.FirstName},\n\nCongratulations on completing your course at American K-9 Interdiction. Your student record now shows you as a graduate.\n\nHere is what to expect next:\n- About 30 days after graduation, we will ask you to complete a short employment confirmation.\n- We will check in with you from time to time to see how you are doing and whether we can help.\n- You are welcome to contact us any time about career support.\n\nPlease keep your email address and phone number up to date with us so we can reach you. Reply to this email or call (757) 304-9600 with any changes.\n\nBest regards,\nThe AK9I Team\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Automated: AK9I_Graduate_Followups, 2 days after Course_End_Date__c, Status = Graduated, via F0 (solicited, not marketing)). Pending Jonathan's review; not live."
+          }
+        ]
       }
     ],
     "contracts": [
@@ -1011,7 +1212,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Deployment roster or site plan updated",
         "timing": "Per contract and client needs",
         "source": "SITE",
-        "status": "Planned"
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_B_Service_Schedule",
+            "from": "contact@ak9i.com",
+            "to": "The client contact",
+            "subject": "Updated service schedule",
+            "body": "Hello [Name],\n\nHere is the updated service schedule for [site or agreement].\n\nDates and times: [schedule]\nTeam assigned: [names or roles]\nSite requirements: [access, contacts, other needs]\n\nPlease confirm this works for you, or let me know what needs to change.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\ncontact@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, Contracts & Field Operations, when the roster or site plan changes). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "c4-client",
@@ -1021,7 +1232,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Service period underway; operational update required",
         "timing": "Per contract",
         "source": "SITE",
-        "status": "Planned"
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_B_Client_Update",
+            "from": "contact@ak9i.com",
+            "to": "The client contact",
+            "subject": "Service update",
+            "body": "Hello [Name],\n\nHere is an update on [agreement or project name] for the period [period].\n\nCompleted: [summary]\nUpcoming: [summary]\nItems needing your input: [items, or \"none\"]\n\nPlease let me know if you have questions.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\ncontact@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, Contracts & Field Operations, per contract). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "c4-evidence",
@@ -1031,7 +1252,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Work performed or contractual deliverable reached",
         "timing": "Per contract",
         "source": "SITE",
-        "status": "Planned"
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_B_Service_Evidence",
+            "from": "contact@ak9i.com",
+            "to": "The client contact",
+            "subject": "Service report: [deliverable]",
+            "body": "Hello [Name],\n\nAttached is the service report for [deliverable or period].\n\nSummary: [summary of work performed]\nDates: [dates]\nNotes: [any exceptions or follow-up items]\n\nPlease let me know if you need anything else for your records.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\ncontact@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, when work or a deliverable is complete). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "c4-billing",
@@ -1051,7 +1282,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Reportable service incident or exception",
         "timing": "Per contract and incident protocol",
         "source": "SITE",
-        "status": "Planned"
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_B_Incident_Notice",
+            "from": "contact@ak9i.com",
+            "to": "The client contact",
+            "subject": "Incident notification: [short description]",
+            "body": "Hello [Name],\n\nWe are writing to let you know about an incident during [service or site] on [date and time].\n\nWhat happened: [facts only]\nImmediate action taken: [action]\nNext steps: [next steps and timing]\nPoint of contact: {!User.Name}, (757) 304-9600\n\nWe will follow up with [update or report] by [date].\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\ncontact@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, per contract and incident protocol). Pending Jonathan's review; not live."
+          }
+        ]
       }
     ]
   },
@@ -1074,8 +1315,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Student graduates",
         "timing": "At or after graduation",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S5_Graduation_Thank_You",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Thank you from American K-9 Interdiction",
+            "body": "Hi {!Contact.FirstName},\n\nThank you for training with American K-9 Interdiction. It was a privilege to work with you, and we are proud of what you accomplished.\n\nWe would like to stay in touch as you start the next part of your career. If you have questions or need anything from us, reply to this email or call (757) 304-9600.\n\nBest regards,\nThe AK9I Team\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n\nYou are receiving this email because you are an American K-9 Interdiction student or graduate. To stop receiving these emails, reply with \"Unsubscribe\" and we will remove you from our list.\nAmerican K-9 Interdiction, 4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Automated: AK9I_Graduate_Followups, 7 days after Course_End_Date__c, Status = Graduated, via F0 (unsolicited, not marketing; counts toward the cap)). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s5-evidence",
@@ -1085,8 +1335,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Graduate reporting follow-up becomes due",
         "timing": "At relevant outcome milestone",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S5_Outcome_Evidence_Request",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Quick update on your employment",
+            "body": "Hi {!Contact.FirstName},\n\nAs part of our graduate follow-up, we are asking for a short update on your employment.\n\nPlease reply with:\n- Your current employer, or that you are still looking.\n- Your job title.\n- Your start date.\n\n[Any document requested, for example an offer letter or employer confirmation, if required.]\n\nThank you. This helps us support you and future students.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, after the task from AK9I_Outcome_Evidence_Task (on AK9I_Next_Employment_Followup__c)). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s5-d30",
@@ -1115,8 +1374,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Graduation date is 60 days past",
         "timing": "60 days after graduation",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S5_Checkin_60",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Checking in: how are things going?",
+            "body": "Hi {!Contact.FirstName},\n\nIt has been about two months since you graduated from American K-9 Interdiction, and we wanted to check in.\n\nHow are things going? We would like to hear:\n- Whether you are working in the K9 field or elsewhere.\n- Whether there is anything we can help you with.\n\nJust reply to this email, or call (757) 304-9600.\n\nBest regards,\nThe AK9I Team\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n\nYou are receiving this email because you are an American K-9 Interdiction student or graduate. To stop receiving these emails, reply with \"Unsubscribe\" and we will remove you from our list.\nAmerican K-9 Interdiction, 4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Automated: AK9I_Graduate_Followups, 60 days after Course_End_Date__c, Status = Graduated, via F0 (unsolicited, not marketing; counts toward the cap)). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s5-d90",
@@ -1126,8 +1394,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Graduation date is 90 days past",
         "timing": "90 days after graduation",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S5_Checkin_90",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Checking in at 90 days",
+            "body": "Hi {!Contact.FirstName},\n\nIt has been about three months since your graduation from American K-9 Interdiction. We hope your career is going well.\n\nIf your employment has changed since we last heard from you, please let us know by replying to this email. If you are looking for work or need help with anything, we are here to help. You can also call us at (757) 304-9600.\n\nBest regards,\nThe AK9I Team\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n\nYou are receiving this email because you are an American K-9 Interdiction student or graduate. To stop receiving these emails, reply with \"Unsubscribe\" and we will remove you from our list.\nAmerican K-9 Interdiction, 4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Automated: AK9I_Graduate_Followups, 90 days after Course_End_Date__c, Status = Graduated, via F0 (unsolicited, not marketing; counts toward the cap)). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s5-career",
@@ -1137,8 +1414,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Graduate requests or needs career assistance",
         "timing": "According to individual need",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S5_Career_Support",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Following up on career support",
+            "body": "Hi {!Contact.FirstName},\n\nThank you for reaching out about your job search. Here is how we can help:\n\n[Specific support offered: for example resume review, employer contacts or a call with our team]\n\nNext step: [next step and date]\n\nReply to this email or call (757) 304-9600 any time.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, as needed). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s5-feedback",
@@ -1148,8 +1434,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Feedback or unresolved student experience issue",
         "timing": "After feedback or issue identified",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S5_Feedback_Followup",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Thank you for your feedback",
+            "body": "Hi {!Contact.FirstName},\n\nThank you for sharing your feedback about [topic]. We appreciate you taking the time to tell us.\n\nWhat we are doing about it: [action]\nWho to contact: {!User.Name}, enrollment@ak9i.com or (757) 304-9600\n\nIf there is anything else we should know, please reply to this email.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, after feedback or an issue is identified). Pending Jonathan's review; not live."
+          }
+        ]
       }
     ],
     "contracts": [
@@ -1161,8 +1456,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Service milestone achieved or delivery completed",
         "timing": "Within 2 weeks suggested",
         "source": "SITE",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_B_Satisfaction_Checkin",
+            "from": "contact@ak9i.com",
+            "to": "The client contact",
+            "subject": "How are we doing?",
+            "body": "Hello [Name],\n\nNow that [service or milestone] is [underway / complete], I wanted to check in. How satisfied are you with our work so far, and is there anything we should do differently?\n\nI would welcome a quick reply or a short call, whichever is easier for you.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\ncontact@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, after the task from AK9I_Contract_Handoff_Task (14 days after the Opportunity is won)). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "c5-recovery",
@@ -1172,8 +1476,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Client raises issue or service quality concern",
         "timing": "Per agreed recovery plan",
         "source": "SITE",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_B_Issue_Resolution",
+            "from": "contact@ak9i.com",
+            "to": "The client contact",
+            "subject": "Following up on your concern",
+            "body": "Hello [Name],\n\nThank you for raising your concern about [issue]. Here is where things stand.\n\nWhat we have done: [actions]\nWhat remains: [remaining steps and dates]\nYour contact: {!User.Name}, (757) 304-9600\n\nPlease let me know if this resolves the issue or if anything else needs attention.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\ncontact@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, per the agreed recovery plan). Pending Jonathan's review; not live."
+          }
+        ]
       }
     ]
   },
@@ -1239,8 +1552,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Relevant approved course or LMS content available",
         "timing": "Based on interests / consent",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S6_Continuing_Education",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Continuing education from American K-9 Interdiction",
+            "body": "Hi {!Contact.FirstName},\n\nAs an American K-9 Interdiction graduate, we thought you would be interested in this:\n\n[Course or content name and short description]\nHow to access it: [link or instructions]\n\nYou can see our current courses at https://ak9i.edu/courses/. Reply to this email if you have questions.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315\n\nTo stop receiving these emails, reply with \"Unsubscribe\" and we will remove you from our list.",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, only to graduates who asked for this kind of update (consent check)). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s6-refresher",
@@ -1250,8 +1572,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Relevant refresher or workshop opportunity available",
         "timing": "Per event calendar",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S6_Refresher_Invite",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Refresher training opportunity",
+            "body": "Hi {!Contact.FirstName},\n\nWe are offering [refresher or workshop name] for graduates.\n\nDate: [date]\nLocation: [location]\nDetails: [short description]\n\nIf you would like to attend or learn more, reply to this email or call (757) 304-9600. You can also see our courses at https://ak9i.edu/courses/.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315\n\nTo stop receiving these emails, reply with \"Unsubscribe\" and we will remove you from our list.",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, per event calendar; consent check). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s6-events",
@@ -1261,8 +1592,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Alumni event scheduled",
         "timing": "Before event, with preferences",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S6_Alumni_Event_Invite",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "You're invited: [event name]",
+            "body": "Hi {!Contact.FirstName},\n\nYou are invited to [event name] for American K-9 Interdiction graduates.\n\nDate and time: [date and time]\nLocation: [location]\nWhat to expect: [short description]\n\nPlease reply to let us know if you can attend.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315\n\nTo stop receiving these emails, reply with \"Unsubscribe\" and we will remove you from our list.",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, before an alumni event; consent and preference check). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s6-mentor",
@@ -1272,8 +1612,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Relevant voluntary mentor/mentee opportunity exists",
         "timing": "As appropriate",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S6_Mentor_Invite",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "A mentoring opportunity",
+            "body": "Hi {!Contact.FirstName},\n\nWe have a mentoring opportunity we thought might interest you.\n\n[Description of the mentor or mentee opportunity and time commitment]\n\nParticipation is completely voluntary. If you are interested, reply to this email and we will share more details.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, voluntary; consent check). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s6-billing",
@@ -1295,8 +1644,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Contract end date is 90 days away",
         "timing": "90 days before end",
         "source": "REC",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_B_Renewal_Reminder",
+            "from": "contact@ak9i.com",
+            "to": "The client contact",
+            "subject": "Your agreement ends on [end date]",
+            "body": "Hello [Name],\n\nOur agreement for [agreement name] is scheduled to end on [end date], which is about [90 / 60 / 30] days away.\n\nWe would like to talk with you about renewal and whether any changes to the scope would be helpful. Are you available for a short call in the next two weeks?\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\ncontact@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, after the 90/60/30-day tasks from AK9I_Contract_Renewal_Reminders). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "c6-d60",
@@ -1306,8 +1664,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Contract end date is 60 days away",
         "timing": "60 days before end",
         "source": "REC",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_B_Renewal_Reminder",
+            "from": "contact@ak9i.com",
+            "to": "The client contact",
+            "subject": "Your agreement ends on [end date]",
+            "body": "Hello [Name],\n\nOur agreement for [agreement name] is scheduled to end on [end date], which is about [90 / 60 / 30] days away.\n\nWe would like to talk with you about renewal and whether any changes to the scope would be helpful. Are you available for a short call in the next two weeks?\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\ncontact@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, after the 90/60/30-day tasks from AK9I_Contract_Renewal_Reminders). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "c6-d30",
@@ -1317,8 +1684,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Contract end date is 30 days away",
         "timing": "30 days before end",
         "source": "REC",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_B_Renewal_Reminder",
+            "from": "contact@ak9i.com",
+            "to": "The client contact",
+            "subject": "Your agreement ends on [end date]",
+            "body": "Hello [Name],\n\nOur agreement for [agreement name] is scheduled to end on [end date], which is about [90 / 60 / 30] days away.\n\nWe would like to talk with you about renewal and whether any changes to the scope would be helpful. Are you available for a short call in the next two weeks?\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\ncontact@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, after the 90/60/30-day tasks from AK9I_Contract_Renewal_Reminders). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "c6-expand",
@@ -1328,8 +1704,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Client expresses interest in more sites/services",
         "timing": "During account planning",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_B_Expansion_Followup",
+            "from": "contact@ak9i.com",
+            "to": "The client contact",
+            "subject": "Following up on additional services",
+            "body": "Hello [Name],\n\nThank you for mentioning your interest in [additional sites or services]. I would be glad to put together options for you.\n\nTo do that, could you share:\n- [Information needed, for example locations, timing or number of teams]\n\nWould a short call this week or next work for you?\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\ncontact@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, during account planning). Pending Jonathan's review; not live."
+          }
+        ]
       }
     ]
   },
@@ -1352,7 +1737,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Graduate has credible outcome and expressed willingness",
         "timing": "After opt-in / eligibility check",
         "source": "PLAN",
-        "status": "Planned"
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S7_Testimonial_Permission",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "May we share your story?",
+            "body": "Hi {!Contact.FirstName},\n\nWe are proud of what you have accomplished since graduating from American K-9 Interdiction. Would you be willing to let us share your story?\n\nWe would like to use: [quote / photo / video, and where it would appear]\n\nThis is completely optional, and we will not use anything without your written permission. If you agree, please reply \"Yes, I give permission\" and tell us which items we may use. You can withdraw permission at any time by replying to this email.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, only after opt-in; record the answer in AK9I_Advocacy_Consent__c). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s7-review",
@@ -1362,8 +1757,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Positive, genuine relationship; review invitation appropriate",
         "timing": "Per approved outreach cadence",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S7_Review_Request",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Would you share a review?",
+            "body": "Hi {!Contact.FirstName},\n\nIf you had a good experience training with American K-9 Interdiction, would you consider leaving an honest review? It helps future students decide whether our courses are right for them.\n\nYou can leave a review here: [review link]\n\nThere is no obligation, and we appreciate your feedback either way.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, per approved cadence; only with AK9I_Advocacy_Consent__c). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s7-referral",
@@ -1373,8 +1777,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Alumnus volunteers interest in recommending AK9I",
         "timing": "As appropriate, never mandatory",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S7_Referral_Invite",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Know someone who would be a good fit?",
+            "body": "Hi {!Contact.FirstName},\n\nIf you know someone who is interested in a K9 career, we would be glad to talk with them. They can learn about our courses at https://ak9i.edu/courses/, email enrollment@ak9i.com or call (757) 304-9600.\n\nIf they mention your name, we will know you sent them. This is entirely optional, and we appreciate you thinking of us.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual; never mandatory; only with AK9I_Advocacy_Consent__c). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s7-speaker",
@@ -1384,8 +1797,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Graduation, event, or mentoring opportunity needs volunteers",
         "timing": "Before scheduled opportunity",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S7_Speaker_Invite",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Invitation to speak to our students",
+            "body": "Hi {!Contact.FirstName},\n\nWe would like to invite you to [speak at / mentor at] [event or class] on [date].\n\nWhat we are asking: [short description and time commitment]\n\nThis is voluntary. If you are interested, reply to this email and we will send the details.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, before a scheduled opportunity; only with AK9I_Advocacy_Consent__c). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "s7-employer",
@@ -1395,8 +1817,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Qualified alum and employer connection established",
         "timing": "As appropriate with consent",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_S7_Employer_Introduction",
+            "from": "enrollment@ak9i.com",
+            "to": "The student or graduate",
+            "subject": "Could you introduce us to your employer?",
+            "body": "Hi {!Contact.FirstName},\n\nThank you for keeping in touch. We would like to connect with [employer name] to learn whether they might be interested in hiring other American K-9 Interdiction graduates or working with us.\n\nWould you be comfortable introducing us to [contact name or role]? This is completely optional. If you are, reply to this email and we will take it from there.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\nenrollment@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, with the graduate's consent). Pending Jonathan's review; not live."
+          }
+        ]
       }
     ],
     "contracts": [
@@ -1408,8 +1839,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Client is satisfied and reference-ready",
         "timing": "After positive result; with permission",
         "source": "PLAN",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_B_Reference_Request",
+            "from": "contact@ak9i.com",
+            "to": "The client contact",
+            "subject": "Would you be willing to serve as a reference?",
+            "body": "Hello [Name],\n\nThank you for the opportunity to work with [organization]. Would you be willing to serve as a reference for American K-9 Interdiction?\n\nIf you agree, we would only share your name and contact details with prospective clients you approve, and we would let you know before anyone contacts you. This is completely optional.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\ncontact@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, after a positive result and only with permission). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "c7-case",
@@ -1419,7 +1859,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Verifiable client result and permission opportunity exist",
         "timing": "Before any public reuse",
         "source": "PLAN",
-        "status": "Planned"
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_B_Case_Study_Permission",
+            "from": "contact@ak9i.com",
+            "to": "The client contact",
+            "subject": "Permission request: case study",
+            "body": "Hello [Name],\n\nWe would like to prepare a short case study about our work with [organization] and would welcome your permission.\n\nWhat we would like to use: [description of the result, quote and/or logo]\nWhere it would appear: [website, proposals, other]\n\nWe will send you the draft for approval before anything is published, and nothing will be used without your written permission.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\ncontact@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, before any public reuse). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "c7-peer",
@@ -1429,8 +1879,17 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Willing client identifies relevant peer contact",
         "timing": "After voluntary agreement",
         "source": "SITE",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_B_Peer_Introduction",
+            "from": "contact@ak9i.com",
+            "to": "The client contact",
+            "subject": "Thank you for the introduction",
+            "body": "Hello [Name],\n\nThank you for offering to introduce us to [peer name and organization]. To make it easy, here is a short note you can forward:\n\n\"I would like to introduce you to {!User.Name} at American K-9 Interdiction. They have worked with us on [scope], and I thought it might be useful for you to talk. You can reach them at contact@ak9i.com or (757) 304-9600.\"\n\nThank you again. We appreciate your trust.\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\ncontact@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, after the client voluntarily agrees). Pending Jonathan's review; not live."
+          }
+        ]
       },
       {
         "id": "c7-joint",
@@ -1440,14 +1899,23 @@ export const COMMUNICATION_STAGES=[
         "trigger": "Client voluntarily agrees to participate",
         "timing": "Per approved joint plan",
         "source": "SITE",
-        "status": "Planned",
-        "emails": []
+        "status": "Sandbox",
+        "emails": [
+          {
+            "name": "AK9I_B_Joint_Outreach",
+            "from": "contact@ak9i.com",
+            "to": "The client contact",
+            "subject": "Joint outreach proposal",
+            "body": "Hello [Name],\n\nThank you for your interest in working together on [joint activity]. Here is what we have in mind:\n\nWhat: [description]\nWhen: [timing]\nRoles: [who does what]\n\nNothing will be published or sent without your approval. Would you like to set up a call to discuss?\n\nBest regards,\n{!User.Name}\nAmerican K-9 Interdiction\ncontact@ak9i.com | (757) 304-9600\n4007 Burdette Rd, Carrsville, VA 23315",
+            "note": "Draft built and tested in the Salesforce sandbox Nov 2, 2026 (Manual, per an approved joint plan). Pending Jonathan's review; not live."
+          }
+        ]
       }
     ]
   }
 ];
 export const COMMUNICATION_RULES={
-  "status": "Status as of October 27, 2026 · Live = running in production · Sandbox = built and in testing · Planned = not built yet",
+  "status": "Status as of November 2, 2026 · Live = running in production · Sandbox = built and in testing · Planned = not built yet",
   "cap": "Check the AK9I outreach limit of two unsolicited contacts per person in any rolling 30 days before outbound outreach; distinguish required service/transactional notices and applicable consent.",
   "sms": "SMS is not live. Informational consent, marketing consent and no-text preference must be recorded before any texting is enabled.",
   "stop": "Stop or reroute stage-specific messages on withdrawal, start-date change, opt-out, actual start, graduation, owner reassignment or stage change.",
