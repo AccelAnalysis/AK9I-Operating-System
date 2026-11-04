@@ -1915,9 +1915,10 @@ export const COMMUNICATION_STAGES=[
   }
 ];
 export const COMMUNICATION_RULES={
-  "status": "Status as of November 2, 2026 · Live = running in production · Sandbox = built and in testing · Planned = not built yet",
+  "status": "Status as of November 4, 2026 · Live = running in production · Sandbox = built and in testing · Planned = not built yet",
   "cap": "Check the AK9I outreach limit of two unsolicited contacts per person in any rolling 30 days before outbound outreach; distinguish required service/transactional notices and applicable consent.",
   "sms": "SMS is not live. Informational consent, marketing consent and no-text preference must be recorded before any texting is enabled.",
   "stop": "Stop or reroute stage-specific messages on withdrawal, start-date change, opt-out, actual start, graduation, owner reassignment or stage change.",
-  "ownership": "Every active record needs one accountable owner, source, next action and due date."
+  "ownership": "Every active record needs one accountable owner, source, next action and due date.",
+  "unsubscribe": "The one-click unsubscribe page and its per-person links are live in production as of November 4, 2026. The link is not yet written into the email templates, so every email below still asks the reader to reply. Adding it to the templates is the next step."
 };
